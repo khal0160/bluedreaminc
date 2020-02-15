@@ -1,0 +1,98 @@
+body{
+    border: 1cm solid rgb(63, 60, 60);}
+p{   
+    background-color: rgb(53, 81, 192);
+    text-emphasis-color: pink;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 0.5cm;
+    
+    }
+#youssefPic{
+    height:420px;
+}
+
+h1,h4{
+
+    text-align: center;
+    font-family: 'Rambla', sans-serif;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgb(53, 81, 192);
+    text-shadow: 20px;
+    width: 100%;
+    padding-top: 0.5cm;
+    padding-bottom : 0.5cm;}
+h2{
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0, 0, 0, 0}
+h5{
+    text-align: center;
+    text-overflow: ellipsis;}
+.display-4{
+    border: 1cm solid black;}
+.footer-copyright{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;}
+
+a{
+    align-self: center;
+
+}
+p.card-text{
+    background-color: white;
+}
+div.card-body{
+    background-color: black;
+}
+h5.card-title{
+    color: white;
+}
+#soundcloud.card-body{
+    background-color: rgb(230, 112, 45);
+}
+i{
+    color:white;
+}
+#sCard.col-md-6{
+    display:flex;
+    justify-content: center;
+    padding-bottom:0.5cm;
+}
+#github.col-md-6{
+    display:flex;
+    justify-content: center;
+    padding-bottom:0.5cm;
+}
+.btn.btn-primary{
+    background-color:white;
+    color:black;
+}
+#intro{
+    font-size: 20px;
+    padding-left:0.5cm;
+    padding-right:0.5cm;
+    color: white;
+}
+.row{
+    justify-content: center;
+}
+
+
+.col-sm-3{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
