@@ -1,0 +1,24 @@
+.page {
+    min-height: 100vh;
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100vw;
+    opacity: 0;
+    transform: translateX(-200%);}
+.page.active {
+    opacity: 1;
+    transform: translateX(0);
+    background-color: aqua;}
+button{
+    height: 20px;
+}
+.albumHead{
+    font-size: 50px; 
+}
+.topHead{
+    font-size: 50px;
+}
+.sButton{
+    height:50px;
+}
