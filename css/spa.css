@@ -2,6 +2,14 @@
     LAYOUT - MOBILE FIRST
 **************************/
 @import url('https://fonts.googleapis.com/css?family=Oxanium&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Armata&display=swap');
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -24,15 +32,14 @@ header div{
     font-size: 9vw ;
 
 }
-header svg{
+header img{
     display: flex;
     justify-content: flex-end;
     right: 0;
-    height: 100%;
+    height: 50%;
     width: 10vw;
-    fill: white;
 }
-svg:hover{
+img:hover{
     fill: blue;
 }
 .page {
@@ -54,12 +61,21 @@ svg:hover{
 div#myTopNav.topNav{
     display: flex;
     justify-content: row;
+    justify-content: space-around;
     height: 5vh;
     width: 100vw;
     background-color: #121212;
 }
+button{
+    color: white;
+    background-color: #121212;
+    width: 10vw;
+}
+.albumHead{
+    margin: 10px;
+    font-family: 'Armata', sans-serif;
 
-
+}
 /**************************
     LAYOUT - MEDIUM SIZE
 **************************/
@@ -68,8 +84,7 @@ div#myTopNav.topNav{
 /**************************
     LAYOUT - LARGE SIZE
 **************************/
-@media screen and (min-width:800px){
-    
+@media screen and (min-width:800px){   
 }
 /**************************
     LAYOUT - EXTRA LARGE SIZE
