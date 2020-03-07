@@ -1,69 +1,42 @@
 /**************************
     LAYOUT - MOBILE FIRST
 **************************/
-/*
-font-family: 'Quicksand', ;
-*/
 @import url('https://fonts.googleapis.com/css?family=Oxanium&display=swap');
-html{
-  left: 0;
+*{
+    left: 0;
+}
+body{
+  left: 0;  
 }
 header.topHead{
   left: 0;
+  font-size: 10vw ;
 }
 .page {
     min-height: 100vh;
     position: absolute;
-    top: 10;
-    left: 0;
     width: 100vw;
     opacity: 0;
-    transform: translateX(-200%);}
+    transform: translateX(-200%);
+}
 .page.active {
     opacity: 1;
     transform: translateX(0);
-    background-color: aqua;}
-button{
-    height: 20px;
-}
-.albumHead{
-    font-size: 50px; 
+    background-color: aqua;
 }
 .topHead{
     font-family: 'Oxanium' ;
     font-size: 50px;
 }
-.sButton{
-    height:50px;
-}
-.bottomBar{
-    display: flex;
-    flex-direction: row;
-    position: -webkit-sticky;
-    position: sticky;
-    bottom: 0;
-    background-color: white;
-    padding: 10px;
-}
-.playBar_icon{
-    
-    padding-right: 10px;
-    
-}
-/* Add a black background color to the top navigation */
-.topnav {
-    
-    left: 0;
-  }
-  
-img{
-    fill: whitesmoke;
+div#myTopNav.topNav{
+    height: 5vh;
+    width: 100vw;
+    background-color: violet;
 }
 /**************************
     LAYOUT - MEDIUM SIZE
 **************************/
 @media screen and (min-width:600px){
-
 }
 /**************************
     LAYOUT - LARGE SIZE
@@ -74,6 +47,5 @@ img{
 /**************************
     LAYOUT - EXTRA LARGE SIZE
 **************************/
-@media screen and (min-width:1200px){
-    
+@media screen and (min-width:1200px){    
 }
