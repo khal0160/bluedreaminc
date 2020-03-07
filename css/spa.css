@@ -1,3 +1,16 @@
+/**************************
+    LAYOUT - MOBILE FIRST
+**************************/
+/*
+font-family: 'Quicksand', ;
+*/
+@import url('https://fonts.googleapis.com/css?family=Oxanium&display=swap');
+html{
+  left: 0;
+}
+header.topHead{
+  left: 0;
+}
 .page {
     min-height: 100vh;
     position: absolute;
@@ -17,8 +30,50 @@ button{
     font-size: 50px; 
 }
 .topHead{
+    font-family: 'Oxanium' ;
     font-size: 50px;
 }
 .sButton{
     height:50px;
+}
+.bottomBar{
+    display: flex;
+    flex-direction: row;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+    padding: 10px;
+}
+.playBar_icon{
+    
+    padding-right: 10px;
+    
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    
+    left: 0;
+  }
+  
+img{
+    fill: whitesmoke;
+}
+/**************************
+    LAYOUT - MEDIUM SIZE
+**************************/
+@media screen and (min-width:600px){
+
+}
+/**************************
+    LAYOUT - LARGE SIZE
+**************************/
+@media screen and (min-width:800px){
+    
+}
+/**************************
+    LAYOUT - EXTRA LARGE SIZE
+**************************/
+@media screen and (min-width:1200px){
+    
 }

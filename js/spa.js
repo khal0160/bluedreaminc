@@ -26,7 +26,6 @@ let app = {
         document.getElementById("s8Button").addEventListener("click", app.nav);
         document.getElementById("s9Button").addEventListener("click", app.nav);
         document.getElementById("s10Button").addEventListener("click", app.nav);
-
     },
     nav: ev => {
       console.log("nav is being triggered")
