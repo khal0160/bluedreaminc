@@ -76,6 +76,18 @@ button{
     font-family: 'Armata', sans-serif;
 
 }
+div.description{
+    margin: 10px;
+    font-family: 'Armata', sans-serif;
+}
+div.frontCover{
+    margin: 10px;
+    font-family: 'Armata', sans-serif;
+}
+div.backCover{
+    margin: 10px;
+    font-family: 'Armata', sans-serif;
+}
 /**************************
     LAYOUT - MEDIUM SIZE
 **************************/
