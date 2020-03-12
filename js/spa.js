@@ -15,6 +15,7 @@ let app = {
     },
     addListeners: () => {
         console.log("after addListeners");
+        document.getElementById("diveinchiCharacter").addEventListener("click", app.openDiveinchi);
         document.getElementById("homeButton").addEventListener("click", app.nav);
         document.getElementById("s1Button").addEventListener("click", app.nav);
         document.getElementById("s2Button").addEventListener("click", app.nav);
@@ -54,6 +55,11 @@ let app = {
       history.pushState({}, currentPage, `#${currentPage}`);
       document.getElementById(hash).dispatchEvent(app.show);
     },
+    openDiveinchi: ()=>{
+      let btn = document.getElementById("characterPage");
+      btn.dataset.target = "diveinchiSection"
+      app.nav;
+    }
   };
   const ready = "cordova" in window ? "deviceready" : "DOMContentLoaded";
   document.addEventListener(ready, app.init);

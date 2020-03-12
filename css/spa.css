@@ -88,6 +88,22 @@ div.backCover{
     margin: 10px;
     font-family: 'Armata', sans-serif;
 }
+.characterRow{
+    display: flex;
+    justify-content: row;
+    margin-top: 40%;
+
+}
+img#ayeshaCharacter{
+    width: 50%;
+    height: 50%;
+}
+img#diveinchiCharacter{
+    width: 50%;
+    height: 50%;
+    margin-left: 10px;
+}
+
 /**************************
     LAYOUT - MEDIUM SIZE
 **************************/
