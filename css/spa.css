@@ -91,16 +91,18 @@ div.backCover{
 .characterRow{
     display: flex;
     justify-content: row;
-    margin-top: 40%;
+    margin-top: 20vh;
+    width: 50px;
+    height: 80px;
 
 }
 img#ayeshaCharacter{
-    width: 50%;
-    height: 50%;
+    width: 50vw;
+    height: 60vh;
 }
 img#diveinchiCharacter{
-    width: 50%;
-    height: 50%;
+    width: 50vw;
+    height: 60vh;
     margin-left: 10px;
 }
 
