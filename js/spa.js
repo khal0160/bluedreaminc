@@ -15,6 +15,7 @@ let app = {
     },
     addListeners: () => {
         console.log("after addListeners");
+        document.getElementById("topLogo").addEventListener("click", app.nav);
         document.getElementById("diveinchiCharacter").addEventListener("click", app.nav);
         document.getElementById("homeButton").addEventListener("click", app.nav);
         document.getElementById("s1Button").addEventListener("click", app.nav);
@@ -32,6 +33,7 @@ let app = {
       console.log("nav is being triggered")
       ev.preventDefault();
       let currentPage = ev.target.getAttribute('data-target');
+      console.log(currentPage);
       document.querySelector('.active').classList.remove('active');
       document.getElementById(currentPage).classList.add('active');
       console.log(currentPage);
