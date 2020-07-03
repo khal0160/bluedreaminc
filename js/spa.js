@@ -63,23 +63,26 @@ let app = {
       history.replaceState({}, 'Card', '#card');
       window.addEventListener('popstate', app.poppin);
       app.KEY = "device" in window ? "REVIEW" + device.uuid : "REVIEWTEMPKEY";
+      
       app.addListeners();
+      
     },
     addListeners: () => {
         console.log("after addListeners");
-        document.getElementById("topLogo").addEventListener("click", app.nav);
-        document.getElementById("diveinchiCharacter").addEventListener("click", app.nav);
+        
+        
         document.getElementById("homeButton").addEventListener("click", app.nav);
         document.getElementById("s1Button").addEventListener("click", app.nav);
-        document.getElementById("s2Button").addEventListener("click", app.buildSimulation);
-        document.getElementById("s3Button").addEventListener("click", app.nav);
-        document.getElementById("s4Button").addEventListener("click", app.nav);
-        document.getElementById("s5Button").addEventListener("click", app.nav);
-        document.getElementById("s6Button").addEventListener("click", app.nav);
-        document.getElementById("s7Button").addEventListener("click", app.nav);
-        document.getElementById("s8Button").addEventListener("click", app.nav);
-        document.getElementById("s9Button").addEventListener("click", app.nav);
-        document.getElementById("s10Button").addEventListener("click", app.nav);
+        document.getElementById("s2Button").addEventListener("click", app.buildSimulation(2));
+        document.getElementById("s3Button").addEventListener("click", app.buildSimulation(3));
+        document.getElementById("s4Button").addEventListener("click", app.buildSimulation(4));
+        document.getElementById("s5Button").addEventListener("click", app.buildSimulation(5));
+        document.getElementById("s6Button").addEventListener("click", app.buildSimulation(6));
+        document.getElementById("s7Button").addEventListener("click", app.buildSimulation(7));
+        document.getElementById("s8Button").addEventListener("click", app.buildSimulation(8));
+        document.getElementById("s9Button").addEventListener("click", app.buildSimulation(9));
+        document.getElementById("s10Button").addEventListener("click", app.buildSimulation(10));
+        
     },
     nav: ev => {
       console.log("nav is being triggered")
@@ -111,14 +114,15 @@ let app = {
     },
     buildSimulation : (simNumber) =>{
       let body = document.getElementById("body");
-      //<section class="page">
       let simPage = document.createElement("section");
       simPage.classList.add("page");
+      //<section class="page">
       body.appendChild(simPage);
-      //<div class="albumHead">Simulation_1: Testing</div>
       let simHead = document.createElement("div");
       simHead.classList.add("albumHead");
-      simHead.textContent("Simulation_"+simNumber+": Testing");
+      //<div class="albumHead">Simulation_1: Testing</div>
+      simHead.textContent="Simulation_"+simNumber+": Testing";
+      //simHead.textContent("Simulation_"+simNumber+": Testing");
       simPage.appendChild(simHead);
       //<div class="albumContainer">
       let simContainer = document.createElement("div");
@@ -135,18 +139,24 @@ let app = {
       let frontCover = document.createElement("img");
       frontCover.src="";
       frontCover.classList.add("frontCover");
-      backCover.classList.add("backCover");
+      
       let backCover = document.createElement("img");
+      backCover.src="";
+      backCover.classList.add("backCover");
       simCover.appendChild(frontCover);
       simCover.appendChild(backCover);
 
-      
+      console.log(app.simulations[simNumber-1]);
       //find the number of tracks in the simulation with the given simNumber
       //loop that number of times creating
       //<div class="row">
       //<img src="art/s1_2.jpg" alt="Dont fight it and you wont get hurt" width="300" height="300f">
       //<audio controls src="audio/s1_2.mp3"></audio>
     },
+    buildStore :() =>{
+      //find body
+      //add stuff
+    }
   };
   const ready = "cordova" in window ? "deviceready" : "DOMContentLoaded";
   document.addEventListener(ready, app.init);

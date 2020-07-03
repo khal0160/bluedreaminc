@@ -1,0 +1,40 @@
+/**************************
+    LAYOUT - MOBILE FIRST
+**************************/
+#body{
+
+}
+#header{
+    background-color: black;
+    color: white;
+    height: 1cm;
+    width: 100%;
+    top: 0;
+    position: fixed;
+}
+#middle{
+      
+}
+#footer{
+    background-color: black;
+    color: white;
+    height: 1cm;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+/**************************
+    LAYOUT - MEDIUM SIZE
+**************************/
+@media screen and (min-width:600px){
+}
+/**************************
+    LAYOUT - LARGE SIZE
+**************************/
+@media screen and (min-width:800px){   
+}
+/**************************
+    LAYOUT - EXTRA LARGE SIZE
+**************************/
+@media screen and (min-width:1200px){    
+}

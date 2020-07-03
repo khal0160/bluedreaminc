@@ -111,9 +111,12 @@ section{
     display: flex;
     justify-content: center;
     left: 1cm;
-
 }
-
+#storeButton{
+    background-color: white;
+    color: black;
+    padding: 3%;
+}
 /**************************
     LAYOUT - MEDIUM SIZE
 **************************/
