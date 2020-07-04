@@ -6,17 +6,22 @@
 }
 #header{
     background-color: black;
-    color: white;
     height: 1cm;
     width: 100%;
     top: 0;
     position: fixed;
 }
+#headTitle{
+    padding-top: 10px;
+    padding-left: 0.3cm;
+    text-align: left;
+    color: white;
+}
 #middle{
-      
 }
 #footer{
     background-color: black;
+    text-align: center;
     color: white;
     height: 1cm;
     width: 100%;
