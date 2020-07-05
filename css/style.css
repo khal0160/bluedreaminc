@@ -1,6 +1,4 @@
-
-
- .icon-block {
+.icon-block {
     padding: 0 15px;
   }
   .icon-block .material-icons {
@@ -11,4 +9,9 @@
   width: 100%;
   position: fixed;
   bottom: 0;
+}
+#playBar{
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
 }
