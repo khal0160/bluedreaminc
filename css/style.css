@@ -1,10 +1,14 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 .icon-block {
     padding: 0 15px;
   }
   .icon-block .material-icons {
       font-size: inherit;
   }
-
 #footer{
   width: 100%;
   position: fixed;
@@ -14,4 +18,26 @@
   padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
+}
+#currentTrackArt{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-self: center;
+}
+.page{
+  display: none;
+  width: 100%;
+  min-height: 100%; /* allow for content off the bottom of the page */
+
+  padding: 1rem 2rem;
+  opacity: 0;
+}
+.active{
+  display: block; 
+  opacity: 1;
+}
+img{
+  width: 200px;
+  height: 200px;
 }

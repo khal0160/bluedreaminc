@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,71 +9,112 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <title>DIVEINCHI</title>
 </head>
-
 <body id="body">
-
-    <nav class="light-blue lighten-1" role="navigation">
-        <div class="nav-wrapper container ">
-          <a id="logo-container" href="#" class="brand-logo">DIVEINCHI</a>
-          <!-- <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><i class="material-icons">menu</i></li>
-          </ul>
-          <ul id="nav-mobile" class="sidenav">
-            <li><a href="#">Navbar Link</a></li>
-          </ul> -->
-          
-          <a class='dropdown-trigger btn right' href='#' data-target='dropdown1' data-constrainwidth="false">Simulations</a>
-           <!-- Dropdown Structure -->
-          <ul id='dropdown1' class='dropdown-content ' >
-            <li data-constrainwidth="false"><a href="#!">Simulation 1</a></li>
-            <li><a href="#!">Simulation 2</a></li>
-            <li><a href="#!">Simulation 3</a></li>
-            <li><a href="#!">Simulation 4</a></li>
-            <li><a href="#!">Simulation 5</a></li>
-            <li><a href="#!">Simulation 6</a></li>
-            <li><a href="#!">Simulation 7</a></li>
-            <li><a href="#!">Simulation 8</a></li>
-            <li><a href="#!">Simulation 9</a></li>
-            <li><a href="#!">Simulation 10</a></li>
-
-            
-          </ul> 
-          <!-- <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
-        </div>
-      </nav>
-      <div class="section no-pad-bot" id="index-banner">
-        <div class="container">
-          <br><br>
-          <h1 class="header center orange-text"></h1>
-          <div class="row center">
-            <h5 class="header col s12 light">Blue Dream Inc. Store</h5>
-          </div>
-          <div class="row center">
-            <a href="http://bluedreaminc.ca" id="download-button" class="btn-large waves-effect waves-light blue">Shop</a>
-          </div>
-          <br><br>
-    
+<!-- HEADER BAR -->
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo left">DIVEINCHI</a>
+      <a class='dropdown-trigger btn right' href='#' data-target='dropdown1' data-constrainwidth="false">Simulations</a>
+      <ul id='dropdown1' class='dropdown-content ' >
+        <li><a href="#!" data-target="one" class="simButton">Simulation 1</a></li>
+        <li><a href="#!" data-target="two" class="simButton">Simulation 2</a></li>
+        <li><a href="#!" data-target="three" class="simButton">Simulation 3</a></li>
+        <li><a href="#!" data-target="four" class="simButton">Simulation 4</a></li>
+        <li><a href="#!" data-target="five" class="simButton">Simulation 5</a></li>
+        <li><a href="#!" data-target="six" class="simButton">Simulation 6</a></li>
+        <li><a href="#!" data-target="seven" class="simButton">Simulation 7</a></li>
+        <li><a href="#!" data-target="eight" class="simButton">Simulation 8</a></li>
+        <li><a href="#!" data-target="nine" class="simButton">Simulation 9</a></li>
+        <li><a href="#!" data-target="ten" class="simButton">Simulation 10</a></li>
+      </ul>
+    </div>
+  </nav>
+<!-- HEADER BAR -->
+<!-- TEMPLATES -->
+  <template id="albumRow">
+    <div class="row">
+      <div class="col s12 m6 l3"><p><img class="responsive-img teal lighten-2 trackArt" src="icons/diveinchiShilohette.png" alt=""></p></div>
+      <div class="col s12 m6 l3"><p> </p></div>
+      <div class="col s12 m6 l6 blue"><p></p></div>
+    </div>
+  </template>
+  <template id="trackRow">
+    <div class="row">
+      <div class="col s12 m6 l3"><p></p></div>
+      <div class="col s12 m6 l3"><p> <img class="responsive-img teal lighten-2 trackArt" src="icons/diveinchiShilohette.png" alt=""></p></div>
+      <div class="col s12 m6 l6 blue"><p></p></div>
+      </div>
+    </template>
+<!-- TEMPLATES -->
+<!-- PAGES -->
+  <section id="one" class="page active">
+    <h2 class="albumTitle">Simulation 1: Testing</h2>
+    <div class="row">
+      <div class="col s12 m6 l3"><p><img class="responsive-img teal lighten-2 trackArt" src="icons/diveinchiShilohette.png" alt=""></p></div>
+      <div class="column">
+        <div class="col s12 m6 l6 trackTitle teal">
+          <p>Track Name - Artist [ Album ]</p>
+        </div>     
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m6 l3 trackArt"><p><img class="responsive-img teal lighten-2 trackArt" src="icons/diveinchiShilohette.png" alt=""></p></div>
+      <div class="column">
+        <div class="col s12 m6 l6 trackTitle teal"><p>Track Name - Artist [ Album ]</p></div>
+        <div class="progress col s12 m6 l6 trackTitle">
+          <div class="indeterminate"></div>
         </div>
       </div>
-    
-    
-      
-      <footer id= "footer" class="page-footer orange">
-        <div id="playBar" class="container">
-          <i class="material-icons ">play_arrow</i>
-          <i class="material-icons ">navigate_before</i>
-          <i class="material-icons ">navigate_next</i>
-          
-        </div>
-        
-        
-      </footer>
-    
-    
-      <!--  Scripts-->
+    </div>
+  </section>
+  <section id="two" class="page">
+    <h2>Simulation 2</h2>
+  </section>
+  <section id="three" class="page">
+    <h2>Simulation 3</h2>
+  </section>
+  <section id="four" class="page">
+    <h2>Simulation 4</h2>
+  </section>
+  <section id="five" class="page">
+  <h2>Simulation 5</h2>
+  </section>
+  <section id="six" class="page">
+    <h2>Simulation 6</h2>
+  </section>
+  <section id="seven" class="page">
+    <h2>Simulation 7</h2>
+  </section>
+  <section id="eight" class="page">
+    <h2>Simulation 8</h2>
+  </section>
+  <section id="nine" class="page">
+    <h2>Simulation 9</h2>
+  </section>
+  <section id="ten" class="page">
+    <h2>Simulation 10</h2>
+  </section>
+<!-- PAGES -->
+<!-- FOOTER -->
+  <footer id= "footer" class="page-footer blue">
+    <div id="playBar" class="container">
+      <i class="material-icons ">keyboard_arrow_left</i>
+      <i class="material-icons ">play_arrow</i>
+      <i class="material-icons ">keyboard_arrow_right</i>
+      <i class="material-icons ">shuffle</i>
+      <i class="material-icons ">loop</i>
+      <div class="progress">
+        <div class="indeterminate"></div>
+      </div>
+      <img id="currentTrackArt" class="responsive-img" src="art/s10_FrontCover.png">
+      <div>Artist Name</div>
+      <div>Track Name - Album</div>
+    </div>
+  </footer>
+<!-- FOOTER -->
+<!--  Scripts-->
       <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script src="js/materialize.js"></script>
       <script src="js/diveinchi.js"></script> 
 </body>
-
 </html>
