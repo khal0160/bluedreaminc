@@ -23,7 +23,14 @@ let app = {
         console.log("Navigate to", target);
         document.querySelector(".page.active").classList.remove("active");
         document.getElementById(target).classList.add("active");
+        app.buildSimulation();
     },
+    buildSimulation: ()=>{
+        console.log('After buildSimulation');
+        let temp = document.getElementById('albumRow');
+        let content = temp.content;
+        document.getElementById("one").appendChild(content.cloneNode(true));
+    }
 }
 const ready = "cordova" in window ? "deviceready" : "DOMContentLoaded";
 document.addEventListener(ready, app.init);
