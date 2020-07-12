@@ -3,61 +3,90 @@ let app = {
     show: new Event('show'),
     simulations: [
         {
-          name: "Testing",
-          trackCount: 11, 
-          description: "Blah Blah Blah",
-          
+            albumId: "one",
+            albumName: "Testing",
+            albumTrackCount: 11, 
+            albumDescription: "Blah Blah Blah",
+            albumFrontCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_FrontCover.jpg",
+            albumBackCover: "",
         },
         {
-          name: "Good Deeds And Synth",
-          trackCount: 6, 
-          description: "Blah Blah Blah",
+            albumId: "two",
+            albumName: "Good Deeds And Synth",
+            albumTrackCount: 6, 
+            albumDescription: "Blah Blah Blah",
+            albumFrontCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s2_FrontCover.jpg",
+            albumBackCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s2_BackCover.jpg",
         },
         {
-          name: "Instant Gratification",
-          trackCount: 27, 
-          description: "Blah Blah Blah",
+            albumId: "three",
+            albumName: "Instant Gratification",
+            albumTrackCount: 27, 
+            albumDescription: "Blah Blah Blah",
+            albumFrontCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_FrontCover.jpg",
+            albumBackCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_BackCover.jpg",
         },
         {
-          name: "Micro dosing Fear",
-          trackCount: 9, 
-          description: "Blah Blah Blah",
+            albumId: "four",
+            albumName: "Micro dosing Fear",
+            albumTrackCount: 9, 
+            albumDescription: "Blah Blah Blah",
+            albumFrontCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s4_FrontCover.jpg",
+            albumBackCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s4_BackCover.jpg",
         },
         {
-          name: "Alternate Immersion",
-          trackCount: 6, 
-          description: "Blah Blah Blah",
+            albumId: "five",
+            albumName: "Alternate Immersion",
+            albumTrackCount: 6, 
+            albumDescription: "Blah Blah Blah",
+            albumFrontCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s5_FrontCover.jpg",
+            albumBackCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s5_BackCover.jpg",
         },
         {
-          name: "Logical Eternity",
-          trackCount: 3, 
-          description: "Blah Blah Blah",
+            albumId: "six",
+            albumName: "Logical Eternity",
+            albumTrackCount: 3, 
+            albumDescription: "Blah Blah Blah",
+            albumFrontCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s6_FrontCover.jpg",
+            albumBackCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s6_BackCover.jpg",
         },
         {
-          name: "HitClips",
-          trackCount: 7, 
-          description: "Blah Blah Blah",
+            albumId: "seven",
+            albumName: "HitClips",
+            albumTrackCount: 7, 
+            albumDescription: "Blah Blah Blah",
+            albumFrontCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s7_FrontCover.jpg",
+            albumBackCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s7_BackCover.jpg",
         },
         {
-          name: "Lasouf",
-          trackCount: 0, 
-          description: "Blah Blah Blah",
+            albumId: "eight",
+            albumName: "Lasouf",
+            albumTrackCount: 0, 
+            albumDescription: "Blah Blah Blah",
+            albumFrontCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s8_FrontCover.jpg",
+            albumBackCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s8_BackCover.jpg",
         },
         {
-          name: "Lorem Ipsum",
-          trackCount: 8, 
-          description: "Blah Blah Blah",
+            albumId: "nine",
+            albumName: "Lorem Ipsum",
+            albumTrackCount: 8, 
+            albumDescription: "Blah Blah Blah",
+            albumFrontCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s9_FrontCover.jpg",
+            albumBackCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s9_BackCover.jpg",
         },
         {
-          name: "Plastic 604",
-          trackCount: 10, 
-          description: "Blah Blah Blah",
+            albumId: "ten",
+            albumFrontCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_FrontCover.jpg",
+            albumBackCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_BackCover.jpg",
+            albumName: "Plastic 604",
+            albumTrackCount: 10, 
+            albumDescription: "Blah Blah Blah",
         },
-      ],
+    ],
     trackList:[
         {
             trackName: "Achievement Unlocked: New Level Of Abstraction",
-            trackSimNum: 1,
+            albumId: "one",
             trackPosition: 1, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_1.jpg",
@@ -65,7 +94,7 @@ let app = {
         },
         {
             trackName: "Dont Fight It And You Wont Get Hurt",
-            trackSimNum: 1,
+            albumId: "one",
             trackPosition: 2, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_2.jpg",
@@ -73,7 +102,7 @@ let app = {
         },
         {
             trackName: "Just A Few More",
-            trackSimNum: 1,
+            albumId: "one",
             trackPosition: 3, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_3.jpg",
@@ -81,7 +110,7 @@ let app = {
         },
         {
             trackName: "Dont Act Like You Dont See Me",
-            trackSimNum: 1,
+            albumId: "one",
             trackPosition: 4, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_4.jpg",
@@ -89,7 +118,7 @@ let app = {
         },
         {
             trackName: "Oh So You Bboy Huh, Ok Lets Go",
-            trackSimNum: 1,
+            albumId: "one",
             trackPosition: 5, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_5.jpg",
@@ -97,7 +126,7 @@ let app = {
         },
         {
             trackName: "There You Are",
-            trackSimNum: 1,
+            albumId: "one",
             trackPosition: 6, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_6.jpg",
@@ -105,7 +134,7 @@ let app = {
         },
         {
             trackName: "Pretty People Malevolent Thoughts",
-            trackSimNum: 1,
+            albumId: "one",
             trackPosition: 7, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_7.jpg",
@@ -113,7 +142,7 @@ let app = {
         },
         {
             trackName: "Balance",
-            trackSimNum: 1,
+            albumId: "one",
             trackPosition: 8, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_8.jpg",
@@ -121,7 +150,7 @@ let app = {
         },
         {
             trackName: "Electric",
-            trackSimNum: 1,
+            albumId: "one",
             trackPosition: 9, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_9.jpg",
@@ -129,7 +158,7 @@ let app = {
         },
         {
             trackName: "Locked In Memory And In Heart",
-            trackSimNum: 1,
+            albumId: "one",
             trackPosition: 10, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_10.jpg",
@@ -137,7 +166,7 @@ let app = {
         },
         {
             trackName: "Road Ends Ahead",
-            trackSimNum: 1,
+            albumId: "one",
             trackPosition: 11, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_11.jpg",
@@ -145,7 +174,7 @@ let app = {
         },
         {
             trackName: "Intro",
-            trackSimNum: 2,
+            albumId: "two",
             trackPosition: 1, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s2_1.jpg",
@@ -153,7 +182,7 @@ let app = {
         },
         {
             trackName: "1",
-            trackSimNum: 2,
+            albumId: "two",
             trackPosition: 2, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s2_2.jpg",
@@ -161,7 +190,7 @@ let app = {
         },
         {
             trackName: "2",
-            trackSimNum: 2,
+            albumId: "two",
             trackPosition: 3, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s2_3.jpg",
@@ -169,7 +198,7 @@ let app = {
         },
         {
             trackName: "3",
-            trackSimNum: 2,
+            albumId: "two",
             trackPosition: 4, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s2_4.jpg",
@@ -177,7 +206,7 @@ let app = {
         },
         {
             trackName: "4",
-            trackSimNum: 2,
+            albumId: "two",
             trackPosition: 5, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s2_5.jpg",
@@ -185,7 +214,7 @@ let app = {
         },
         {
             trackName: "5",
-            trackSimNum: 2,
+            albumId: "two",
             trackPosition: 6, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s2_6.jpg",
@@ -193,7 +222,7 @@ let app = {
         },
         {
             trackName: "Achievement Unlocked New Level Of Production",
-            trackSimNum: 3,
+            albumId: "three",
             trackPosition: 1, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_1.jpg",
@@ -201,7 +230,7 @@ let app = {
         },
         {
             trackName: "I",
-            trackSimNum: 3,
+            albumId: "three",
             trackPosition: 2, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_2.jpg",
@@ -209,7 +238,7 @@ let app = {
         },
         {
             trackName: "Oh My",
-            trackSimNum: 3,
+            albumId: "three",
             trackPosition: 3, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_3.jpg",
@@ -217,7 +246,7 @@ let app = {
         },
         {
             trackName: "Montreal Scene",
-            trackSimNum: 3,
+            albumId: "three",
             trackPosition: 4, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_4.jpg",
@@ -225,7 +254,7 @@ let app = {
         },
         {
             trackName: "Blue Dream",
-            trackSimNum: 3,
+            albumId: "three",
             trackPosition: 5, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_4.jpg",
@@ -233,7 +262,7 @@ let app = {
         },
         {
             trackName: "Prince Of Darkness",
-            trackSimNum: 3,
+            albumId: "three",
             trackPosition: 6, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_5.jpg",
@@ -241,7 +270,7 @@ let app = {
         },
         {
             trackName: "Jocker Tantrum",
-            trackSimNum: 3,
+            albumId: "three",
             trackPosition: 7, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_6.jpg",
@@ -249,7 +278,7 @@ let app = {
         },
         {
             trackName: "I Never Got Why Youd Do That",
-            trackSimNum: 3,
+            albumId: "three",
             trackPosition: 8, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_7.jpg",
@@ -257,7 +286,7 @@ let app = {
         },
         {
             trackName: "Rabbit Hole",
-            trackSimNum: 3,
+            albumId: "three",
             trackPosition: 9, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_8.jpg",
@@ -265,7 +294,7 @@ let app = {
         },
         {
             trackName: "Conquering Vibe",
-            trackSimNum: 3,
+            albumId: "three",
             trackPosition: 10, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_10.jpg",
@@ -273,7 +302,7 @@ let app = {
         },
         {
             trackName: "Raised By The Internet",
-            trackSimNum: 3,
+            albumId: "three",
             trackPosition: 11, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_11.jpg",
@@ -281,7 +310,7 @@ let app = {
         },
         {
             trackName: "Past Present Future",
-            trackSimNum: 3,
+            albumId: "three",
             trackPosition: 12, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_12.jpg",
@@ -289,7 +318,7 @@ let app = {
         },
         {
             trackName: "Cathartic",
-            trackSimNum: 3,
+            albumId: "three",
             trackPosition: 13, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_13.jpg",
@@ -297,7 +326,7 @@ let app = {
         },
         {
             trackName: "Catacomb Vision",
-            trackSimNum: 3,
+            albumId: "three",
             trackPosition: 14, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_14.jpg",
@@ -305,7 +334,7 @@ let app = {
         },
         {
             trackName: "Wounded Hearts With Damaged Souls",
-            trackSimNum: 3,
+            albumId: "three",
             trackPosition: 15, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_15.jpg",
@@ -313,7 +342,7 @@ let app = {
         },
         {
             trackName: "Rhythm In The Beat",
-            trackSimNum: 3,
+            albumId: "three",
             trackPosition: 16, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_16.jpg",
@@ -321,7 +350,7 @@ let app = {
         },
         {
             trackName: "Time Travel Race Car",
-            trackSimNum: 3,
+            albumId: "three",
             trackPosition: 17, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_17.jpg",
@@ -329,7 +358,7 @@ let app = {
         },
         {
             trackName: "Truth To Passion",
-            trackSimNum: 3,
+            albumId: "three",
             trackPosition: 18, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_18.jpg",
@@ -337,7 +366,7 @@ let app = {
         },
         {
             trackName: "Fight Or Flight Which Do You Choose",
-            trackSimNum: 3,
+            albumId: "three",
             trackPosition: 19, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_19.jpg",
@@ -345,7 +374,7 @@ let app = {
         },
         {
             trackName: "Dummy Trap",
-            trackSimNum: 3,
+            albumId: "three",
             trackPosition: 20, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_20.jpg",
@@ -353,7 +382,7 @@ let app = {
         },
         {
             trackName: "Please Try Again Later",
-            trackSimNum: 3,
+            albumId: "three",
             trackPosition: 21, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_21.jpg",
@@ -361,7 +390,7 @@ let app = {
         },
         {
             trackName: "Dethroned",
-            trackSimNum: 3,
+            albumId: "three",
             trackPosition: 21, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_21.jpg",
@@ -369,7 +398,7 @@ let app = {
         },
         {
             trackName: "Where Is Earl",
-            trackSimNum: 3,
+            albumId: "three",
             trackPosition: 23, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_23.jpg",
@@ -377,7 +406,7 @@ let app = {
         },
         {
             trackName: "Good Morning",
-            trackSimNum: 3,
+            albumId: "three",
             trackPosition: 24, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_24.jpg",
@@ -385,7 +414,7 @@ let app = {
         },
         {
             trackName: "Soul Room",
-            trackSimNum: 3,
+            albumId: "three",
             trackPosition: 25, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_25.jpg",
@@ -393,7 +422,7 @@ let app = {
         },
         {
             trackName: "Demetreus Mathew Thomson",
-            trackSimNum: 3,
+            albumId: "three",
             trackPosition: 26, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_26.jpg",
@@ -401,7 +430,7 @@ let app = {
         },
         {
             trackName: "Why Are You Terrified",
-            trackSimNum: 4,
+            albumId: "four",
             trackPosition: 1, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s4_1.jpg",
@@ -409,7 +438,7 @@ let app = {
         },
         {
             trackName: "I Cant Feel Enough",
-            trackSimNum: 4,
+            albumId: "four",
             trackPosition: 2, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s4_2.jpg",
@@ -417,7 +446,7 @@ let app = {
         },
         {
             trackName: "Lord Forgive Me For I Have Sinned",
-            trackSimNum: 4,
+            albumId: "four",
             trackPosition: 3, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s4_3.jpg",
@@ -425,7 +454,7 @@ let app = {
         },
         {
             trackName: "Lost In The Desert, Microdosing Fear",
-            trackSimNum: 4,
+            albumId: "four",
             trackPosition: 4, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s4_4.jpg",
@@ -433,7 +462,7 @@ let app = {
         },
         {
             trackName: "Dancing Moral Trails",
-            trackSimNum: 4,
+            albumId: "four",
             trackPosition: 5, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s4_5.jpg",
@@ -441,7 +470,7 @@ let app = {
         },
         {
             trackName: "Lost In The Amazon, Micro dosing Fear",
-            trackSimNum: 4,
+            albumId: "four",
             trackPosition: 6, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s4_6.jpg",
@@ -449,7 +478,7 @@ let app = {
         },
         {
             trackName: "Clearing Clouds",
-            trackSimNum: 4,
+            albumId: "four",
             trackPosition: 7, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s4_7.jpg",
@@ -457,7 +486,7 @@ let app = {
         },
         {
             trackName: "Merry Go Round",
-            trackSimNum: 4,
+            albumId: "four",
             trackPosition: 8, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s4_8.jpg",
@@ -465,7 +494,7 @@ let app = {
         },
         {
             trackName: "Young Dive In Chi",
-            trackSimNum: 4,
+            albumId: "four",
             trackPosition: 9, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s4_9.jpg",
@@ -473,7 +502,7 @@ let app = {
         },
         {
             trackName: "Shopping In The Early 2000s",
-            trackSimNum: 5,
+            albumId: "five",
             trackPosition: 1, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s5_1.jpg",
@@ -481,7 +510,7 @@ let app = {
         },
         {
             trackName: "Walking To My Tesla To Swim With Whales",
-            trackSimNum: 5,
+            albumId: "five",
             trackPosition: 2, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s5_2.jpg",
@@ -489,7 +518,7 @@ let app = {
         },
         {
             trackName: "Seen It Before",
-            trackSimNum: 5,
+            albumId: "five",
             trackPosition: 3, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s5_3.jpg",
@@ -497,7 +526,7 @@ let app = {
         },
         {
             trackName: "97 To Billings Bridge",
-            trackSimNum: 5,
+            albumId: "five",
             trackPosition: 4, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s5_4.jpg",
@@ -505,7 +534,7 @@ let app = {
         },
         {
             trackName: "You Pass Butter",
-            trackSimNum: 5,
+            albumId: "five",
             trackPosition: 5, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s5_5.jpg",
@@ -513,7 +542,7 @@ let app = {
         },
         {
             trackName: "Burn Out",
-            trackSimNum: 5,
+            albumId: "five",
             trackPosition: 6, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s5_6.jpg",
@@ -521,7 +550,7 @@ let app = {
         },
         {
             trackName: "Imminent Onus",
-            trackSimNum: 6,
+            albumId: "six",
             trackPosition: 1, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s6_1.jpg",
@@ -529,7 +558,7 @@ let app = {
         },
         {
             trackName: "Ancient Philosophy",
-            trackSimNum: 6,
+            albumId: "six",
             trackPosition: 2, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s6_1.jpg",
@@ -537,7 +566,7 @@ let app = {
         },
         {
             trackName: "DreamScape",
-            trackSimNum: 7,
+            albumId: "seven",
             trackPosition: 1, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s7_1.jpg",
@@ -545,7 +574,7 @@ let app = {
         },
         {
             trackName: "Felicia",
-            trackSimNum: 7,
+            albumId: "seven",
             trackPosition: 2, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s7_2.jpg",
@@ -553,7 +582,7 @@ let app = {
         },
         {
             trackName: "Nirvana",
-            trackSimNum: 7,
+            albumId: "seven",
             trackPosition: 3, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s7_3.jpg",
@@ -561,7 +590,7 @@ let app = {
         },
         {
             trackName: "NeverKnown",
-            trackSimNum: 7,
+            albumId: "seven",
             trackPosition: 4, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s7_4.jpg",
@@ -569,7 +598,7 @@ let app = {
         },
         {
             trackName: "Unknown",
-            trackSimNum: 7,
+            albumId: "seven",
             trackPosition: 5, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s7_5.jpg",
@@ -577,7 +606,7 @@ let app = {
         },
         {
             trackName: "Laughter",
-            trackSimNum: 7,
+            albumId: "seven",
             trackPosition: 6, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s7_6.jpg",
@@ -585,7 +614,7 @@ let app = {
         },
         {
             trackName: "Glitch",
-            trackSimNum: 7,
+            albumId: "seven",
             trackPosition: 7, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s7_7.jpg",
@@ -593,7 +622,7 @@ let app = {
         },
         {
             trackName: "What I Gotta Do To Play",
-            trackSimNum: 9,
+            albumId: "nine",
             trackPosition: 1, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s9_1.jpg",
@@ -601,7 +630,7 @@ let app = {
         },
         {
             trackName: "Bicycle For The Mind",
-            trackSimNum: 9,
+            albumId: "nine",
             trackPosition: 2, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s9_2.jpg",
@@ -609,7 +638,7 @@ let app = {
         },
         {
             trackName: "SoundCloud Gaara",
-            trackSimNum: 9,
+            albumId: "nine",
             trackPosition: 3, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s9_3.jpg",
@@ -617,7 +646,7 @@ let app = {
         },
         {
             trackName: "Defeat Your Own Mind",
-            trackSimNum: 9,
+            albumId: "nine",
             trackPosition: 4, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s9_4.jpg",
@@ -625,7 +654,7 @@ let app = {
         },
         {
             trackName: "Everydays Journey",
-            trackSimNum: 9,
+            albumId: "nine",
             trackPosition: 5, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s9_5.jpg",
@@ -633,7 +662,7 @@ let app = {
         },
         {
             trackName: "I Still Love You",
-            trackSimNum: 9,
+            albumId: "nine",
             trackPosition: 6, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s9_6.jpg",
@@ -641,7 +670,7 @@ let app = {
         },
         {
             trackName: "Selflish",
-            trackSimNum: 9,
+            albumId: "nine",
             trackPosition: 7, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s9_7.jpg",
@@ -649,7 +678,7 @@ let app = {
         },
         {
             trackName: "Jacuzzi On A Balcony",
-            trackSimNum: 9,
+            albumId: "nine",
             trackPosition: 8, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s9_8.jpg",
@@ -657,7 +686,7 @@ let app = {
         },
         {
             trackName: "Front Street Boys",
-            trackSimNum: 10,
+            albumId: "ten",
             trackPosition: 1, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_1.jpg",
@@ -665,7 +694,7 @@ let app = {
         },
         {
             trackName: "All Rise",
-            trackSimNum: 10,
+            albumId: "ten",
             trackPosition: 2, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_2.jpg",
@@ -673,7 +702,7 @@ let app = {
         },
         {
             trackName: "Step Up",
-            trackSimNum: 10,
+            albumId: "ten",
             trackPosition: 3, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_3.jpg",
@@ -681,7 +710,7 @@ let app = {
         },
         {
             trackName: "No You Never Thought",
-            trackSimNum: 10,
+            albumId: "ten",
             trackPosition: 4, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_4.jpg",
@@ -689,7 +718,7 @@ let app = {
         },
         {
             trackName: "Sunday Night Train Freestyle",
-            trackSimNum: 10,
+            albumId: "ten",
             trackPosition: 5, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_5.jpg",
@@ -697,7 +726,7 @@ let app = {
         },
         {
             trackName: "Lets Drive Away",
-            trackSimNum: 10,
+            albumId: "ten",
             trackPosition: 6, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_6.jpg",
@@ -705,7 +734,7 @@ let app = {
         },
         {
             trackName: "Ostracized From Normality",
-            trackSimNum: 10,
+            albumId: "ten",
             trackPosition: 7, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_7.jpg",
@@ -713,7 +742,7 @@ let app = {
         },
         {
             trackName: "Counterfeit Baby",
-            trackSimNum: 10,
+            albumId: "ten",
             trackPosition: 8, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_8.jpg",
@@ -721,7 +750,7 @@ let app = {
         },
         {
             trackName: "Save Your Apologies",
-            trackSimNum: 10,
+            albumId: "ten",
             trackPosition: 9, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_9.jpg",
@@ -729,7 +758,7 @@ let app = {
         },
         {
             trackName: "Youthful Apathy",
-            trackSimNum: 10,
+            albumId: "ten",
             trackPosition: 10, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_10.jpg",
@@ -737,7 +766,7 @@ let app = {
         },
         {
             trackName: "Hit The Ground Hard",
-            trackSimNum: 10,
+            albumId: "ten",
             trackPosition: 11, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_11.jpg",
@@ -745,7 +774,7 @@ let app = {
         },
         {
             trackName: "Encore That",
-            trackSimNum: 10,
+            albumId: "ten",
             trackPosition: 12, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_12.jpg",
@@ -781,22 +810,25 @@ let app = {
     },
     buildSimulation: tar =>{
         console.log('After buildSimulation');
-        // let whatever = ev.target;
-        console.log(tar.getAttribute('data-target'));
-
-        let temp = document.getElementById('albumRow');
-        let content = temp.content;
-        let clone = content.cloneNode(true);
-        document.getElementById("one").appendChild(clone);
-        let img = clone.querySelector("trackArt");
-        //loop through the simulation
-        //what is the simulation number?
-        //how many tracks are there?
-
-        let uniqueEnd = "s"+simNum+"_"+trackNum+".jpg";
-        img.src="https://diveinchi-art.s3.us-east-2.amazonaws.com/";
-        //s10_BackCover.png
-        //add this to src 
+        let target= tar.getAttribute('data-target');
+        console.log(target);
+        let find = app.simulations.find(element=>element.albumId === target);
+        console.log(find + "find");
+        for(i=0; i < find.albumTrackCount;i++){
+            let temp = document.getElementById('albumRow');
+            let content = temp.content;
+            let clone = content.cloneNode(true);
+            console.log(i);
+            document.getElementById(target).appendChild(clone);
+            console.log(clone);  
+            let allRows = document.getElementById(target).getElementsByClassName("row");
+            let lastRow = allRows[allRows.length - 1];
+            let track = app.trackList.find(element=>element.albumId === target && element.trackPosition === i);
+            if (track !== undefined) {
+                artSrc = track.trackArt
+                lastRow.querySelector('.trackArt').src = artSrc;
+            }
+        }
     },
 }
 const ready = "cordova" in window ? "deviceready" : "DOMContentLoaded";

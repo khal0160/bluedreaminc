@@ -4,11 +4,11 @@
   box-sizing: border-box;
 }
 .icon-block {
-    padding: 0 15px;
-  }
-  .icon-block .material-icons {
-      font-size: inherit;
-  }
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
 #footer{
   width: 100%;
   position: fixed;
@@ -29,7 +29,6 @@
   display: none;
   width: 100%;
   min-height: 100%; /* allow for content off the bottom of the page */
-
   padding: 1rem 2rem;
   opacity: 0;
 }
