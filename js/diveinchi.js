@@ -177,7 +177,7 @@ let app = {
             albumId: "two",
             trackPosition: 1, 
             trackDescription: "Blah Blah Blah",
-            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s2_1.jpg",
+            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s2_BackCover.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s2_1.mp3",
         },
         {
@@ -185,7 +185,7 @@ let app = {
             albumId: "two",
             trackPosition: 2, 
             trackDescription: "Blah Blah Blah",
-            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s2_2.jpg",
+            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s2_BackCover.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s2_2.mp3",
         },
         {
@@ -193,7 +193,7 @@ let app = {
             albumId: "two",
             trackPosition: 3, 
             trackDescription: "Blah Blah Blah",
-            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s2_3.jpg",
+            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s2_BackCover.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s2_3.mp3",
         },
         {
@@ -201,7 +201,7 @@ let app = {
             albumId: "two",
             trackPosition: 4, 
             trackDescription: "Blah Blah Blah",
-            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s2_4.jpg",
+            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s2_BackCover.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s2_4.mp3",
         },
         {
@@ -209,7 +209,7 @@ let app = {
             albumId: "two",
             trackPosition: 5, 
             trackDescription: "Blah Blah Blah",
-            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s2_5.jpg",
+            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s2_BackCover.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s2_5.mp3",
         },
         {
@@ -217,7 +217,7 @@ let app = {
             albumId: "two",
             trackPosition: 6, 
             trackDescription: "Blah Blah Blah",
-            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s2_6.jpg",
+            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s2_BackCover.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s2_6.mp3",
         },
         {
@@ -784,6 +784,13 @@ let app = {
         
 
     ],
+    currentTrack:{
+        currentTrackName: "",
+        currentTrackArt: "",
+        currentTrackAudio: "",
+        currentTrackAlbumName: "",
+        currentTrackAlbumPostion: "",
+    },
     init: ()=>{
         console.log("after app.init")
         app.addListeners();
@@ -798,6 +805,12 @@ let app = {
     addListeners: ()=>{
             var elems = document.querySelectorAll('.dropdown-trigger');
             var instances = M.Dropdown.init(elems, []);
+            // document.getElementById("#prevButton").addEventListener("click", app.previous);
+            // document.getElementById("#nextButton").addEventListener("click", app.next);
+            // document.getElementById("#playButton").addEventListener("click", app.play);
+            // document.getElementById("#pauseButton").addEventListener("click", app.pause);
+            // document.getElementById("#shuffleButton").addEventListener("click", app.shuffle);
+            // document.getElementById("#loopButton").addEventListener("click", app.loop);
     },
     nav: ev=>{
         ev.preventDefault();
@@ -815,7 +828,7 @@ let app = {
         let find = app.simulations.find(element=>element.albumId === target);
         console.log(find + "find");
         for(i=0; i < find.albumTrackCount;i++){
-            let temp = document.getElementById('albumRow');
+            let temp = document.getElementById('trackRow');
             let content = temp.content;
             let clone = content.cloneNode(true);
             console.log(i);
@@ -826,10 +839,19 @@ let app = {
             let track = app.trackList.find(element=>element.albumId === target && element.trackPosition === i);
             if (track !== undefined) {
                 artSrc = track.trackArt
+                trackSrc = track.trackAudio
                 lastRow.querySelector('.trackArt').src = artSrc;
+                lastRow.querySelector('.trackAudio').src =trackSrc;
             }
         }
     },
+    // play: ev=>{},
+    // pause: ev=>{},
+    // previous: ev=>{},
+    // next: ev=>{},
+    // shuffle: ev=>{},
+    // loop: ev=>{},
+    
 }
 const ready = "cordova" in window ? "deviceready" : "DOMContentLoaded";
 document.addEventListener(ready, app.init);

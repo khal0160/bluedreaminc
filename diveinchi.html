@@ -33,16 +33,16 @@
 <!-- TEMPLATES -->
   <template id="albumRow">
     <div class="row" id="">
-      <div class="col s12 m6 l3"><p><img class="trackArt" src="" alt=""></p></div>
+      <div class="col s12 m6 l3"><img class="trackArt" src="" alt=""></div>
       <div class="col s12 m6 l3"><p> </p></div>
-      <div class="col s12 m6 l6 blue"><p></p></div>
+      <div class="col s12 m6 l6 blue"></div>
     </div>
   </template>
   <template id="trackRow">
     <div class="row">
-      <div class="col s12 m6 l3"><p></p></div>
-      <div class="col s12 m6 l3"><p> <img class="responsive-img teal lighten-2 trackArt" src="https://diveinchi-art.s3.us-east-2.amazonaws.com/" alt=""></p></div>
-      <div class="col s12 m6 l6 blue"><p></p></div>
+      <div class="col s12 m6 l3"><p> <img class="responsive-img teal lighten-2 trackArt" src="" alt=""></p></div>
+      <div class="col s12 m6 l3"></div>
+      <div class="col s12 m6 l6 blue"><audio src="" class="trackAudio"></audio></div>
       </div>
     </template>
 <!-- TEMPLATES -->
@@ -81,21 +81,22 @@
 <!-- FOOTER -->
   <footer id= "footer" class="page-footer blue">
     <!-- Play Buttons -->
-    <div id="playBar" class="container">
-      <i class="material-icons">keyboard_arrow_left</i>
-      <i class="material-icons">play_arrow</i>
-      <i class="material-icons">keyboard_arrow_right</i>
-      <i class="material-icons">shuffle</i>
-      <i class="material-icons">loop</i>
-    <!-- Track Visualizer-->
-      <div class="progress container">
-        <div class="indeterminate"></div>
-      </div>
+    <div id="playBar">
+      <i class="material-icons playButtons" id="prevButton">keyboard_arrow_left</i>
+      <i class="material-icons playButtons" id="playButton">play_arrow</i>
+      <i class="material-icons playButtons" id="nextButton">keyboard_arrow_right</i>
+      <i class="material-icons playButtons" id="shuffleButton">shuffle</i>
+      <i class="material-icons playButtons" id="loopButton">loop</i>
     <!-- Track Details -->
-      <div class="container">
-        <img id="currentTrackArt" class="responsive-img" src="art/s10_FrontCover.png">
-        <div>Artist Name</div>
-        <div>Track Name - Album</div>
+    <div class="trackDetails trackDetails">
+      <img id="currentTrackArt" class="responsive-img col l1" src="art/s10_FrontCover.png">
+      <div  class="col l1">Track Name - Album</div>
+      <div class="col l1">Artist Name</div>
+      
+    </div>
+    <!-- Track Visualizer-->
+      <div class="progress container trackVisual">
+        <div class="indeterminate"></div>
       </div>
     </div>
   </footer>
