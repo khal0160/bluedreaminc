@@ -785,11 +785,11 @@ let app = {
 
     ],
     currentTrack:{
-        currentTrackName: "",
-        currentTrackArt: "",
-        currentTrackAudio: "",
-        currentTrackAlbumName: "",
-        currentTrackAlbumPostion: "",
+        currentTrackName: "Encore That",
+        currentTrackAlbumId: "ten",
+        currentTrackAlbumPostion: 12,
+        currentTrackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_12.jpg",
+        currentTrackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_12.mp3",
     },
     init: ()=>{
         console.log("after app.init")
@@ -827,13 +827,17 @@ let app = {
         console.log(target);
         let find = app.simulations.find(element=>element.albumId === target);
         console.log(find + "find");
+        let temp = document.getElementById('albumRow');
+        let content = temp.content;
+        let clone = content.cloneNode(true);
+        console.log(clone + "hhhhhh")
+        document.getElementById(target).appendChild(clone);
         for(i=0; i < find.albumTrackCount;i++){
             let temp = document.getElementById('trackRow');
             let content = temp.content;
             let clone = content.cloneNode(true);
             console.log(i);
             document.getElementById(target).appendChild(clone);
-            console.log(clone);  
             let allRows = document.getElementById(target).getElementsByClassName("row");
             let lastRow = allRows[allRows.length - 1];
             let track = app.trackList.find(element=>element.albumId === target && element.trackPosition === i);
@@ -841,7 +845,7 @@ let app = {
                 artSrc = track.trackArt
                 trackSrc = track.trackAudio
                 lastRow.querySelector('.trackArt').src = artSrc;
-                lastRow.querySelector('.trackAudio').src =trackSrc;
+                lastRow.querySelector('.trackAudioSource').src = trackSrc;
             }
         }
     },
@@ -851,7 +855,6 @@ let app = {
     // next: ev=>{},
     // shuffle: ev=>{},
     // loop: ev=>{},
-    
 }
 const ready = "cordova" in window ? "deviceready" : "DOMContentLoaded";
 document.addEventListener(ready, app.init);

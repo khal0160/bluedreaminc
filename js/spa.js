@@ -71,7 +71,6 @@ let app = {
     addListeners: () => {
         console.log("after addListeners");
         
-        
         document.getElementById("homeButton").addEventListener("click", app.nav);
         document.getElementById("s1Button").addEventListener("click", app.nav);
         document.getElementById("s2Button").addEventListener("click", app.buildSimulation(2));

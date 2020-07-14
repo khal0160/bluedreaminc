@@ -10,6 +10,8 @@
   font-size: inherit;
 }
 #footer{
+  display: flex;
+  align-content: center;
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -60,4 +62,9 @@ img{
 .trackVisual{
   width: 40%;
   float: left;
+}
+.headTitle{
+  font-family: 'Libre Barcode 39 Extended Text', cursive;
+  color: black;
+  font-size: 30px;
 }
