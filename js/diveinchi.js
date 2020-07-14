@@ -1,4 +1,5 @@
 let app = {
+    //TOP LEVEL INFO
     pages: [],
     show: new Event('show'),
     simulations: [
@@ -791,6 +792,9 @@ let app = {
         currentTrackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_12.jpg",
         currentTrackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_12.mp3",
     },
+    //TOP LEVEL INFO
+
+    //FUNCTIONS
     init: ()=>{
         console.log("after app.init")
         app.addListeners();
@@ -824,19 +828,17 @@ let app = {
     buildSimulation: tar =>{
         console.log('After buildSimulation');
         let target= tar.getAttribute('data-target');
-        console.log(target);
         let find = app.simulations.find(element=>element.albumId === target);
-        console.log(find + "find");
         let temp = document.getElementById('albumRow');
         let content = temp.content;
         let clone = content.cloneNode(true);
-        console.log(clone + "hhhhhh")
         document.getElementById(target).appendChild(clone);
+        
+        
         for(i=0; i < find.albumTrackCount;i++){
             let temp = document.getElementById('trackRow');
             let content = temp.content;
             let clone = content.cloneNode(true);
-            console.log(i);
             document.getElementById(target).appendChild(clone);
             let allRows = document.getElementById(target).getElementsByClassName("row");
             let lastRow = allRows[allRows.length - 1];
@@ -855,6 +857,7 @@ let app = {
     // next: ev=>{},
     // shuffle: ev=>{},
     // loop: ev=>{},
+    //FUNCTIONS
 }
 const ready = "cordova" in window ? "deviceready" : "DOMContentLoaded";
 document.addEventListener(ready, app.init);

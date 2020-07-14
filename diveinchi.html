@@ -12,7 +12,7 @@
 </head>
 <body id="body">
 <!-- HEADER BAR -->
-  <nav class="light-blue lighten-1" role="navigation">
+  <nav id="header" class="grey" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="left headTitle">DIVEINCHI</a>
       <a class='dropdown-trigger btn right' href='#' data-target='dropdown1' data-constrainwidth="false">Simulations</a>
@@ -46,14 +46,16 @@
       <div class="col s12 m6 l6">
         <audio class="trackAudio" controls="controls">
           <source class="trackAudioSource" src="" type="audio/mpeg"/>
-          Hello song
         </audio>
       </div>
       </div>
     </template>
 <!-- TEMPLATES -->
 <!-- PAGES -->
-  <section id="one" class="page active">
+  <section id="intro" class="page active">
+    <h2 class="albumTitle">Choose the Simulation level</h2>
+  </section>
+  <section id="one" class="page">
     <h2 class="albumTitle">Simulation 1: Testing</h2>
   </section>
   <section id="two" class="page">
@@ -81,11 +83,15 @@
     <h2>Simulation 9</h2>
   </section>
   <section id="ten" class="page">
-    <h2>Simulation 10</h2>
+    <div class="titleBlock">
+      <h4 class="albumTitle">Simulation 10</h3>
+      <h2 class="albumTitle">Plastic 604</h2>
+    </div>
+    
   </section>
 <!-- PAGES -->
 <!-- FOOTER -->
-  <footer id= "footer" class="page-footer blue">
+  <footer id= "footer" class="">
     <!-- Play Buttons -->
     <div id="playBar">
       <i class="material-icons playButtons" id="prevButton">keyboard_arrow_left</i>
@@ -93,17 +99,15 @@
       <i class="material-icons playButtons" id="nextButton">keyboard_arrow_right</i>
       <i class="material-icons playButtons" id="shuffleButton">shuffle</i>
       <i class="material-icons playButtons" id="loopButton">loop</i>
-    <!-- Track Details -->
-    <div class="trackDetails trackDetails">
-      <img id="currentTrackArt" class="responsive-img col l1" src="art/s10_FrontCover.png">
-      <div  class="col l1">Track Name - Album</div>
-      <div class="col l1">Artist Name</div>
-      
     </div>
-    <!-- Track Visualizer-->
-      <div class="progress container trackVisual">
-        <div class="indeterminate"></div>
-      </div>
+    <!-- Track Details -->
+    <div class="trackDetails">
+      <img id="currentTrackArt" class="" src="art/s10_FrontCover.png">
+      <div id="currentTrackDetails">
+        <div class="">Track Name - Album | Artist Name </div>
+        <div class="progress container trackVisual">
+          <div class="indeterminate"></div>
+        </div>
     </div>
   </footer>
 <!-- FOOTER -->

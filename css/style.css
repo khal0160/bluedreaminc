@@ -3,68 +3,97 @@
   margin: 0;
   box-sizing: border-box;
 }
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-#footer{
-  display: flex;
-  align-content: center;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-}
-#playBar{
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-#currentTrackArt{
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-self: center;
-}
 .page{
   display: none;
   width: 100%;
   min-height: 100%; /* allow for content off the bottom of the page */
   padding: 1rem 2rem;
+  padding-bottom: 40px;
+  padding-top: 40px;
   opacity: 0;
 }
 .active{
   display: block; 
   opacity: 1;
 }
-img{
-  width: 200px;
-  height: 200px;
-}
-.trackDetails{
-  display: flex;
-  justify-content: row;
-}
-.playButtons{
-  width: 5%;
-  float: left;
-}
-.trackDetails{
-  display: flex;
-  justify-content: space-around;
-  width: 30%;
-  float: left; 
-}
-.trackVisual{
-  width: 40%;
-  float: left;
+#header{
+  position: fixed;
+  top: 0;
+  z-index: 100;
+
 }
 .headTitle{
   font-family: 'Libre Barcode 39 Extended Text', cursive;
   color: black;
   font-size: 30px;
 }
+.row{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-content: flex-start;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 5px;
+  padding-top : 5px;
+  background-color: grey;
+  
+}
+#playBar{
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  height: 10px;
+}
+.trackDetails{
+  display: flex;
+
+}
+.playButtons{
+  width: 20%;
+  
+}
+#currentTrackArt{
+  width: 50px;
+  height: 50px;
+  bottom: 0;
+}
+#currentTrackDetails{
+  padding-left: 10px; 
+}
+.trackDetails{
+  display: flex;
+  background-color: lightgrey;
+}
+.trackVisual{
+  height: 20px;
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+/**************************
+    LAYOUT - MEDIUM SIZE
+**************************/
+/* @media screen and (min-width:600px){
+} */
+/**************************
+    LAYOUT - LARGE SIZE
+**************************/
+/* @media screen and (min-width:800px){   
+} */
+/**************************
+    LAYOUT - EXTRA LARGE SIZE
+**************************/
+/* @media screen and (min-width:1200px){    
+} */
