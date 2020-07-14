@@ -831,23 +831,25 @@ let app = {
         let find = app.simulations.find(element=>element.albumId === target);
         let temp = document.getElementById('albumRow');
         let content = temp.content;
-        let clone = content.cloneNode(true);
+        let clone = content.cloneNode(true); 
         document.getElementById(target).appendChild(clone);
-        
-        
-        for(i=0; i < find.albumTrackCount;i++){
+        document.querySelector('.albumArt').setAttribute("src",find.albumFrontCover)
+        //BUILD TRACKLIST
+        for(i=1; i < find.albumTrackCount;i++){
             let temp = document.getElementById('trackRow');
             let content = temp.content;
             let clone = content.cloneNode(true);
             document.getElementById(target).appendChild(clone);
+
             let allRows = document.getElementById(target).getElementsByClassName("row");
             let lastRow = allRows[allRows.length - 1];
             let track = app.trackList.find(element=>element.albumId === target && element.trackPosition === i);
             if (track !== undefined) {
-                artSrc = track.trackArt
-                trackSrc = track.trackAudio
+                artSrc = track.trackArt;
+                trackSrc = track.trackAudio;
                 lastRow.querySelector('.trackArt').src = artSrc;
                 lastRow.querySelector('.trackAudioSource').src = trackSrc;
+                lastRow.querySelector('.trackTitle').textContent=track.trackName;
             }
         }
     },
