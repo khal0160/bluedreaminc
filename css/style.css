@@ -37,14 +37,13 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  justify-content: flex-start;
   width: 100%;
   position: fixed;
   bottom: 0;
   padding-bottom: 5px;
   padding-top : 5px;
   background-color: grey;
-  
+  height: 10%;  
 }
 #playBar{
   padding-bottom: 10px;
@@ -54,12 +53,9 @@
   height: 10px;
 }
 .trackDetails{
-  display: flex;
-
 }
 .playButtons{
-  width: 20%;
-  
+  width: 20%; 
 }
 #currentTrackArt{
   width: 50px;
@@ -82,16 +78,91 @@
 .icon-block .material-icons {
   font-size: inherit;
 }
-/**************************
-    LAYOUT - MEDIUM SIZE
-**************************/
-/* @media screen and (min-width:600px){
-} */
+
 /**************************
     LAYOUT - LARGE SIZE
 **************************/
-/* @media screen and (min-width:800px){   
-} */
+@media screen and (min-width:800px){  
+  #header{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    height: 10%;
+  } 
+  .page{
+    display: none;
+    width: 100%;
+    min-height: 100%; /* allow for content off the bottom of the page */
+    padding: 1rem 2rem;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    opacity: 0;
+  }
+  .active{
+    display: block; 
+    opacity: 1;
+  }
+  .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 5px;
+    padding-top : 5px;
+    background-color: grey;
+    height: 10%;  
+  }
+  #playBar{
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 10px;
+    width: 50%;
+  }
+  .trackDetails{
+    width: 50%;
+  }
+  .playButtons{
+    width: 20%; 
+  }
+  #currentTrackArt{
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+  }
+  #currentTrackDetails{
+    padding-left: 10px; 
+    display: flex;
+    justify-content: flex-end;
+  }
+  .trackDetails{
+    display: flex;
+    right: 0;
+    background-color: lightgrey;
+  }
+  .trackVisual{
+    height: 20px;
+  }
+  .icon-block {
+    padding: 0 15px;
+  }
+  .icon-block .material-icons {
+    font-size: inherit;
+  }
+  
+
+}
 /**************************
     LAYOUT - EXTRA LARGE SIZE
 **************************/

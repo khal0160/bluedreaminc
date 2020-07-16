@@ -88,10 +88,11 @@ let app = {
         {
             trackName: "Achievement Unlocked: New Level Of Abstraction",
             albumId: "one",
-            trackPosition: 1, 
+            trackPosition: 1,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_1.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_1.mp3",
+            trackLength: 1.29,
         },
         {
             trackName: "Dont Fight It And You Wont Get Hurt",
@@ -100,6 +101,7 @@ let app = {
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_2.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_2.mp3",
+            trackLength: 1.02,
         },
         {
             trackName: "Just A Few More",
@@ -108,6 +110,7 @@ let app = {
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_3.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_3.mp3",
+            trackLength: 0.55,
         },
         {
             trackName: "Dont Act Like You Dont See Me",
@@ -116,6 +119,7 @@ let app = {
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_4.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_4.mp3",
+            trackLength: 0.54,
         },
         {
             trackName: "Oh So You Bboy Huh, Ok Lets Go",
@@ -124,6 +128,7 @@ let app = {
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_5.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_5.mp3",
+            trackLength: 1.52,
         },
         {
             trackName: "There You Are",
@@ -132,6 +137,7 @@ let app = {
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_6.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_6.mp3",
+            trackLength: 0.54,
         },
         {
             trackName: "Pretty People Malevolent Thoughts",
@@ -140,6 +146,7 @@ let app = {
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_7.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_7.mp3",
+            trackLength: 1.20,
         },
         {
             trackName: "Balance",
@@ -148,6 +155,7 @@ let app = {
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_8.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_8.mp3",
+            trackLength: 0.54,
         },
         {
             trackName: "Electric",
@@ -156,6 +164,7 @@ let app = {
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_9.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_9.mp3",
+            trackLength: 0.54,
         },
         {
             trackName: "Locked In Memory And In Heart",
@@ -164,6 +173,7 @@ let app = {
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_10.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_10.mp3",
+            trackLength: 0.54,
         },
         {
             trackName: "Road Ends Ahead",
@@ -172,6 +182,7 @@ let app = {
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_11.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_11.mp3",
+            trackLength: 0.54,
         },
         {
             trackName: "Intro",
@@ -785,19 +796,19 @@ let app = {
         
 
     ],
+    audioPlayer: undefined, 
     currentTrack:{
-        currentTrackName: "Encore That",
-        currentTrackAlbumId: "ten",
-        currentTrackAlbumPostion: 12,
-        currentTrackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_12.jpg",
-        currentTrackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_12.mp3",
+        currentTrackName: "Acheivement Unlocked: New Level Of Abstraction",
+        currentTrackAlbumId: "one",
+        currentTrackAlbumPostion: 1,
+        currentTrackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_1.jpg",
+        currentTrackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_1.mp3",
+        currentTrackLength: 0,
     },
     //TOP LEVEL INFO
-
     //FUNCTIONS
     init: ()=>{
         console.log("after app.init")
-        app.addListeners();
         app.pages = document.querySelectorAll('.page');
         app.pages.forEach((pg)=>{
             pg.addEventListener('show', app.pageShown);
@@ -805,14 +816,15 @@ let app = {
         document.querySelectorAll('.simButton').forEach((link)=>{
             link.addEventListener('click', app.nav);
         })
+        app.addListeners();
     },
     addListeners: ()=>{
             var elems = document.querySelectorAll('.dropdown-trigger');
             var instances = M.Dropdown.init(elems, []);
             // document.getElementById("#prevButton").addEventListener("click", app.previous);
             // document.getElementById("#nextButton").addEventListener("click", app.next);
-            // document.getElementById("#playButton").addEventListener("click", app.play);
-            // document.getElementById("#pauseButton").addEventListener("click", app.pause);
+            document.getElementById("playButton").addEventListener("click", app.play);
+            document.getElementById("pauseButton").addEventListener("click", app.pause);
             // document.getElementById("#shuffleButton").addEventListener("click", app.shuffle);
             // document.getElementById("#loopButton").addEventListener("click", app.loop);
     },
@@ -853,8 +865,19 @@ let app = {
             }
         }
     },
-    // play: ev=>{},
-    // pause: ev=>{},
+    play: ev=>{
+        console.log("something is playing");   
+        console.log(app.currentTrack.currentTrackAudio)        
+        app.audioPlayer = new Audio(app.currentTrack.currentTrackAudio);
+        app.audioPlayer.play();
+        document.getElementById("playButton").textContent="pause";
+        document.getElementById("playButton").setAttribute("id","pauseButton");
+        app.addListeners();
+    },
+    pause: ev=>{
+        console.log("something just paused")
+        app.audioPlayer.pause();
+    },
     // previous: ev=>{},
     // next: ev=>{},
     // shuffle: ev=>{},
