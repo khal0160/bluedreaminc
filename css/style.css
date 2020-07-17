@@ -46,11 +46,12 @@
   height: 10%;  
 }
 #playBar{
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
   display: flex;
-  height: 10px;
+  justify-content: center;
+  height: 10%;
 }
 .trackDetails{
 }
@@ -67,7 +68,6 @@
 }
 .trackDetails{
   display: flex;
-  background-color: lightgrey;
 }
 .trackVisual{
   height: 20px;

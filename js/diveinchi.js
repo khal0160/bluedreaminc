@@ -804,6 +804,7 @@ let app = {
         currentTrackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_1.jpg",
         currentTrackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_1.mp3",
         currentTrackLength: 0,
+        state: "paused"
     },
     //TOP LEVEL INFO
     //FUNCTIONS
@@ -817,14 +818,17 @@ let app = {
             link.addEventListener('click', app.nav);
         })
         app.addListeners();
+        audiojs.events.ready(function() {
+            var as = audiojs.createAll();
+          });
     },
     addListeners: ()=>{
             var elems = document.querySelectorAll('.dropdown-trigger');
             var instances = M.Dropdown.init(elems, []);
             // document.getElementById("#prevButton").addEventListener("click", app.previous);
             // document.getElementById("#nextButton").addEventListener("click", app.next);
-            document.getElementById("playButton").addEventListener("click", app.play);
-            document.getElementById("pauseButton").addEventListener("click", app.pause);
+            document.getElementById("playButton").addEventListener("click", app.navPlayPause);
+
             // document.getElementById("#shuffleButton").addEventListener("click", app.shuffle);
             // document.getElementById("#loopButton").addEventListener("click", app.loop);
     },
@@ -865,19 +869,22 @@ let app = {
             }
         }
     },
-    play: ev=>{
-        console.log("something is playing");   
-        console.log(app.currentTrack.currentTrackAudio)        
-        app.audioPlayer = new Audio(app.currentTrack.currentTrackAudio);
-        app.audioPlayer.play();
-        document.getElementById("playButton").textContent="pause";
-        document.getElementById("playButton").setAttribute("id","pauseButton");
-        app.addListeners();
-    },
-    pause: ev=>{
-        console.log("something just paused")
-        app.audioPlayer.pause();
-    },
+    navPlayPause: ev=> {
+        if(app.currentTrack.state === "paused") {
+            if (app.audioPlayer === undefined) {
+                app.audioPlayer = new Audio(app.currentTrack.currentTrackAudio);
+            }
+            app.audioPlayer.play();
+            app.currentTrack.state = "playing"
+            document.getElementById("playButton").textContent="pause";
+        } else if (app.currentTrack.state == "playing") {
+            app.audioPlayer.pause();
+            app.currentTrack.state = "paused"
+            document.getElementById("playButton").textContent="play_arrow";
+        }
+
+    }
+
     // previous: ev=>{},
     // next: ev=>{},
     // shuffle: ev=>{},
