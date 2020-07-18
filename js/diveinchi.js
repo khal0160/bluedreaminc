@@ -797,7 +797,7 @@ let app = {
 
     ],
     audioPlayer: undefined, 
-    currentTrack:{
+     currentTrack:{
         currentTrackName: "Acheivement Unlocked: New Level Of Abstraction",
         currentTrackAlbumId: "one",
         currentTrackAlbumPostion: 1,
@@ -827,8 +827,7 @@ let app = {
             var instances = M.Dropdown.init(elems, []);
             // document.getElementById("#prevButton").addEventListener("click", app.previous);
             // document.getElementById("#nextButton").addEventListener("click", app.next);
-            document.getElementById("playButton").addEventListener("click", app.navPlayPause);
-
+            document.getElementById("playButton").addEventListener("click", app.playPause);
             // document.getElementById("#shuffleButton").addEventListener("click", app.shuffle);
             // document.getElementById("#loopButton").addEventListener("click", app.loop);
     },
@@ -866,25 +865,30 @@ let app = {
                 lastRow.querySelector('.trackArt').src = artSrc;
                 lastRow.querySelector('.trackAudioSource').src = trackSrc;
                 lastRow.querySelector('.trackTitle').textContent=track.trackName;
+                lastRow.querySelector('.playTrackButton').addEventListener('click', app.playTrack)
             }
         }
     },
-    navPlayPause: ev=> {
+    playPause: ev=> {
         if(app.currentTrack.state === "paused") {
             if (app.audioPlayer === undefined) {
                 app.audioPlayer = new Audio(app.currentTrack.currentTrackAudio);
             }
             app.audioPlayer.play();
+            app.audioPlayer.addEventListener('timeupdate', app.trackTime)
             app.currentTrack.state = "playing"
             document.getElementById("playButton").textContent="pause";
-        } else if (app.currentTrack.state == "playing") {
+        } 
+        else if (app.currentTrack.state == "playing") {
             app.audioPlayer.pause();
             app.currentTrack.state = "paused"
             document.getElementById("playButton").textContent="play_arrow";
         }
-
-    }
-
+    },
+    trackTime: ev=> {
+        currentPercent=app.audioPlayer.currentTime / app.audioPlayer.duration * 100;
+        document.querySelector(".trackProgress").style.width=currentPercent+ "%";
+    },
     // previous: ev=>{},
     // next: ev=>{},
     // shuffle: ev=>{},

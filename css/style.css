@@ -78,6 +78,15 @@
 .icon-block .material-icons {
   font-size: inherit;
 }
+.audioPlayer{
+  display: flex;
+  justify-content: row;
+}
+.trackProgress{
+  width: 10px;
+  height: 20px;
+  background-color: black;
+}
 
 /**************************
     LAYOUT - LARGE SIZE
@@ -160,9 +169,8 @@
   .icon-block .material-icons {
     font-size: inherit;
   }
-  
-
 }
+
 /**************************
     LAYOUT - EXTRA LARGE SIZE
 **************************/
