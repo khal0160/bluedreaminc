@@ -798,12 +798,12 @@ let app = {
     ],
     audioPlayer: undefined, 
      currentTrack:{
-        currentTrackName: "Acheivement Unlocked: New Level Of Abstraction",
-        currentTrackAlbumId: "one",
-        currentTrackAlbumPostion: 1,
-        currentTrackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_1.jpg",
-        currentTrackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_1.mp3",
-        currentTrackLength: 0,
+        name: "Acheivement Unlocked: New Level Of Abstraction",
+        albumId: "one",
+        albumPostion: 1,
+        art: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_1.jpg",
+        audio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_1.mp3",
+        length: 0,
         state: "paused"
     },
     //TOP LEVEL INFO
@@ -872,7 +872,7 @@ let app = {
     playPause: ev=> {
         if(app.currentTrack.state === "paused") {
             if (app.audioPlayer === undefined) {
-                app.audioPlayer = new Audio(app.currentTrack.currentTrackAudio);
+                app.audioPlayer = new Audio(app.currentTrack.audio);
             }
             app.audioPlayer.play();
             app.audioPlayer.addEventListener('timeupdate', app.trackTime)
@@ -886,8 +886,20 @@ let app = {
         }
     },
     trackTime: ev=> {
+        //Start Time Tracking
         currentPercent=app.audioPlayer.currentTime / app.audioPlayer.duration * 100;
         document.querySelector(".trackProgress").style.width=currentPercent+ "%";
+        currentMinute= Math.floor(app.audioPlayer.currentTime/60);
+        currentSeconds= Math.floor(app.audioPlayer.currentTime-currentMinute*60);
+        if(currentMinute<10){currentMinute = "0"+ currentMinute};
+        if(currentSeconds<10){currentSeconds = "0"+ currentSeconds};
+        document.querySelector(".trackCurrentTime").textContent= currentMinute +":"+ currentSeconds;
+        //End Time Tracking
+        currentEndMinute= Math.floor(app.audioPlayer.duration/60)-currentMinute;
+        currentEndSeconds= 60-currentSeconds;
+        if(currentEndMinute<10){currentEndMinute = "0"+ currentEndMinute};
+        if(currentEndSeconds<10){currentEndSeconds = "0"+ currentEndSeconds};
+        document.querySelector(".trackEndTime").textContent= currentEndMinute +":"+ currentEndSeconds;
     },
     // previous: ev=>{},
     // next: ev=>{},

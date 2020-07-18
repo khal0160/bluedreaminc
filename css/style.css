@@ -87,6 +87,10 @@
   height: 20px;
   background-color: black;
 }
+.progressRow{
+  display: flex;
+  justify-content: row;
+}
 
 /**************************
     LAYOUT - LARGE SIZE
