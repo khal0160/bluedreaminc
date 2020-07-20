@@ -797,15 +797,7 @@ let app = {
 
     ],
     audioPlayer: undefined, 
-     currentTrack:{
-        name: "Acheivement Unlocked: New Level Of Abstraction",
-        albumId: "one",
-        albumPostion: 1,
-        art: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_1.jpg",
-        audio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_1.mp3",
-        length: 0,
-        state: "paused"
-    },
+    currentTrack: undefined,
     //TOP LEVEL INFO
     //FUNCTIONS
     init: ()=>{
@@ -825,11 +817,7 @@ let app = {
     addListeners: ()=>{
             var elems = document.querySelectorAll('.dropdown-trigger');
             var instances = M.Dropdown.init(elems, []);
-            // document.getElementById("#prevButton").addEventListener("click", app.previous);
-            // document.getElementById("#nextButton").addEventListener("click", app.next);
             document.getElementById("playButton").addEventListener("click", app.playPause);
-            // document.getElementById("#shuffleButton").addEventListener("click", app.shuffle);
-            // document.getElementById("#loopButton").addEventListener("click", app.loop);
     },
     nav: ev=>{
         ev.preventDefault();
@@ -855,7 +843,6 @@ let app = {
             let content = temp.content;
             let clone = content.cloneNode(true);
             document.getElementById(target).appendChild(clone);
-
             let allRows = document.getElementById(target).getElementsByClassName("row");
             let lastRow = allRows[allRows.length - 1];
             let track = app.trackList.find(element=>element.albumId === target && element.trackPosition === i);
@@ -865,11 +852,14 @@ let app = {
                 lastRow.querySelector('.trackArt').src = artSrc;
                 lastRow.querySelector('.trackAudioSource').src = trackSrc;
                 lastRow.querySelector('.trackTitle').textContent=track.trackName;
-                lastRow.querySelector('.playTrackButton').addEventListener('click', app.playTrack)
+                lastRow.querySelector('.playTrackButton').addEventListener('click', app.playPause);
             }
         }
     },
     playPause: ev=> {
+        if(app.currentTrack===undefined){
+            app.updateCurrentTrack("Intro")
+        }
         if(app.currentTrack.state === "paused") {
             if (app.audioPlayer === undefined) {
                 app.audioPlayer = new Audio(app.currentTrack.audio);
@@ -881,7 +871,7 @@ let app = {
         } 
         else if (app.currentTrack.state == "playing") {
             app.audioPlayer.pause();
-            app.currentTrack.state = "paused"
+            app.currentTrack.state = "paused";
             document.getElementById("playButton").textContent="play_arrow";
         }
     },
@@ -901,10 +891,19 @@ let app = {
         if(currentEndSeconds<10){currentEndSeconds = "0"+ currentEndSeconds};
         document.querySelector(".trackEndTime").textContent= currentEndMinute +":"+ currentEndSeconds;
     },
-    // previous: ev=>{},
-    // next: ev=>{},
-    // shuffle: ev=>{},
-    // loop: ev=>{},
+    updateCurrentTrack(trackName){
+        let findTrack = app.trackList.find(element=>element.trackName === trackName);
+        app.currentTrack = new Object();
+        app.currentTrack.name=findTrack.trackName;
+        app.currentTrack.albumId=findTrack.albumId;
+        app.currentTrack.albumPosition=findTrack.trackPosition;
+        app.currentTrack.art=findTrack.trackArt;
+        app.currentTrack.audio=findTrack.trackAudio;
+        app.currentTrack.length=findTrack.trackLength;
+        app.currentTrack.state="paused";
+        app.currentTrack.currentTime="";
+        app.currentTrack.endTime=""
+    },
     //FUNCTIONS
 }
 const ready = "cordova" in window ? "deviceready" : "DOMContentLoaded";

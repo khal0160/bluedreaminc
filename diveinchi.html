@@ -43,24 +43,19 @@
     <div class="row">
       <div class="col s12 m6 l3"><img class="responsive-img trackArt" src="" alt=""></div>
       <div class="col s12 m12 l9">
-        <div class="trackTitle"></div>
+        <div class="trackTitle col s12"></div>
         <div class="audioPlayer">
-          <div class="startTime s1">00:00</div>
-          <div class="playTrackButton s12">
-            <i class="material-icons playButtons" id="playButton">play_arrow</i>
+          <i class="material-icons playTrackButton">play_arrow</i>
+          <div class="trackCurrentTime">00:00</div>
+          <source class="trackAudioSource" src="" type="audio/mpeg"/>
+          <div class="progress trackVisual">
+            <div class="trackProgress"></div>
           </div>
-          <div class="audioVisual ">
-            <source ontimeupdate="consoleLogTime();" class="trackAudioSource" src="" type="audio/mpeg"/>
-            <div class="progress">
-              <div class="determinate" style="width: 20%">
-              </div>
-            </div>
-          </div>
-          <div class="endTime s1">00:00</div>
+          <div class="trackEndTime">00:00</div>
         </div>
-      </div> 
-    </div>
-  </template>
+      </div>
+    </div> 
+</template>
 <!-- TEMPLATES -->
 <!-- PAGES -->
   <section id="intro" class="page active">
@@ -105,11 +100,7 @@
   <footer id= "footer" class="">
     <!-- Play Buttons -->
     <div id="playBar">
-      <i class="material-icons playButtons" id="prevButton">keyboard_arrow_left</i>
       <i class="material-icons playButtons" id="playButton">play_arrow</i>
-      <i class="material-icons playButtons" id="nextButton">keyboard_arrow_right</i>
-      <i class="material-icons playButtons" id="shuffleButton">shuffle</i>
-      <i class="material-icons playButtons" id="loopButton">loop</i>
     </div>
     <!-- Track Details -->
     <div class="trackDetails">
@@ -129,9 +120,9 @@
   </footer>
 <!-- FOOTER -->
 <!--  Scripts-->
-      <script src="js/materialize.js"></script>
-      <script src="js/audio.min.js"></script>
-      <script src="js/diveinchi.js"></script> 
+  <script src="js/materialize.js"></script>
+  <script src="js/audio.min.js"></script>
+  <script src="js/diveinchi.js"></script> 
 <!--  Scripts-->
 </body>
 </html>

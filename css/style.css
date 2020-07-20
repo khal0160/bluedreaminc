@@ -72,15 +72,12 @@
 .trackVisual{
   height: 20px;
 }
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
 .audioPlayer{
   display: flex;
   justify-content: row;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
 }
 .trackProgress{
   width: 10px;
@@ -91,7 +88,12 @@
   display: flex;
   justify-content: row;
 }
-
+.trackCurrentTime{
+  padding-right: 10px;
+}
+.trackEndTime{
+  padding-left: 10px;
+}
 /**************************
     LAYOUT - LARGE SIZE
 **************************/
