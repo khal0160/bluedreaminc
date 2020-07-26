@@ -12,10 +12,12 @@
   </head>
 <body id="body">
 <!-- HEADER BAR -->
-  <nav id="header" class="grey" role="navigation">
+  <nav id="header" class="grey darken-4" role="navigation">
     <div class="container">
       <a id="logo-container" href="#" class="left headTitle">DIVEINCHI</a>
-      <a class='dropdown-trigger btn right' href='#' data-target='dropdown1' data-constrainwidth="false">Simulations</a>
+      <a class='material-icons dropdown-trigger right' data-target='dropdown1'>
+        <i class="material-icons">menu</i>
+      </a>
       <ul id='dropdown1' class='dropdown-content ' >
         <li><a href="#!" data-target="one" class="simButton">Simulation 1</a></li>
         <li><a href="#!" data-target="two" class="simButton">Simulation 2</a></li>
@@ -34,7 +36,7 @@
 <!-- TEMPLATES -->
   <template id="albumRow">
     <div class="row">
-      <div class="col s12 m6 l12"><img class= "responsive-img teal lighten-2 albumArt"src="" alt=""></div>
+      <div class="col s12 m6 l12"><img class= "responsive-img albumArt"src="" alt=""></div>
       <div class="col s12 m6 l3"><p></p></div>
       <div class="col s12 m6 l6 "></div>
     </div>
@@ -65,39 +67,39 @@
     <h2 class="albumTitle">Simulation 1: Testing</h2>
   </section>
   <section id="two" class="page">
-    <h2>Simulation 2</h2>
+    <h2 class="albumTitle">Simulation 2: Good Deeds And Synth</h2>
   </section>
   <section id="three" class="page">
-    <h2>Simulation 3</h2>
+    <h2 class="albumTitle">Simulation 3: Instant Gratification</h2>
   </section>
   <section id="four" class="page">
-    <h2>Simulation 4</h2>
+    <h2 class="albumTitle">Simulation 4: Microdosing Fear</h2>
   </section>
   <section id="five" class="page">
-  <h2>Simulation 5</h2>
+  <h2 class="albumTitle">Simulation 5: Alternate Immersion</h2>
   </section>
   <section id="six" class="page">
-    <h2>Simulation 6</h2>
+    <h2 class="albumTitle">Simulation 6: Logical Eternity</h2>
   </section>
   <section id="seven" class="page">
-    <h2>Simulation 7</h2>
+    <h2 class="albumTitle">Simulation 7: HitClips</h2>
   </section>
   <section id="eight" class="page">
-    <h2>Simulation 8</h2>
+    <h2 class="albumTitle">Simulation 8: Lasouf</h2>
   </section>
   <section id="nine" class="page">
-    <h2>Simulation 9</h2>
+    <h2 class="albumTitle">Simulation 9: Lorem Ipsum</h2>
   </section>
   <section id="ten" class="page">
     <div class="titleBlock">
-      <h4 class="albumTitle">Simulation 10</h3>
-      <h2 class="albumTitle">Plastic 604</h2>
+      <h2 class="albumTitle">Simulation 10: Plastic 604</h2>
+      
     </div>
     
   </section>
 <!-- PAGES -->
 <!-- FOOTER -->
-  <footer id= "footer" class="">
+  <footer id= "footer" class="grey darken-4">
     <!-- Play Buttons -->
     <div id="playBar">
       <i class="material-icons playButtons" id="playButton">play_arrow</i>
@@ -106,16 +108,14 @@
     <div class="trackDetails">
       <img id="currentTrackArt" class="" src="art/s10_FrontCover.png">
       <div id="currentTrackDetails">
-        <div class="">Track Name - Album | Artist Name </div>
+        <div id="footTrackName">Track Name - Album | Artist Name </div>
         <div class="progressRow container">
           <div class="trackCurrentTime">00:00</div>
-        <div class="progress container trackVisual">
+        <div class="progress container trackVisual white">
           <div class="trackProgress"></div>
         </div>
         <div class="trackEndTime">00:00</div>
         </div>
-        
-
     </div>
   </footer>
 <!-- FOOTER -->

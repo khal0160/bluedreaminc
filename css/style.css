@@ -2,29 +2,38 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
+}
+html{
+  background-color: #616161;
+}
+.material-icons{
+  color: whitesmoke;
+  
 }
 .page{
   display: none;
   width: 100%;
   min-height: 100%; /* allow for content off the bottom of the page */
   padding: 1rem 2rem;
-  padding-bottom: 40px;
+  padding-bottom: 10%;
   padding-top: 40px;
   opacity: 0;
+  
 }
 .active{
   display: block; 
   opacity: 1;
+  padding-bottom: 10%;
 }
 #header{
   position: fixed;
   top: 0;
   z-index: 100;
-
 }
 .headTitle{
   font-family: 'Libre Barcode 39 Extended Text', cursive;
-  color: black;
+  color: whitesmoke;
   font-size: 30px;
 }
 .row{
@@ -42,18 +51,15 @@
   bottom: 0;
   padding-bottom: 5px;
   padding-top : 5px;
-  background-color: grey;
   height: 10%;  
 }
 #playBar{
   padding-bottom: 20px;
-  padding-left: 10px;
+  padding-left: 5px;
   padding-right: 10px;
   display: flex;
   justify-content: center;
   height: 10%;
-}
-.trackDetails{
 }
 .playButtons{
   width: 20%; 
@@ -71,6 +77,7 @@
 }
 .trackVisual{
   height: 20px;
+  background-color: whitesmoke;
 }
 .audioPlayer{
   display: flex;
@@ -82,7 +89,7 @@
 .trackProgress{
   width: 10px;
   height: 20px;
-  background-color: black;
+  background-color: blue;
 }
 .progressRow{
   display: flex;
@@ -90,10 +97,30 @@
 }
 .trackCurrentTime{
   padding-right: 10px;
+  color: whitesmoke;
 }
 .trackEndTime{
   padding-left: 10px;
+  color: whitesmoke;
 }
+.albumTitle{
+  font-size: 7vw;
+  color: whitesmoke;
+}
+#footTrackName{
+  color: whitesmoke;
+}
+img{
+  border-radius: 8px;
+}
+a.simButton{
+  background-color: rgb(51, 51, 58);
+  
+}
+.trackTitle{
+  color: whitesmoke;
+}
+
 /**************************
     LAYOUT - LARGE SIZE
 **************************/
@@ -176,7 +203,6 @@
     font-size: inherit;
   }
 }
-
 /**************************
     LAYOUT - EXTRA LARGE SIZE
 **************************/

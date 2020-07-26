@@ -797,11 +797,11 @@ let app = {
 
     ],
     audioPlayer: undefined, 
-    currentTrack: undefined,
+    currentTrack: "",
     //TOP LEVEL INFO
     //FUNCTIONS
     init: ()=>{
-        console.log("after app.init")
+        console.log("after init")
         app.pages = document.querySelectorAll('.page');
         app.pages.forEach((pg)=>{
             pg.addEventListener('show', app.pageShown);
@@ -815,11 +815,13 @@ let app = {
           });
     },
     addListeners: ()=>{
+        console.log("after addListeners")
             var elems = document.querySelectorAll('.dropdown-trigger');
             var instances = M.Dropdown.init(elems, []);
             document.getElementById("playButton").addEventListener("click", app.playPause);
     },
     nav: ev=>{
+        console.log("after nav")
         ev.preventDefault();
         let btn = ev.target;
         let target = btn.getAttribute("data-target");
@@ -853,29 +855,41 @@ let app = {
                 lastRow.querySelector('.trackAudioSource').src = trackSrc;
                 lastRow.querySelector('.trackTitle').textContent=track.trackName;
                 lastRow.querySelector('.playTrackButton').addEventListener('click', app.playPause);
+                lastRow.querySelector('.playTrackButton').setAttribute('dataTrackName', track.trackName);
             }
         }
     },
     playPause: ev=> {
-        if(app.currentTrack===undefined){
-            app.updateCurrentTrack("Intro")
-        }
-        if(app.currentTrack.state === "paused") {
-            if (app.audioPlayer === undefined) {
-                app.audioPlayer = new Audio(app.currentTrack.audio);
+        console.log("after playPause")
+        // DEFINE EVENT TRACK NAME
+        let name = ev.target.getAttribute("dataTrackName")
+        let oldTrackName = app.currentTrack.name
+        // IF NAME EXISTS
+        if (name != null && name != undefined){
+            // IF CURRENTTRACK IS NOT EMPTY
+            if (app.currentTrack.name != name ) {
+                console.log("currentTrack is different than target")
+                app.updateCurrentTrack(name);
+                app.checkCurrentTrackState(ev, oldTrackName);
+            } 
+            // IF CURRENTTRACK IS EMPTY
+            else {
+                console.log("currentTrack is the same as target")
+                app.checkCurrentTrackState(ev, oldTrackName);          
             }
-            app.audioPlayer.play();
-            app.audioPlayer.addEventListener('timeupdate', app.trackTime)
-            app.currentTrack.state = "playing"
-            document.getElementById("playButton").textContent="pause";
-        } 
-        else if (app.currentTrack.state == "playing") {
-            app.audioPlayer.pause();
-            app.currentTrack.state = "paused";
-            document.getElementById("playButton").textContent="play_arrow";
+        }
+        else{
+            console.log("No track name found")
         }
     },
-    trackTime: ev=> {
+    trackTime(ev){
+        // WHY IS THIS NOT UPDATINGGG 
+        // WHY DOES IT SOUND 
+        console.log("after trackTime");
+        let currentTrackCurrentTime = ev.target.parentNode.querySelector('.trackCurrentTime');
+        let currentTrackEndTime = ev.target.parentNode.querySelector('.trackEndTime');
+        console.log(currentTrackCurrentTime)
+        console.log(currentTrackEndTime)
         //Start Time Tracking
         currentPercent=app.audioPlayer.currentTime / app.audioPlayer.duration * 100;
         document.querySelector(".trackProgress").style.width=currentPercent+ "%";
@@ -884,14 +898,19 @@ let app = {
         if(currentMinute<10){currentMinute = "0"+ currentMinute};
         if(currentSeconds<10){currentSeconds = "0"+ currentSeconds};
         document.querySelector(".trackCurrentTime").textContent= currentMinute +":"+ currentSeconds;
+        currentTrackCurrentTime.textContent = currentMinute +":"+ currentSeconds;
         //End Time Tracking
         currentEndMinute= Math.floor(app.audioPlayer.duration/60)-currentMinute;
         currentEndSeconds= 60-currentSeconds;
         if(currentEndMinute<10){currentEndMinute = "0"+ currentEndMinute};
         if(currentEndSeconds<10){currentEndSeconds = "0"+ currentEndSeconds};
-        document.querySelector(".trackEndTime").textContent= currentEndMinute +":"+ currentEndSeconds;
+        if(stillPlaying==true){
+            document.querySelector(".trackEndTime").textContent= currentEndMinute +":"+ currentEndSeconds;
+            currentTrackEndTime.textContent= currentEndMinute +":"+ currentEndSeconds;
+        }
     },
     updateCurrentTrack(trackName){
+        console.log("after checkCurrentTrack");
         let findTrack = app.trackList.find(element=>element.trackName === trackName);
         app.currentTrack = new Object();
         app.currentTrack.name=findTrack.trackName;
@@ -902,9 +921,54 @@ let app = {
         app.currentTrack.length=findTrack.trackLength;
         app.currentTrack.state="paused";
         app.currentTrack.currentTime="";
-        app.currentTrack.endTime=""
+        app.currentTrack.endTime="";
+        //play the currentTrack
     },
-    //FUNCTIONS
+    checkCurrentTrackState(ev, oldTrackName){
+        console.log("after checkCurrentTrackState");
+        //IF PAUSED 
+        if(app.currentTrack.state === "paused") {
+            // IF UNDEFINED
+            console.log("playing");
+            if (app.audioPlayer === undefined) {
+                app.audioPlayer = new Audio(app.currentTrack.audio);
+            }
+
+            if (app.currentTrack.name !== oldTrackName) {
+                console.log("pausing current track because track has changed")
+                app.audioPlayer.pause();
+                console.log("changing audio source because track has changed")
+                app.audioPlayer = new Audio(app.currentTrack.audio);
+                console.log("changing all play button to play_arrow")
+                let playButtons = document.querySelectorAll('.playTrackButton');
+                for (i = 0; i < playButtons.length; i++) {
+                    playButtons[i].textContent = "play_arrow";
+                }
+            }
+
+            console.log("playing " + app.currentTrack.name)
+            // IF DEFINED
+            app.audioPlayer.play();
+            app.audioPlayer.addEventListener('timeupdate', app.trackTime(ev))
+            // CHANGE STATE TO PLAYING
+            app.currentTrack.state = "playing";
+            ev.target.textContent="pause";
+            document.getElementById("playButton").textContent="pause";
+            document.getElementById("footTrackName").textContent= app.currentTrack.name;
+            
+        } 
+        //IF PLAYING
+        else if (app.currentTrack.state === "playing") {
+            console.log("paused");
+            app.audioPlayer.pause();
+            app.audioPlayer.addEventListener('timeupdate', app.trackTime(ev))
+            // CHANGE STATE TO PAUSED
+            app.currentTrack.state = "paused";
+            ev.target.textContent="play_arrow";
+            document.getElementById("playButton").textContent="play_arrow";
+            document.getElementById("footTrackName").textContent= app.currentTrack.name;
+        }
+    },
 }
 const ready = "cordova" in window ? "deviceready" : "DOMContentLoaded";
 document.addEventListener(ready, app.init);
