@@ -1,15 +1,16 @@
+/**************************
+    LAYOUT - MOBILE SIZE
+**************************/
 *{ 
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
 }
 html{
   background-color: #616161;
 }
 .material-icons{
   color: whitesmoke;
-  
 }
 .page{
   display: none;
@@ -18,8 +19,7 @@ html{
   padding: 1rem 2rem;
   padding-bottom: 10%;
   padding-top: 40px;
-  opacity: 0;
-  
+  opacity: 0; 
 }
 .active{
   display: block; 
@@ -113,14 +113,16 @@ html{
 img{
   border-radius: 8px;
 }
-a.simButton{
-  background-color: rgb(51, 51, 58);
-  
-}
 .trackTitle{
   color: whitesmoke;
 }
-
+.dropdown-content{
+}
+.simButton{
+  background-color: #705757;
+  z-index: 1;
+  font-size: 1vw;
+}
 /**************************
     LAYOUT - LARGE SIZE
 **************************/
@@ -203,8 +205,3 @@ a.simButton{
     font-size: inherit;
   }
 }
-/**************************
-    LAYOUT - EXTRA LARGE SIZE
-**************************/
-/* @media screen and (min-width:1200px){    
-} */
