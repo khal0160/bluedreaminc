@@ -22,15 +22,9 @@ ______________________________________
 CSS
 LAYOUT - MOBILE SIZE
 
-LAYOUT - MEDIUM SIZE
-@media screen and (min-width:600px){
-}
-    - NOT IMPLEMENTED
+
 LAYOUT - LARGE SIZE
 @media screen and (min-width:800px){   
 }
-    - NOT IMPLEMENTED
-LAYOUT - EXTRA LARGE SIZE
-@media screen and (min-width:1200px){    
-}
-    - NOT IMPLEMENTED 
+
+

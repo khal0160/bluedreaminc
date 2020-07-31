@@ -30,6 +30,7 @@ html{
   position: fixed;
   top: 0;
   z-index: 100;
+
 }
 .headTitle{
   font-family: 'Libre Barcode 39 Extended Text', cursive;
@@ -117,12 +118,15 @@ img{
   color: whitesmoke;
 }
 .dropdown-content{
+  width: 130px !important;
 }
 .simButton{
-  background-color: #705757;
+  background-color: #212121;
   z-index: 1;
   font-size: 1vw;
+  color: whitesmoke !important;
 }
+
 /**************************
     LAYOUT - LARGE SIZE
 **************************/
@@ -174,9 +178,7 @@ img{
     height: 10px;
     width: 50%;
   }
-  .trackDetails{
-    width: 50%;
-  }
+
   .playButtons{
     width: 20%; 
   }
@@ -188,12 +190,11 @@ img{
   #currentTrackDetails{
     padding-left: 10px; 
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column ;
   }
   .trackDetails{
     display: flex;
     right: 0;
-    background-color: lightgrey;
   }
   .trackVisual{
     height: 20px;
@@ -203,5 +204,9 @@ img{
   }
   .icon-block .material-icons {
     font-size: inherit;
+  }
+  .progressRow{
+    display: flex;
+    justify-content: row;
   }
 }

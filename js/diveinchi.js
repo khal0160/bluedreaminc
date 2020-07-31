@@ -882,14 +882,7 @@ let app = {
             console.log("No track name found")
         }
     },
-    trackTime(ev){
-        // WHY IS THIS NOT UPDATINGGG 
-        // WHY DOES IT SOUND 
-        console.log("after trackTime");
-        let currentTrackCurrentTime = ev.target.parentNode.querySelector('.trackCurrentTime');
-        let currentTrackEndTime = ev.target.parentNode.querySelector('.trackEndTime');
-        console.log(currentTrackCurrentTime)
-        console.log(currentTrackEndTime)
+    trackTime: () => {
         //Start Time Tracking
         currentPercent=app.audioPlayer.currentTime / app.audioPlayer.duration * 100;
         document.querySelector(".trackProgress").style.width=currentPercent+ "%";
@@ -898,13 +891,12 @@ let app = {
         if(currentMinute<10){currentMinute = "0"+ currentMinute};
         if(currentSeconds<10){currentSeconds = "0"+ currentSeconds};
         document.querySelector(".trackCurrentTime").textContent= currentMinute +":"+ currentSeconds;
-        currentTrackCurrentTime.textContent = currentMinute +":"+ currentSeconds;
         //End Time Tracking
         currentEndMinute= Math.floor(app.audioPlayer.duration/60)-currentMinute;
         currentEndSeconds= 60-currentSeconds;
         if(currentEndMinute<10){currentEndMinute = "0"+ currentEndMinute};
         if(currentEndSeconds<10){currentEndSeconds = "0"+ currentEndSeconds};
-        if(stillPlaying==true){
+        if(app.currentTrack.state==="playing"){
             document.querySelector(".trackEndTime").textContent= currentEndMinute +":"+ currentEndSeconds;
             currentTrackEndTime.textContent= currentEndMinute +":"+ currentEndSeconds;
         }
@@ -933,7 +925,6 @@ let app = {
             if (app.audioPlayer === undefined) {
                 app.audioPlayer = new Audio(app.currentTrack.audio);
             }
-
             if (app.currentTrack.name !== oldTrackName) {
                 console.log("pausing current track because track has changed")
                 app.audioPlayer.pause();
@@ -945,23 +936,28 @@ let app = {
                     playButtons[i].textContent = "play_arrow";
                 }
             }
-
             console.log("playing " + app.currentTrack.name)
             // IF DEFINED
             app.audioPlayer.play();
-            app.audioPlayer.addEventListener('timeupdate', app.trackTime(ev))
+            app.audioPlayer.addEventListener('timeupdate', app.trackTime)
             // CHANGE STATE TO PLAYING
             app.currentTrack.state = "playing";
             ev.target.textContent="pause";
             document.getElementById("playButton").textContent="pause";
             document.getElementById("footTrackName").textContent= app.currentTrack.name;
-            
         } 
         //IF PLAYING
         else if (app.currentTrack.state === "playing") {
             console.log("paused");
             app.audioPlayer.pause();
-            app.audioPlayer.addEventListener('timeupdate', app.trackTime(ev))
+            //
+            //
+            //
+            app.audioPlayer.addEventListener('timeupdate', app.trackTime)
+            //
+            //
+            //
+            //
             // CHANGE STATE TO PAUSED
             app.currentTrack.state = "paused";
             ev.target.textContent="play_arrow";
@@ -969,6 +965,7 @@ let app = {
             document.getElementById("footTrackName").textContent= app.currentTrack.name;
         }
     },
+    //FUNCTIONS
 }
 const ready = "cordova" in window ? "deviceready" : "DOMContentLoaded";
 document.addEventListener(ready, app.init);
