@@ -1,4 +1,5 @@
 let app = {
+    //-------------------------------
     //TOP LEVEL INFO
     pages: [],
     show: new Event('show'),
@@ -799,9 +800,12 @@ let app = {
     audioPlayer: undefined, 
     currentTrack: "",
     //TOP LEVEL INFO
+    //-------------------------------
     //FUNCTIONS
     init: ()=>{
         console.log("after init")
+        app.loading();
+        
         app.pages = document.querySelectorAll('.page');
         app.pages.forEach((pg)=>{
             pg.addEventListener('show', app.pageShown);
@@ -869,12 +873,15 @@ let app = {
             // IF CURRENTTRACK IS NOT EMPTY
             if (app.currentTrack.name != name ) {
                 console.log("currentTrack is different than target")
+                // UPDATE CURRENT TRACK
                 app.updateCurrentTrack(name);
+                // CHECK CURRENT TRACK STATE
                 app.checkCurrentTrackState(ev, oldTrackName);
             } 
             // IF CURRENTTRACK IS EMPTY
             else {
                 console.log("currentTrack is the same as target")
+                // CHECK CURRENT TRACK STATE
                 app.checkCurrentTrackState(ev, oldTrackName);          
             }
         }
@@ -882,15 +889,20 @@ let app = {
             console.log("No track name found")
         }
     },
-    trackTime: () => {
+    // progress bar keeps playing on the first clicked track
+    trackTime: ev=> {
         //Start Time Tracking
+        console.log("trackTime" + ev.target)
         currentPercent=app.audioPlayer.currentTime / app.audioPlayer.duration * 100;
+        //HOW DO I GET THE TARGET TO LAND ON THE SPECIFIC TRACK BEING PLAYED
+        //INSTEAD OF FINDING THE FIRST .trackProgress 
         document.querySelector(".trackProgress").style.width=currentPercent+ "%";
         currentMinute= Math.floor(app.audioPlayer.currentTime/60);
         currentSeconds= Math.floor(app.audioPlayer.currentTime-currentMinute*60);
         if(currentMinute<10){currentMinute = "0"+ currentMinute};
         if(currentSeconds<10){currentSeconds = "0"+ currentSeconds};
         document.querySelector(".trackCurrentTime").textContent= currentMinute +":"+ currentSeconds;
+        document.getElementById("footCurrentTime").textContent= currentMinute +":"+ currentSeconds;
         //End Time Tracking
         currentEndMinute= Math.floor(app.audioPlayer.duration/60)-currentMinute;
         currentEndSeconds= 60-currentSeconds;
@@ -898,13 +910,18 @@ let app = {
         if(currentEndSeconds<10){currentEndSeconds = "0"+ currentEndSeconds};
         if(app.currentTrack.state==="playing"){
             document.querySelector(".trackEndTime").textContent= currentEndMinute +":"+ currentEndSeconds;
-            currentTrackEndTime.textContent= currentEndMinute +":"+ currentEndSeconds;
+            //document.querySelector("currentTrackEndTime").textContent= currentEndMinute +":"+ currentEndSeconds;
+            //document.getElementById("footCurrentTime").textContent=a
+            document.getElementById("footEndTime").textContent= currentEndMinute +":"+ currentEndSeconds;
         }
     },
     updateCurrentTrack(trackName){
         console.log("after checkCurrentTrack");
+        // Find the track from the trackList array
         let findTrack = app.trackList.find(element=>element.trackName === trackName);
+        // Create a new object
         app.currentTrack = new Object();
+        // Define object's variables
         app.currentTrack.name=findTrack.trackName;
         app.currentTrack.albumId=findTrack.albumId;
         app.currentTrack.albumPosition=findTrack.trackPosition;
@@ -914,15 +931,16 @@ let app = {
         app.currentTrack.state="paused";
         app.currentTrack.currentTime="";
         app.currentTrack.endTime="";
-        //play the currentTrack
+        
     },
     checkCurrentTrackState(ev, oldTrackName){
         console.log("after checkCurrentTrackState");
-        //IF PAUSED 
+        //IF CurrentTrack is PAUSED 
         if(app.currentTrack.state === "paused") {
-            // IF UNDEFINED
+            // IF audioPlayer is UNDEFINED
             console.log("playing");
             if (app.audioPlayer === undefined) {
+                // audioPlayer gets defined
                 app.audioPlayer = new Audio(app.currentTrack.audio);
             }
             if (app.currentTrack.name !== oldTrackName) {
@@ -945,25 +963,27 @@ let app = {
             ev.target.textContent="pause";
             document.getElementById("playButton").textContent="pause";
             document.getElementById("footTrackName").textContent= app.currentTrack.name;
+            document.getElementById("currentTrackArt").src=app.currentTrack.art;
+            
         } 
-        //IF PLAYING
+        //IF CurrentTrack is PLAYING
         else if (app.currentTrack.state === "playing") {
             console.log("paused");
             app.audioPlayer.pause();
-            //
-            //
-            //
             app.audioPlayer.addEventListener('timeupdate', app.trackTime)
-            //
-            //
-            //
-            //
             // CHANGE STATE TO PAUSED
             app.currentTrack.state = "paused";
             ev.target.textContent="play_arrow";
             document.getElementById("playButton").textContent="play_arrow";
             document.getElementById("footTrackName").textContent= app.currentTrack.name;
         }
+    },
+    loading: ()=>{
+        document.getElementById('loading').classList.remove("hidden")
+        setTimeout(function() {
+            document.getElementById('loading').classList.add("hidden")
+          }, 1000);
+
     },
     //FUNCTIONS
 }

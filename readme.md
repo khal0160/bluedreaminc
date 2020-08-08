@@ -3,9 +3,12 @@ diveinchi.com current issues
 ______________________________________
 ______________________________________
 JAVASCRIPT
-- Track play button doesnt update to pause when clicked
-- Footer doesnt update TrackName
-- Footer doesnt update play Button
+
+
+- Footer doesnt have a default track
+- Footer doesnt pause track
+- Footer doesnt play track
+
 ______________________________________
 ______________________________________
 AWS DATABASE
@@ -21,7 +24,7 @@ ______________________________________
 ______________________________________
 CSS
 LAYOUT - MOBILE SIZE
-
+- active page end scroll needs to be above footer line
 
 LAYOUT - LARGE SIZE
 @media screen and (min-width:800px){   

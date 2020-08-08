@@ -11,6 +11,9 @@
     <title>DIVEINCHI</title>
   </head>
 <body id="body">
+  <div id="loading">
+    <img src="/img/BlueDreamInc.jpg" alt="" id="loadImage">
+    <div class="lds-hourglass"></div>  </div>
 <!-- HEADER BAR -->
   <nav id="header" class="grey darken-4" role="navigation">
     <div class="container">
@@ -110,11 +113,11 @@
       <div id="currentTrackDetails">
         <div id="footTrackName">Track Name - Album | Artist Name </div>
         <div class="progressRow container">
-          <div class="trackCurrentTime">00:00</div>
+          <div class="trackCurrentTime" id="footCurrentTime">00:00</div>
         <div class="progress container trackVisual white">
           <div class="trackProgress"></div>
         </div>
-        <div class="trackEndTime">00:00</div>
+        <div class="trackEndTime" id="footEndTime">00:00</div>
         </div>
     </div>
   </footer>
