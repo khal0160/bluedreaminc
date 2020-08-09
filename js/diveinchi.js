@@ -78,8 +78,8 @@ let app = {
         },
         {
             albumId: "ten",
-            albumFrontCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_FrontCover.jpg",
-            albumBackCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_BackCover.jpg",
+            albumFrontCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_FrontCover.png",
+            albumBackCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_BackCover.png",
             albumName: "Plastic 604",
             albumTrackCount: 10, 
             albumDescription: "Blah Blah Blah",
@@ -703,7 +703,7 @@ let app = {
             trackPosition: 1, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_1.jpg",
-            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_1.mp3",
+            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_1.wav",
         },
         {
             trackName: "All Rise",
@@ -711,7 +711,7 @@ let app = {
             trackPosition: 2, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_2.jpg",
-            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_2.mp3",
+            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_2.wav",
         },
         {
             trackName: "Step Up",
@@ -719,7 +719,7 @@ let app = {
             trackPosition: 3, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_3.jpg",
-            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_3.mp3",
+            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_3.wav",
         },
         {
             trackName: "No You Never Thought",
@@ -727,7 +727,7 @@ let app = {
             trackPosition: 4, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_4.jpg",
-            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_4.mp3",
+            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_4.wav",
         },
         {
             trackName: "Sunday Night Train Freestyle",
@@ -735,7 +735,7 @@ let app = {
             trackPosition: 5, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_5.jpg",
-            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_5.mp3",
+            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_5.wav",
         },
         {
             trackName: "Lets Drive Away",
@@ -743,7 +743,7 @@ let app = {
             trackPosition: 6, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_6.jpg",
-            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_6.mp3",
+            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_6.wav",
         },
         {
             trackName: "Ostracized From Normality",
@@ -751,7 +751,7 @@ let app = {
             trackPosition: 7, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_7.jpg",
-            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_7.mp3",
+            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_7.wav",
         },
         {
             trackName: "Counterfeit Baby",
@@ -759,7 +759,7 @@ let app = {
             trackPosition: 8, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_8.jpg",
-            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_8.mp3",
+            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_8.wav",
         },
         {
             trackName: "Save Your Apologies",
@@ -767,7 +767,7 @@ let app = {
             trackPosition: 9, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_9.jpg",
-            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_9.mp3",
+            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_9.wav",
         },
         {
             trackName: "Youthful Apathy",
@@ -775,7 +775,7 @@ let app = {
             trackPosition: 10, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_10.jpg",
-            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_10.mp3",
+            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_10.wav",
         },
         {
             trackName: "Hit The Ground Hard",
@@ -783,7 +783,7 @@ let app = {
             trackPosition: 11, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_11.jpg",
-            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_11.mp3",
+            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_11.wav",
         },
         {
             trackName: "Encore That",
@@ -791,7 +791,7 @@ let app = {
             trackPosition: 12, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_12.jpg",
-            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_12.mp3",
+            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_12.wav",
         },
 
         
