@@ -12,8 +12,8 @@
   </head>
 <body id="body">
   <div id="loading">
-    <img src="/img/BlueDreamInc.jpg" alt="" id="loadImage">
-    <div class="lds-hourglass"></div>  </div>
+  <img  class="responsive-img" src="/img/BlueDreamInc.jpg" alt="" id="loadImage">
+  <div class="lds-hourglass"></div>  </div>
 <!-- HEADER BAR -->
   <nav id="header" class="grey darken-4" role="navigation">
     <div class="container">
@@ -39,14 +39,14 @@
 <!-- TEMPLATES -->
   <template id="albumRow">
     <div class="row">
-      <div class="col s12 m6 l12"><img class= "responsive-img albumArt"src="" alt=""></div>
+      <div class="col s12 m12 l12"><img class= "responsive-img albumArt"src="" alt=""></div>
       <div class="col s12 m6 l3"><p></p></div>
       <div class="col s12 m6 l6 "></div>
     </div>
   </template>
   <template id="trackRow">
     <div class="row">
-      <div class="col s12 m6 l3"><img class="responsive-img trackArt" src="" alt=""></div>
+      <div class="col s12 m12 l6 trackArtRow"><img class="responsive-img trackArt" src="" alt=""></div>
       <div class="col s12 m12 l9">
         <div class="trackTitle col s12"></div>
         <div class="audioPlayer">
@@ -105,11 +105,11 @@
   <footer id= "footer" class="grey darken-4">
     <!-- Play Buttons -->
     <div id="playBar">
-      <i class="material-icons playButtons" id="playButton">play_arrow</i>
+      <i class="material-icons playButtons" id="footPlayButton">play_arrow</i>
     </div>
     <!-- Track Details -->
     <div class="trackDetails">
-      <img id="currentTrackArt" class="" src="art/s10_FrontCover.png">
+      <img id="currentTrackArt" class="" src="https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_12.png">
       <div id="currentTrackDetails">
         <div id="footTrackName">Track Name - Album | Artist Name </div>
         <div class="progressRow container">

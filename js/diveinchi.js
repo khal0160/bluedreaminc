@@ -702,7 +702,7 @@ let app = {
             albumId: "ten",
             trackPosition: 1, 
             trackDescription: "Blah Blah Blah",
-            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_1.jpg",
+            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_1.png",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_1.wav",
         },
         {
@@ -710,7 +710,7 @@ let app = {
             albumId: "ten",
             trackPosition: 2, 
             trackDescription: "Blah Blah Blah",
-            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_2.jpg",
+            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_2.png",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_2.wav",
         },
         {
@@ -718,7 +718,7 @@ let app = {
             albumId: "ten",
             trackPosition: 3, 
             trackDescription: "Blah Blah Blah",
-            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_3.jpg",
+            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_3.png",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_3.wav",
         },
         {
@@ -726,7 +726,7 @@ let app = {
             albumId: "ten",
             trackPosition: 4, 
             trackDescription: "Blah Blah Blah",
-            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_4.jpg",
+            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_4.png",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_4.wav",
         },
         {
@@ -734,7 +734,7 @@ let app = {
             albumId: "ten",
             trackPosition: 5, 
             trackDescription: "Blah Blah Blah",
-            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_5.jpg",
+            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_5.png",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_5.wav",
         },
         {
@@ -742,7 +742,7 @@ let app = {
             albumId: "ten",
             trackPosition: 6, 
             trackDescription: "Blah Blah Blah",
-            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_6.jpg",
+            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_6.png",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_6.wav",
         },
         {
@@ -750,7 +750,7 @@ let app = {
             albumId: "ten",
             trackPosition: 7, 
             trackDescription: "Blah Blah Blah",
-            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_7.jpg",
+            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_7.png",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_7.wav",
         },
         {
@@ -758,7 +758,7 @@ let app = {
             albumId: "ten",
             trackPosition: 8, 
             trackDescription: "Blah Blah Blah",
-            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_8.jpg",
+            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_8.png",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_8.wav",
         },
         {
@@ -766,7 +766,7 @@ let app = {
             albumId: "ten",
             trackPosition: 9, 
             trackDescription: "Blah Blah Blah",
-            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_9.jpg",
+            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_9.png",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_9.wav",
         },
         {
@@ -774,7 +774,7 @@ let app = {
             albumId: "ten",
             trackPosition: 10, 
             trackDescription: "Blah Blah Blah",
-            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_10.jpg",
+            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_10.png",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_10.wav",
         },
         {
@@ -782,7 +782,7 @@ let app = {
             albumId: "ten",
             trackPosition: 11, 
             trackDescription: "Blah Blah Blah",
-            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_11.jpg",
+            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_11.png",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_11.wav",
         },
         {
@@ -790,7 +790,7 @@ let app = {
             albumId: "ten",
             trackPosition: 12, 
             trackDescription: "Blah Blah Blah",
-            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_12.jpg",
+            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_12.png",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_12.wav",
         },
 
