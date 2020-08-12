@@ -90,6 +90,7 @@ let app = {
             trackName: "Achievement Unlocked: New Level Of Abstraction",
             albumId: "one",
             trackPosition: 1,
+            trackId: 1,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_1.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_1.mp3",
@@ -98,7 +99,8 @@ let app = {
         {
             trackName: "Dont Fight It And You Wont Get Hurt",
             albumId: "one",
-            trackPosition: 2, 
+            trackPosition: 2,
+            trackId: 2, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_2.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_2.mp3",
@@ -108,6 +110,7 @@ let app = {
             trackName: "Just A Few More",
             albumId: "one",
             trackPosition: 3, 
+            trackId: 3,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_3.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_3.mp3",
@@ -117,6 +120,7 @@ let app = {
             trackName: "Dont Act Like You Dont See Me",
             albumId: "one",
             trackPosition: 4, 
+            trackId: 4,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_4.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_4.mp3",
@@ -125,7 +129,8 @@ let app = {
         {
             trackName: "Oh So You Bboy Huh, Ok Lets Go",
             albumId: "one",
-            trackPosition: 5, 
+            trackPosition: 5,
+            trackId: 5, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_5.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_5.mp3",
@@ -135,6 +140,7 @@ let app = {
             trackName: "There You Are",
             albumId: "one",
             trackPosition: 6, 
+            trackId: 6,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_6.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_6.mp3",
@@ -144,6 +150,7 @@ let app = {
             trackName: "Pretty People Malevolent Thoughts",
             albumId: "one",
             trackPosition: 7, 
+            trackId: 7,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_7.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_7.mp3",
@@ -153,6 +160,7 @@ let app = {
             trackName: "Balance",
             albumId: "one",
             trackPosition: 8, 
+            trackId: 8,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_8.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_8.mp3",
@@ -162,6 +170,7 @@ let app = {
             trackName: "Electric",
             albumId: "one",
             trackPosition: 9, 
+            trackId: 9,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_9.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_9.mp3",
@@ -171,6 +180,7 @@ let app = {
             trackName: "Locked In Memory And In Heart",
             albumId: "one",
             trackPosition: 10, 
+            trackId: 10,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_10.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_10.mp3",
@@ -180,6 +190,7 @@ let app = {
             trackName: "Road Ends Ahead",
             albumId: "one",
             trackPosition: 11, 
+            trackId: 12,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s1_11.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s1_11.mp3",
@@ -189,6 +200,7 @@ let app = {
             trackName: "Intro",
             albumId: "two",
             trackPosition: 1, 
+            trackId: 13,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s2_BackCover.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s2_1.mp3",
@@ -197,6 +209,7 @@ let app = {
             trackName: "1",
             albumId: "two",
             trackPosition: 2, 
+            trackId: 14,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s2_BackCover.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s2_2.mp3",
@@ -205,6 +218,7 @@ let app = {
             trackName: "2",
             albumId: "two",
             trackPosition: 3, 
+            trackId: 15,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s2_BackCover.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s2_3.mp3",
@@ -212,7 +226,8 @@ let app = {
         {
             trackName: "3",
             albumId: "two",
-            trackPosition: 4, 
+            trackPosition: 4,
+            trackId: 16, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s2_BackCover.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s2_4.mp3",
@@ -221,6 +236,7 @@ let app = {
             trackName: "4",
             albumId: "two",
             trackPosition: 5, 
+            trackId: 17,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s2_BackCover.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s2_5.mp3",
@@ -229,6 +245,7 @@ let app = {
             trackName: "5",
             albumId: "two",
             trackPosition: 6, 
+            trackId: 18,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s2_BackCover.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s2_6.mp3",
@@ -237,6 +254,7 @@ let app = {
             trackName: "Achievement Unlocked New Level Of Production",
             albumId: "three",
             trackPosition: 1, 
+            trackId: 19,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_1.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_1.mp3",
@@ -245,6 +263,7 @@ let app = {
             trackName: "I",
             albumId: "three",
             trackPosition: 2, 
+            trackId: 20,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_2.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_2.mp3",
@@ -253,6 +272,7 @@ let app = {
             trackName: "Oh My",
             albumId: "three",
             trackPosition: 3, 
+            trackId: 21,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_3.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_3.mp3",
@@ -261,6 +281,7 @@ let app = {
             trackName: "Montreal Scene",
             albumId: "three",
             trackPosition: 4, 
+            trackId: 22,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_4.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_5.mp3",
@@ -269,6 +290,7 @@ let app = {
             trackName: "Blue Dream",
             albumId: "three",
             trackPosition: 5, 
+            trackId: 23,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_4.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_4.mp3",
@@ -276,7 +298,8 @@ let app = {
         {
             trackName: "Prince Of Darkness",
             albumId: "three",
-            trackPosition: 6, 
+            trackPosition: 6,
+            trackId: 24, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_5.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_5.mp3",
@@ -285,6 +308,7 @@ let app = {
             trackName: "Jocker Tantrum",
             albumId: "three",
             trackPosition: 7, 
+            trackId: 25,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_6.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_6.mp3",
@@ -293,6 +317,7 @@ let app = {
             trackName: "I Never Got Why Youd Do That",
             albumId: "three",
             trackPosition: 8, 
+            trackId: 26,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_7.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_7.mp3",
@@ -300,7 +325,8 @@ let app = {
         {
             trackName: "Rabbit Hole",
             albumId: "three",
-            trackPosition: 9, 
+            trackPosition: 9,
+            trackId: 27, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_8.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_8.mp3",
@@ -308,7 +334,8 @@ let app = {
         {
             trackName: "Conquering Vibe",
             albumId: "three",
-            trackPosition: 10, 
+            trackPosition: 10,
+            trackId: 28, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_10.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_10.mp3",
@@ -316,7 +343,8 @@ let app = {
         {
             trackName: "Raised By The Internet",
             albumId: "three",
-            trackPosition: 11, 
+            trackPosition: 11,
+            trackId: 29, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_11.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_11.mp3",
@@ -325,6 +353,7 @@ let app = {
             trackName: "Past Present Future",
             albumId: "three",
             trackPosition: 12, 
+            trackId: 30,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_12.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_12.mp3",
@@ -333,6 +362,7 @@ let app = {
             trackName: "Cathartic",
             albumId: "three",
             trackPosition: 13, 
+            trackId: 31,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_13.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_13.mp3",
@@ -340,7 +370,8 @@ let app = {
         {
             trackName: "Catacomb Vision",
             albumId: "three",
-            trackPosition: 14, 
+            trackPosition: 14,
+            trackId: 32, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_14.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_14.mp3",
@@ -349,6 +380,7 @@ let app = {
             trackName: "Wounded Hearts With Damaged Souls",
             albumId: "three",
             trackPosition: 15, 
+            trackId: 33,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_15.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_15.mp3",
@@ -356,7 +388,8 @@ let app = {
         {
             trackName: "Rhythm In The Beat",
             albumId: "three",
-            trackPosition: 16, 
+            trackPosition: 16,
+            trackId: 34, 
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_16.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_16.mp3",
@@ -365,6 +398,7 @@ let app = {
             trackName: "Time Travel Race Car",
             albumId: "three",
             trackPosition: 17, 
+            trackId: 35,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_17.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_17.mp3",
@@ -373,6 +407,7 @@ let app = {
             trackName: "Truth To Passion",
             albumId: "three",
             trackPosition: 18, 
+            trackId: 36,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_18.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_18.mp3",
@@ -381,6 +416,7 @@ let app = {
             trackName: "Fight Or Flight Which Do You Choose",
             albumId: "three",
             trackPosition: 19, 
+            trackId: 37,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_19.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_19.mp3",
@@ -389,6 +425,7 @@ let app = {
             trackName: "Dummy Trap",
             albumId: "three",
             trackPosition: 20, 
+            trackId: 38,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_20.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_20.mp3",
@@ -397,6 +434,7 @@ let app = {
             trackName: "Please Try Again Later",
             albumId: "three",
             trackPosition: 21, 
+            trackId: 39,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_21.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_21.mp3",
@@ -405,6 +443,7 @@ let app = {
             trackName: "Dethroned",
             albumId: "three",
             trackPosition: 21, 
+            trackId: 40,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_21.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_21.mp3",
@@ -413,6 +452,7 @@ let app = {
             trackName: "Where Is Earl",
             albumId: "three",
             trackPosition: 23, 
+            trackId: 41,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_23.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_23.mp3",
@@ -421,6 +461,7 @@ let app = {
             trackName: "Good Morning",
             albumId: "three",
             trackPosition: 24, 
+            trackId: 42,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_24.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_24.mp3",
@@ -429,6 +470,7 @@ let app = {
             trackName: "Soul Room",
             albumId: "three",
             trackPosition: 25, 
+            trackId: 43,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_25.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_25.mp3",
@@ -437,6 +479,7 @@ let app = {
             trackName: "Demetreus Mathew Thomson",
             albumId: "three",
             trackPosition: 26, 
+            trackId: 44,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_26.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_26.mp3",
@@ -445,6 +488,7 @@ let app = {
             trackName: "Why Are You Terrified",
             albumId: "four",
             trackPosition: 1, 
+            trackId: 45,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s4_1.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s4_1.mp3",
@@ -453,6 +497,7 @@ let app = {
             trackName: "I Cant Feel Enough",
             albumId: "four",
             trackPosition: 2, 
+            trackId: 46,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s4_2.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s4_2.mp3",
@@ -461,6 +506,7 @@ let app = {
             trackName: "Lord Forgive Me For I Have Sinned",
             albumId: "four",
             trackPosition: 3, 
+            trackId: 47,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s4_3.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s4_3.mp3",
@@ -469,6 +515,7 @@ let app = {
             trackName: "Lost In The Desert, Microdosing Fear",
             albumId: "four",
             trackPosition: 4, 
+            trackId: 48,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s4_4.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s4_4.mp3",
@@ -477,6 +524,7 @@ let app = {
             trackName: "Dancing Moral Trails",
             albumId: "four",
             trackPosition: 5, 
+            trackId: 49,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s4_5.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s4_5.mp3",
@@ -485,6 +533,7 @@ let app = {
             trackName: "Lost In The Amazon, Micro dosing Fear",
             albumId: "four",
             trackPosition: 6, 
+            trackId: 50,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s4_6.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s4_6.mp3",
@@ -493,6 +542,7 @@ let app = {
             trackName: "Clearing Clouds",
             albumId: "four",
             trackPosition: 7, 
+            trackId: 51,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s4_7.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s4_7.mp3",
@@ -501,6 +551,7 @@ let app = {
             trackName: "Merry Go Round",
             albumId: "four",
             trackPosition: 8, 
+            trackId: 52,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s4_8.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s4_8.mp3",
@@ -509,6 +560,7 @@ let app = {
             trackName: "Young Dive In Chi",
             albumId: "four",
             trackPosition: 9, 
+            trackId: 53,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s4_9.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s4_9.mp3",
@@ -517,6 +569,7 @@ let app = {
             trackName: "Shopping In The Early 2000s",
             albumId: "five",
             trackPosition: 1, 
+            trackId: 54,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s5_1.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s5_1.mp3",
@@ -525,6 +578,7 @@ let app = {
             trackName: "Walking To My Tesla To Swim With Whales",
             albumId: "five",
             trackPosition: 2, 
+            trackId: 55,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s5_2.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s5_2.mp3",
@@ -533,6 +587,7 @@ let app = {
             trackName: "Seen It Before",
             albumId: "five",
             trackPosition: 3, 
+            trackId: 56,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s5_3.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s5_3.mp3",
@@ -541,6 +596,7 @@ let app = {
             trackName: "97 To Billings Bridge",
             albumId: "five",
             trackPosition: 4, 
+            trackId: 57,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s5_4.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s5_4.mp3",
@@ -549,6 +605,7 @@ let app = {
             trackName: "You Pass Butter",
             albumId: "five",
             trackPosition: 5, 
+            trackId: 58,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s5_5.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s5_5.mp3",
@@ -557,6 +614,7 @@ let app = {
             trackName: "Burn Out",
             albumId: "five",
             trackPosition: 6, 
+            trackId: 59,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s5_6.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s5_6.mp3",
@@ -565,6 +623,7 @@ let app = {
             trackName: "Imminent Onus",
             albumId: "six",
             trackPosition: 1, 
+            trackId: 60,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s6_1.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s6_1.mp3",
@@ -573,6 +632,7 @@ let app = {
             trackName: "Ancient Philosophy",
             albumId: "six",
             trackPosition: 2, 
+            trackId: 61,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s6_1.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s6_2.mp3",
@@ -581,6 +641,7 @@ let app = {
             trackName: "DreamScape",
             albumId: "seven",
             trackPosition: 1, 
+            trackId: 62,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s7_1.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s7_1.mp3",
@@ -589,6 +650,7 @@ let app = {
             trackName: "Felicia",
             albumId: "seven",
             trackPosition: 2, 
+            trackId: 63,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s7_2.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s7_2.mp3",
@@ -597,6 +659,7 @@ let app = {
             trackName: "Nirvana",
             albumId: "seven",
             trackPosition: 3, 
+            trackId: 64,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s7_3.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s7_3.mp3",
@@ -605,6 +668,7 @@ let app = {
             trackName: "NeverKnown",
             albumId: "seven",
             trackPosition: 4, 
+            trackId: 65,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s7_4.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s7_4.mp3",
@@ -613,6 +677,7 @@ let app = {
             trackName: "Unknown",
             albumId: "seven",
             trackPosition: 5, 
+            trackId: 66,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s7_5.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s7_5.mp3",
@@ -621,6 +686,7 @@ let app = {
             trackName: "Laughter",
             albumId: "seven",
             trackPosition: 6, 
+            trackId: 67,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s7_6.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s7_6.mp3",
@@ -629,6 +695,7 @@ let app = {
             trackName: "Glitch",
             albumId: "seven",
             trackPosition: 7, 
+            trackId: 68,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s7_7.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s7_7.mp3",
@@ -637,6 +704,7 @@ let app = {
             trackName: "What I Gotta Do To Play",
             albumId: "nine",
             trackPosition: 1, 
+            trackId: 69,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s9_1.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s9_1.mp3",
@@ -645,6 +713,7 @@ let app = {
             trackName: "Bicycle For The Mind",
             albumId: "nine",
             trackPosition: 2, 
+            trackId: 70,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s9_2.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s9_2.mp3",
@@ -653,6 +722,7 @@ let app = {
             trackName: "SoundCloud Gaara",
             albumId: "nine",
             trackPosition: 3, 
+            trackId: 71,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s9_3.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s9_3.mp3",
@@ -661,6 +731,7 @@ let app = {
             trackName: "Defeat Your Own Mind",
             albumId: "nine",
             trackPosition: 4, 
+            trackId: 72,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s9_4.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s9_4.mp3",
@@ -669,6 +740,7 @@ let app = {
             trackName: "Everydays Journey",
             albumId: "nine",
             trackPosition: 5, 
+            trackId: 73,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s9_5.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s9_5.mp3",
@@ -677,6 +749,7 @@ let app = {
             trackName: "I Still Love You",
             albumId: "nine",
             trackPosition: 6, 
+            trackId: 74,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s9_6.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s9_6.mp3",
@@ -685,6 +758,7 @@ let app = {
             trackName: "Selflish",
             albumId: "nine",
             trackPosition: 7, 
+            trackId: 75,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s9_7.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s9_7.mp3",
@@ -693,6 +767,7 @@ let app = {
             trackName: "Jacuzzi On A Balcony",
             albumId: "nine",
             trackPosition: 8, 
+            trackId: 76,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s9_8.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s9_8.mp3",
@@ -701,6 +776,7 @@ let app = {
             trackName: "Front Street Boys",
             albumId: "ten",
             trackPosition: 1, 
+            trackId: 77,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_1.png",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_1.wav",
@@ -709,6 +785,7 @@ let app = {
             trackName: "All Rise",
             albumId: "ten",
             trackPosition: 2, 
+            trackId: 78,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_2.png",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_2.wav",
@@ -717,6 +794,7 @@ let app = {
             trackName: "Step Up",
             albumId: "ten",
             trackPosition: 3, 
+            trackId: 79,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_3.png",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_3.wav",
@@ -725,6 +803,7 @@ let app = {
             trackName: "No You Never Thought",
             albumId: "ten",
             trackPosition: 4, 
+            trackId: 80,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_4.png",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_4.wav",
@@ -733,6 +812,7 @@ let app = {
             trackName: "Sunday Night Train Freestyle",
             albumId: "ten",
             trackPosition: 5, 
+            trackId: 81,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_5.png",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_5.wav",
@@ -741,6 +821,7 @@ let app = {
             trackName: "Lets Drive Away",
             albumId: "ten",
             trackPosition: 6, 
+            trackId: 82,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_6.png",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_6.wav",
@@ -749,6 +830,7 @@ let app = {
             trackName: "Ostracized From Normality",
             albumId: "ten",
             trackPosition: 7, 
+            trackId: 83,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_7.png",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_7.wav",
@@ -757,6 +839,7 @@ let app = {
             trackName: "Counterfeit Baby",
             albumId: "ten",
             trackPosition: 8, 
+            trackId: 84,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_8.png",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_8.wav",
@@ -765,6 +848,7 @@ let app = {
             trackName: "Save Your Apologies",
             albumId: "ten",
             trackPosition: 9, 
+            trackId: 85,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_9.png",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_9.wav",
@@ -773,6 +857,7 @@ let app = {
             trackName: "Youthful Apathy",
             albumId: "ten",
             trackPosition: 10, 
+            trackId: 86,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_10.png",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_10.wav",
@@ -781,6 +866,7 @@ let app = {
             trackName: "Hit The Ground Hard",
             albumId: "ten",
             trackPosition: 11, 
+            trackId: 87,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_11.png",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_11.wav",
@@ -789,6 +875,7 @@ let app = {
             trackName: "Encore That",
             albumId: "ten",
             trackPosition: 12, 
+            trackId: 88,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_12.png",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s10_12.wav",
@@ -822,7 +909,7 @@ let app = {
         console.log("after addListeners")
             var elems = document.querySelectorAll('.dropdown-trigger');
             var instances = M.Dropdown.init(elems, []);
-            document.getElementById("playButton").addEventListener("click", app.playPause);
+            document.getElementById("footPlayButton").addEventListener("click", app.playPause);
     },
     nav: ev=>{
         console.log("after nav")
@@ -844,7 +931,7 @@ let app = {
         document.getElementById(target).appendChild(clone);
         document.querySelector('.albumArt').setAttribute("src",find.albumFrontCover)
         //BUILD TRACKLIST
-        for(i=1; i < find.albumTrackCount;i++){
+        for(i=1; i < find.albumTrackCount+1;i++){
             let temp = document.getElementById('trackRow');
             let content = temp.content;
             let clone = content.cloneNode(true);
@@ -859,66 +946,88 @@ let app = {
                 lastRow.querySelector('.trackAudioSource').src = trackSrc;
                 lastRow.querySelector('.trackTitle').textContent=track.trackName;
                 lastRow.querySelector('.playTrackButton').addEventListener('click', app.playPause);
-                lastRow.querySelector('.playTrackButton').setAttribute('dataTrackName', track.trackName);
+                lastRow.querySelector('.playTrackButton').setAttribute('trackPosition', i);
+                lastRow.querySelector('.playTrackButton').setAttribute('trackId', track.trackId);
+                lastRow.querySelector('.trackProgress').setAttribute('trackId', track.trackId);
+                lastRow.querySelector('.trackCurrentTime').setAttribute('trackId', track.trackId);
+                lastRow.querySelector('.trackEndTime').setAttribute('trackId', track.trackId);
+
             }
         }
     },
     playPause: ev=> {
         console.log("after playPause")
         // DEFINE EVENT TRACK NAME
-        let name = ev.target.getAttribute("dataTrackName")
-        let oldTrackName = app.currentTrack.name
+        let trackId = ev.target.getAttribute("trackId")
+        let oldTrackId = app.currentTrack.trackId
         // IF NAME EXISTS
-        if (name != null && name != undefined){
+        if (trackId!= null && trackId!= undefined){
             // IF CURRENTTRACK IS NOT EMPTY
-            if (app.currentTrack.name != name ) {
+            if (app.currentTrack.trackId!= trackId) {
                 console.log("currentTrack is different than target")
                 // UPDATE CURRENT TRACK
-                app.updateCurrentTrack(name);
+                app.updateCurrentTrack(trackId);
                 // CHECK CURRENT TRACK STATE
-                app.checkCurrentTrackState(ev, oldTrackName);
+                app.checkCurrentTrackState(ev, oldTrackId);
             } 
             // IF CURRENTTRACK IS EMPTY
             else {
                 console.log("currentTrack is the same as target")
                 // CHECK CURRENT TRACK STATE
-                app.checkCurrentTrackState(ev, oldTrackName);          
+                app.checkCurrentTrackState(ev, oldTrackId);          
             }
         }
         else{
             console.log("No track name found")
         }
     },
-    // progress bar keeps playing on the first clicked track
     trackTime: ev=> {
         //Start Time Tracking
-        console.log("trackTime" + ev.target)
         currentPercent=app.audioPlayer.currentTime / app.audioPlayer.duration * 100;
-        //HOW DO I GET THE TARGET TO LAND ON THE SPECIFIC TRACK BEING PLAYED
-        //INSTEAD OF FINDING THE FIRST .trackProgress 
-        document.querySelector(".trackProgress").style.width=currentPercent+ "%";
+        let progresses = document.querySelectorAll(".trackProgress");
+        for (i = 0; i < progresses.length; i++) {
+            if (progresses[i].getAttribute('trackid') == ev.target.getAttribute('trackid')) {
+                progresses[i].style.width = currentPercent+ "%";
+            }
+        }
+        let startTimes = document.querySelectorAll(".trackCurrentTime");
+        let startTime = null;
+        for (i = 0; i < startTimes.length; i++) {
+            if (startTimes[i].getAttribute('trackid') == ev.target.getAttribute('trackid')) {
+                startTime = startTimes[i];
+            }
+        }
+        let endTimes = document.querySelectorAll(".trackEndTime");
+        let endTime = null;
+        for (i = 0; i < endTimes.length; i++) {
+            if (endTimes[i].getAttribute('trackid') == ev.target.getAttribute('trackid')) {
+                endTime = endTimes[i];
+            }
+        }
         currentMinute= Math.floor(app.audioPlayer.currentTime/60);
         currentSeconds= Math.floor(app.audioPlayer.currentTime-currentMinute*60);
         if(currentMinute<10){currentMinute = "0"+ currentMinute};
         if(currentSeconds<10){currentSeconds = "0"+ currentSeconds};
-        document.querySelector(".trackCurrentTime").textContent= currentMinute +":"+ currentSeconds;
+        startTime.textContent= currentMinute +":"+ currentSeconds;
+        
         document.getElementById("footCurrentTime").textContent= currentMinute +":"+ currentSeconds;
+        document.getElementById("trackCurrentTime").textContent= currentMinute +":"+ currentSeconds;
         //End Time Tracking
         currentEndMinute= Math.floor(app.audioPlayer.duration/60)-currentMinute;
         currentEndSeconds= 60-currentSeconds;
         if(currentEndMinute<10){currentEndMinute = "0"+ currentEndMinute};
         if(currentEndSeconds<10){currentEndSeconds = "0"+ currentEndSeconds};
         if(app.currentTrack.state==="playing"){
-            document.querySelector(".trackEndTime").textContent= currentEndMinute +":"+ currentEndSeconds;
+            endTime.textContent= currentEndMinute +":"+ currentEndSeconds;
             //document.querySelector("currentTrackEndTime").textContent= currentEndMinute +":"+ currentEndSeconds;
             //document.getElementById("footCurrentTime").textContent=a
             document.getElementById("footEndTime").textContent= currentEndMinute +":"+ currentEndSeconds;
         }
     },
-    updateCurrentTrack(trackName){
-        console.log("after checkCurrentTrack");
+    updateCurrentTrack(trackId){
+        console.log("after checkCurrentTrack: " + trackId);
         // Find the track from the trackList array
-        let findTrack = app.trackList.find(element=>element.trackName === trackName);
+        let findTrack = app.trackList.find(element=>element.trackId == trackId);
         // Create a new object
         app.currentTrack = new Object();
         // Define object's variables
@@ -931,9 +1040,11 @@ let app = {
         app.currentTrack.state="paused";
         app.currentTrack.currentTime="";
         app.currentTrack.endTime="";
+        app.currentTrack.trackPosition=findTrack.trackPosition;
+        app.currentTrack.trackId=findTrack.trackId;
         
     },
-    checkCurrentTrackState(ev, oldTrackName){
+    checkCurrentTrackState(ev, oldTrackId){
         console.log("after checkCurrentTrackState");
         //IF CurrentTrack is PAUSED 
         if(app.currentTrack.state === "paused") {
@@ -943,28 +1054,28 @@ let app = {
                 // audioPlayer gets defined
                 app.audioPlayer = new Audio(app.currentTrack.audio);
             }
-            if (app.currentTrack.name !== oldTrackName) {
+            if (app.currentTrack.trackId !== oldTrackId) {
                 console.log("pausing current track because track has changed")
                 app.audioPlayer.pause();
                 console.log("changing audio source because track has changed")
                 app.audioPlayer = new Audio(app.currentTrack.audio);
                 console.log("changing all play button to play_arrow")
                 let playButtons = document.querySelectorAll('.playTrackButton');
+
                 for (i = 0; i < playButtons.length; i++) {
                     playButtons[i].textContent = "play_arrow";
                 }
             }
-            console.log("playing " + app.currentTrack.name)
+            console.log("playing " + app.currentTrack.trackId)
             // IF DEFINED
             app.audioPlayer.play();
             app.audioPlayer.addEventListener('timeupdate', app.trackTime)
             // CHANGE STATE TO PLAYING
             app.currentTrack.state = "playing";
             ev.target.textContent="pause";
-            document.getElementById("playButton").textContent="pause";
+            document.getElementById("footPlayButton").textContent="pause";
             document.getElementById("footTrackName").textContent= app.currentTrack.name;
             document.getElementById("currentTrackArt").src=app.currentTrack.art;
-            
         } 
         //IF CurrentTrack is PLAYING
         else if (app.currentTrack.state === "playing") {
@@ -973,9 +1084,11 @@ let app = {
             app.audioPlayer.addEventListener('timeupdate', app.trackTime)
             // CHANGE STATE TO PAUSED
             app.currentTrack.state = "paused";
+            document.getElementById("footPlayButton").textContent="play_arrow";
             ev.target.textContent="play_arrow";
             document.getElementById("playButton").textContent="play_arrow";
             document.getElementById("footTrackName").textContent= app.currentTrack.name;
+ 
         }
     },
     loading: ()=>{
@@ -983,7 +1096,6 @@ let app = {
         setTimeout(function() {
             document.getElementById('loading').classList.add("hidden")
           }, 1000);
-
     },
     //FUNCTIONS
 }
