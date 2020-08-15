@@ -400,6 +400,8 @@ img{
     top: 0;
     z-index: 100;
     height: 10%;
+    display: flex;
+    align-items: center;
   } 
   .page{
     display: none;
@@ -535,9 +537,157 @@ img{
     color: whitesmoke;
     font-size: 300%;
   }
+  #menuButton{
+    font-size: 40px;
+  }
 }
 /**************************
     LAYOUT - EXTRA LARGE SIZE
 **************************/
 @media screen and (min-width:1200px){    
+  #header{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    height: 10%;
+    display: flex;
+    align-items: center;
+  } 
+  .page{
+    display: none;
+    width: 100%;
+    min-height: 100%; /* allow for content off the bottom of the page */
+    padding: 1rem 2rem;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    opacity: 0;
+  }
+  .active{
+    display: block; 
+    opacity: 1;
+    margin-bottom: 10px;
+  }
+  .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 5px;
+    padding-top : 5px;
+    background-color: grey;
+    height: 10%;  
+  }
+  #playBar{
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 10px;
+    width: 50%;
+  }
+  .playButtons{
+    /* width: 100%;  */
+  }
+  #currentTrackArt{
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+  }
+  #currentTrackDetails{
+    padding-left: 10px; 
+    display: flex;
+    flex-direction: column ;
+  }
+  .trackDetails{
+    display: flex;
+    right: 0;
+  }
+  .trackVisual{
+    height: 20px;
+  }
+  .icon-block {
+    padding: 0 15px;
+  }
+  .icon-block .material-icons {
+    font-size: inherit;
+  }
+  .progressRow{
+    display: flex;
+    justify-content: row;
+  }
+  #loading{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: white;
+    z-index: 1000;
+    color: white;
+    opacity: 1;
+    transition: 0.5s;
+    visibility: visible;
+  }
+  #loading.hidden{
+    opacity: 0;
+    visibility: hidden;
+  }
+  #loadImage{
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    top: 25%;
+    left: 35%;
+  }
+  .lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    left: 45%;
+    top: 45% ;
+  }
+  .lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid black;
+    border-color: black transparent black transparent;
+    animation: lds-hourglass 1.2s infinite;
+  }
+  @keyframes lds-hourglass {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
+  }
+  .headTitle{
+    font-family: 'Libre Barcode 39 Extended Text', cursive;
+    color: whitesmoke;
+    font-size: 300%;
+  }
+  #menuButton{
+    font-size: 60px;
+  }
 }
