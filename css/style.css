@@ -41,8 +41,7 @@ html{
   padding: 2px 2px 2px 2px;
 }
 #menuButton{ 
-  top: 0 !important;
-  justify-content: end;
+  font-size: 60px;
 }
 .row{
   display: flex;
@@ -189,6 +188,9 @@ img{
   100% {
     transform: rotate(1800deg);
   }
+}
+#menuButton{
+  font-size: 30px;
 }
 /**************************
     LAYOUT - MEDIUM SIZE
@@ -396,6 +398,9 @@ img{
   #footPlayButton{
     font-size: 50px;
   }
+  #menuButton{
+    font-size: 30px;
+  }
 }
 /**************************
     LAYOUT - LARGE SIZE
@@ -541,9 +546,7 @@ img{
     font-size: 300%;
   }
   #menuButton{
-    font-size: 40px;
-    position: fixed;
-
+    font-size: 50px;
   }
 }
 /**************************
@@ -620,9 +623,7 @@ img{
   .icon-block {
     padding: 0 15px;
   }
-  .icon-block .material-icons {
-    font-size: inherit;
-  }
+
   .progressRow{
     display: flex;
     justify-content: row;
@@ -690,6 +691,6 @@ img{
     font-size: 300%;
   }
   #menuButton{
-    font-size: 60px;
+    font-size: 70px;
   }
 }
