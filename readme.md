@@ -4,12 +4,7 @@ ______________________________________
 ______________________________________
 JAVASCRIPT
 
-
-- Footer doesnt have a default track
-- Footer doesnt pause track
-- Footer doesnt play track
-
-______________________________________
+_____________________________________
 ______________________________________
 AWS DATABASE
 S3_BackCover.jpg Missing
@@ -23,11 +18,3 @@ S10 set completely Missing
 ______________________________________
 ______________________________________
 CSS
-LAYOUT - MOBILE SIZE
-- active page end scroll needs to be above footer line
-
-LAYOUT - LARGE SIZE
-@media screen and (min-width:800px){   
-}
-
-

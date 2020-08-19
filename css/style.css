@@ -27,14 +27,22 @@ html{
   padding-bottom: 10%;
 }
 #header{
-  position: fixed;
   top: 0;
   z-index: 100;
+  display: flex;
+  justify-content: row;
 }
 .headTitle{
   font-family: 'Libre Barcode 39 Extended Text', cursive;
   color: whitesmoke;
   font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 2px 2px 2px 2px;
+}
+#menuButton{ 
+  top: 0 !important;
+  justify-content: end;
 }
 .row{
   display: flex;
@@ -182,7 +190,6 @@ img{
     transform: rotate(1800deg);
   }
 }
-
 /**************************
     LAYOUT - MEDIUM SIZE
 **************************/
@@ -388,7 +395,6 @@ img{
   }
   #footPlayButton{
     font-size: 50px;
-    
   }
 }
 /**************************
@@ -444,9 +450,6 @@ img{
     align-items: center;
     height: 10px;
     width: 50%;
-  }
-  .playButtons{
-    /* width: 100%;  */
   }
   #currentTrackArt{
     width: 50px;
@@ -539,6 +542,8 @@ img{
   }
   #menuButton{
     font-size: 40px;
+    position: fixed;
+
   }
 }
 /**************************
@@ -594,9 +599,6 @@ img{
     align-items: center;
     height: 10px;
     width: 50%;
-  }
-  .playButtons{
-    /* width: 100%;  */
   }
   #currentTrackArt{
     width: 50px;

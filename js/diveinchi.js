@@ -1,6 +1,4 @@
 let app = {
-    //-------------------------------
-    //TOP LEVEL INFO
     pages: [],
     show: new Event('show'),
     simulations: [
@@ -886,9 +884,8 @@ let app = {
     ],
     audioPlayer: undefined, 
     currentTrack: "",
-    //TOP LEVEL INFO
-    //-------------------------------
-    //FUNCTIONS
+ 
+
     init: ()=>{
         console.log("after init")
         app.loading();
@@ -1097,7 +1094,6 @@ let app = {
             document.getElementById('loading').classList.add("hidden")
           }, 1000);
     },
-    //FUNCTIONS
 }
 const ready = "cordova" in window ? "deviceready" : "DOMContentLoaded";
 document.addEventListener(ready, app.init);
