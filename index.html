@@ -13,14 +13,16 @@
 <body id="body">
   <div id="loading">
   <img  class="responsive-img" src="/img/BlueDreamInc.jpg" alt="" id="loadImage">
-  <div class="lds-hourglass"></div>  </div>
+  <div class="lds-hourglass"></div>  
+</div>
 <!-- HEADER BAR -->
   <nav id="header" class="grey darken-4" role="navigation">
     <div class="container">
-      <a id="logo-container" href="#" class="left headTitle">DIVEINCHI</a>
-      <a class='material-icons dropdown-trigger right'  id="menuButton" data-target='dropdown1'>
-        <i class="material-icons" id="menuButton">menu</i>
+      <a class='material-icons dropdown-trigger left'  id="menuButton" data-target='dropdown1'>
+        <i class="material-icons">menu</i>
       </a>
+      <a id="logo-container" href="#" class="headTitle">DIVEINCHI</a>
+      
       <ul id='dropdown1' class='dropdown-content'>
         <li><a href="#!" data-target="one" class="simButton">Simulation 1</a></li>
         <li><a href="#!" data-target="two" class="simButton">Simulation 2</a></li>
@@ -61,8 +63,6 @@
       </div>
     </div> 
 </template>
-<!-- TEMPLATES -->
-<!-- PAGES -->
   <section id="intro" class="page active">
     <h2 class="albumTitle">Choose the Simulation level</h2>
   </section>
@@ -100,8 +100,6 @@
     </div>
     
   </section>
-<!-- PAGES -->
-<!-- FOOTER -->
   <footer id= "footer" class="grey darken-4">
     <!-- Play Buttons -->
     <div id="playBar">
@@ -121,11 +119,8 @@
         </div>
     </div>
   </footer>
-<!-- FOOTER -->
-<!--  Scripts-->
   <script src="js/materialize.js"></script>
   <script src="js/audio.min.js"></script>
   <script src="js/diveinchi.js"></script> 
-<!--  Scripts-->
 </body>
 </html>
