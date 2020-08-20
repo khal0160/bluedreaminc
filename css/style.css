@@ -16,15 +16,14 @@ html{
   display: none;
   width: 100%;
   min-height: 100%; /* allow for content off the bottom of the page */
-  padding: 1rem 2rem;
+  padding: 1rem;
   padding-bottom: 10%;
-  padding-top: 40px;
   opacity: 0; 
 }
 .active{
   display: block; 
   opacity: 1;
-  padding-bottom: 10%;
+  padding-bottom: 20%;
 }
 #header{
   top: 0;
@@ -61,15 +60,12 @@ html{
   height: 10%;  
 }
 #playBar{
-  padding-bottom: 20px;
   padding-left: 5px;
   padding-right: 10px;
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 10%;
-}
-.playButtons{
-  /* width: 20%;  */
 }
 #currentTrackArt{
   width: 50px;
@@ -78,6 +74,8 @@ html{
 }
 #currentTrackDetails{
   padding-left: 10px; 
+  display: flex;
+  flex-direction: column ;
 }
 .trackDetails{
   display: flex;
@@ -113,6 +111,7 @@ html{
 .albumTitle{
   font-size: 7vw;
   color: whitesmoke;
+  font-family: 'Bungee', cursive;
 }
 #footTrackName{
   color: whitesmoke;
@@ -192,6 +191,9 @@ img{
 #menuButton{
   font-size: 30px;
 }
+#footPlayButton{
+  font-size: 50px;
+} 
 /**************************
     LAYOUT - MEDIUM SIZE
 **************************/
@@ -248,11 +250,11 @@ img{
     height: 10%;  
   }
   #playBar{
-    padding-bottom: 20px;
     padding-left: 5px;
     padding-right: 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 10%;
   }
   #currentTrackArt{
@@ -262,7 +264,8 @@ img{
   }
   #currentTrackDetails{
     padding-left: 10px; 
-    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column ;
   }
   .trackDetails{
     display: flex;
@@ -300,6 +303,7 @@ img{
   .albumTitle{
     font-size: 7vw;
     color: whitesmoke;
+    font-family: 'Bungee', cursive;
   }
   #footTrackName{
     color: whitesmoke;
@@ -426,7 +430,7 @@ img{
   .active{
     display: block; 
     opacity: 1;
-    margin-bottom: 10px;
+    padding-bottom: 20%;
   }
   .row{
     display: flex;
@@ -447,14 +451,12 @@ img{
     height: 10%;  
   }
   #playBar{
-    padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     height: 10px;
-    width: 50%;
   }
   #currentTrackArt{
     width: 50px;
@@ -548,6 +550,9 @@ img{
   #menuButton{
     font-size: 50px;
   }
+  #footPlayButton{
+    font-size: 50px;
+  }
 }
 /**************************
     LAYOUT - EXTRA LARGE SIZE
@@ -573,7 +578,7 @@ img{
   .active{
     display: block; 
     opacity: 1;
-    margin-bottom: 10px;
+    padding-bottom: 20%;
   }
   .row{
     display: flex;
@@ -601,7 +606,6 @@ img{
     justify-content: flex-start;
     align-items: center;
     height: 10px;
-    width: 50%;
   }
   #currentTrackArt{
     width: 50px;
@@ -623,7 +627,9 @@ img{
   .icon-block {
     padding: 0 15px;
   }
-
+  .icon-block .material-icons {
+    font-size: inherit;
+  }
   .progressRow{
     display: flex;
     justify-content: row;
@@ -692,5 +698,8 @@ img{
   }
   #menuButton{
     font-size: 70px;
+  }
+  #footPlayButton{
+    font-size: 50px;
   }
 }
