@@ -702,4 +702,79 @@ img{
   #footPlayButton{
     font-size: 50px;
   }
+  .algorithmRow{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #algorithm1{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    border-style: solid;
+  border-width: thin;
+  }
+  #algorithm2{
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    border-style: solid;
+  border-width: thin;
+  }
+  #algorithm3{
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    border-style: solid;
+  border-width: thin;
+  }
+  #algorithm4{
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    border-style: solid;
+  border-width: thin;
+  }
+  #algorithm5{
+    display: flex;
+    justify-content: center;
+    background-color:lightgrey;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: thin;
+  }
+  .hide{
+    display: block;
+    color: white;
+  }
+  #algorithm1:hover{
+    background-color: white;
+  }
+  #algorithm2:hover{
+    background-color: black;
+  }
+  #algorithm3:hover{
+    background-color: black;
+  }
+  #algorithm4:hover{
+    background-color: black;
+  }
+  #algorithm5:hover {
+    background-color: black;
+  }
+  
 }

@@ -21,7 +21,7 @@ let app = {
         {
             albumId: "three",
             albumName: "Instant Gratification",
-            albumTrackCount: 27, 
+            albumTrackCount: 26, 
             albumDescription: "Blah Blah Blah",
             albumFrontCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_FrontCover.jpg",
             albumBackCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_BackCover.jpg",
@@ -45,7 +45,7 @@ let app = {
         {
             albumId: "six",
             albumName: "Logical Eternity",
-            albumTrackCount: 3, 
+            albumTrackCount: 2, 
             albumDescription: "Blah Blah Blah",
             albumFrontCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s6_FrontCover.jpg",
             albumBackCover: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s6_BackCover.jpg",
@@ -282,7 +282,7 @@ let app = {
             trackId: 22,
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_4.jpg",
-            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_5.mp3",
+            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_4.mp3",
         },
         {
             trackName: "Blue Dream",
@@ -290,8 +290,8 @@ let app = {
             trackPosition: 5, 
             trackId: 23,
             trackDescription: "Blah Blah Blah",
-            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_4.jpg",
-            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_4.mp3",
+            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_5.jpg",
+            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_5.mp3",
         },
         {
             trackName: "Prince Of Darkness",
@@ -299,8 +299,8 @@ let app = {
             trackPosition: 6,
             trackId: 24, 
             trackDescription: "Blah Blah Blah",
-            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_5.jpg",
-            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_5.mp3",
+            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_6.jpg",
+            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_6.mp3",
         },
         {
             trackName: "Jocker Tantrum",
@@ -308,8 +308,8 @@ let app = {
             trackPosition: 7, 
             trackId: 25,
             trackDescription: "Blah Blah Blah",
-            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_6.jpg",
-            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_6.mp3",
+            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_7.jpg",
+            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_7.mp3",
         },
         {
             trackName: "I Never Got Why Youd Do That",
@@ -317,8 +317,8 @@ let app = {
             trackPosition: 8, 
             trackId: 26,
             trackDescription: "Blah Blah Blah",
-            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_7.jpg",
-            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_7.mp3",
+            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_8.jpg",
+            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_8.mp3",
         },
         {
             trackName: "Rabbit Hole",
@@ -326,8 +326,8 @@ let app = {
             trackPosition: 9,
             trackId: 27, 
             trackDescription: "Blah Blah Blah",
-            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_8.jpg",
-            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_8.mp3",
+            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_9.jpg",
+            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_9.mp3",
         },
         {
             trackName: "Conquering Vibe",
@@ -443,8 +443,8 @@ let app = {
             trackPosition: 21, 
             trackId: 40,
             trackDescription: "Blah Blah Blah",
-            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_21.jpg",
-            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_21.mp3",
+            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s3_22.jpg",
+            trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s3_22.mp3",
         },
         {
             trackName: "Where Is Earl",
@@ -632,7 +632,7 @@ let app = {
             trackPosition: 2, 
             trackId: 61,
             trackDescription: "Blah Blah Blah",
-            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s6_1.jpg",
+            trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s6_2.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s6_2.mp3",
         },
         {
@@ -1093,6 +1093,8 @@ let app = {
         setTimeout(function() {
             document.getElementById('loading').classList.add("hidden")
           }, 1000);
+    },
+    chooseAlgorithm: ()=>{
     },
 }
 const ready = "cordova" in window ? "deviceready" : "DOMContentLoaded";
