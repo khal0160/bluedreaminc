@@ -884,8 +884,6 @@ let app = {
     ],
     audioPlayer: undefined, 
     currentTrack: "",
- 
-
     init: ()=>{
         console.log("after init")
         app.loading();
@@ -920,7 +918,8 @@ let app = {
         console.log("Navigate to", target);
         document.querySelector(".page.active").classList.remove("active");
         document.getElementById(target).classList.add("active");
-        app.buildSimulation(ev.target);
+        // app.buildSimulation(ev.target);
+        
     },
     buildSimulation: tar =>{
         console.log('After buildSimulation');
@@ -1098,10 +1097,18 @@ let app = {
             document.getElementById('loading').classList.add("hidden")
           }, 1000);
     },
-    buildListenPage:()=>{},
-    buildAlgorithmsPage:()=>{},
-    buildCatalogPage:()=>{},
-    buildShopPage:()=>{},
+    buildListenPage:()=>{
+        console.log("after buildListenPage");
+    },
+    buildAlgorithmsPage:()=>{
+        console.log("after buildAlgorithmsPage");
+    },
+    buildCatalogPage:()=>{
+        console.log("after buildCatalogPage");
+    },
+    buildShopPage:()=>{
+        console.log("after buildShopPage");
+    },
 
 }
 const ready = "cordova" in window ? "deviceready" : "DOMContentLoaded";
