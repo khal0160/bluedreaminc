@@ -18,13 +18,25 @@
 </div>
 <!-- HEADER BAR -->
   <nav id="header" class="grey darken-4" role="navigation">
-    <div class="container">
-      <a class='material-icons dropdown-trigger left' data-target='dropdown1'>
-        <i class="material-icons" id="menuButton" >menu</i>
+    <a id="logo-container" href="#" class="headTitle">DIVEINCHI</a>
+    <div class="headIcons">
+      <a href="https://music.apple.com/ca/artist/diveinchi/1493677786">
+        <img href="https://www.apple.com" id="appleHeadButton" src="icons/apple.svg" alt="appleIcon" class="icons">
       </a>
-      <a id="logo-container" href="#" class="headTitle">DIVEINCHI</a>
-      
-      <ul id='dropdown1' class='dropdown-content'>
+      <a href="https://www.instagram.com/diveinchi/">
+        <img id="instagramHeadButton" src="icons/instagram.svg" alt="instagramIcon" class="icons">
+      </a>
+      <a href="https://open.spotify.com/artist/1UcfrAUFvuoxqwAaZlDPux?si=qUhpfCMZTsy_BV1VEsm62Q">
+        <img id="spotifyHeadButton" src="icons/spotify.svg" alt="spotifyIcon" class="icons">
+      </a>
+      <a href="https://twitter.com/diveinchi">
+        <img id="twitterHeadButton" src="icons/twitter.svg" alt="twitterIcon" class="icons">
+      </a>
+      <a href="https://www.youtube.com/channel/UCzUmJa1uVZtMxWlB_zkSIoA">
+        <img id="youtubeHeadButton" src="icons/youtube.svg" alt="youtubeIcon" class="icons">
+      </a>
+    </div>
+    <!-- <ul id='dropdown1' class='dropdown-content'>
         <li><a href="#!" data-target="one" class="simButton">Simulation 1</a></li>
         <li><a href="#!" data-target="two" class="simButton">Simulation 2</a></li>
         <li><a href="#!" data-target="three" class="simButton">Simulation 3</a></li>
@@ -35,7 +47,7 @@
         <li><a href="#!" data-target="eight" class="simButton">Simulation 8</a></li>
         <li><a href="#!" data-target="nine" class="simButton">Simulation 9</a></li>
         <li><a href="#!" data-target="ten" class="simButton">Simulation 10</a></li>
-      </u>
+      </ul> -->
     </div>
   </nav>
 <!-- HEADER BAR -->
@@ -65,15 +77,30 @@
     </div> 
   </template>
   <div class="hide"> LOCKED </div>
+  <!-- PAGES -->
   <section id="intro" class="page active">
-    <h2 class="albumTitle">Choose Algorithm</h2>
-    <div class="algorithmRow">
-      <!-- <div id="algorithm1"> DIVEINCHI </div>
-      <div id="algorithm2"> PHILO </div>
-      <div id="algorithm3"> 61ITCH </div>
-      <div id="algorithm4"> LASOUF </div>
-      <div id="algorithm5"> LO2US </div> -->
+    <div class="masterMenu">
+      <div class="menuButton glow" id="listenButton">LISTEN</div>
+      <div class="menuButton glow" id="algorithmsButton">ALGORITHMS</div>
+      <div class="menuButton glow" id="catalogButton">CATALOG</div>
+      <div class="menuButton glow" id="shopButton">SHOP</div> 
     </div>
+    <div class="latestTrack">
+      <div class="instruction">Listen to TRACK NAME</div>
+      <div class="latestTrackLinks">
+        <div class="link">SPOTIFY</div>
+        <div class="link">APPLE</div>
+        <div class="link">YOUTUBE</div>
+        <div class="link">DEEZER</div>
+        <div class="link">TIDAL</div>
+        </div>
+        <div class="latestTrackArtRow">
+          <img src="img/BlueDreamInc.jpg" alt="" class="latestTrackArt">
+        </div>
+        
+      </div>
+    </div>
+    
   </section>
   <section id="one" class="page">
     <h2 class="albumTitle">Simulation 1:</h2>
@@ -117,6 +144,16 @@
       <h2>Plastic 604</h2>
     </div>
   </section>
+  <section id="listenPage" class="page">
+  </section>
+  <section id="algorithmsPage" class="page">
+  </section>
+  <section id="catalogPage" class="page">
+  </section>
+  <section id="shopPage" class="page">
+  </section>
+  <!-- PAGES -->
+
   <footer id= "footer" class="grey darken-4">
     <!-- Play Buttons -->
     <div id="playBar">

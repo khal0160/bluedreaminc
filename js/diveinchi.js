@@ -625,7 +625,7 @@ let app = {
             trackDescription: "Blah Blah Blah",
             trackArt: "https://diveinchi-art.s3.us-east-2.amazonaws.com/s6_1.jpg",
             trackAudio: "https://diveinchi-tracks.s3.us-east-2.amazonaws.com/s6_1.mp3",
-        },
+        }, 
         {
             trackName: "Ancient Philosophy",
             albumId: "six",
@@ -907,6 +907,10 @@ let app = {
             var elems = document.querySelectorAll('.dropdown-trigger');
             var instances = M.Dropdown.init(elems, []);
             document.getElementById("footPlayButton").addEventListener("click", app.playPause);
+            document.getElementById("listenPage").addEventListener("click", app.buildListenPage);
+            document.getElementById("algorithmsPage").addEventListener("click", app.buildAlgorithmsPage);
+            document.getElementById("catalogPage").addEventListener("click", app.buildCatalogPage);
+            document.getElementById("shopPage").addEventListener("click", app.buildShopPage);
     },
     nav: ev=>{
         console.log("after nav")
@@ -1094,8 +1098,11 @@ let app = {
             document.getElementById('loading').classList.add("hidden")
           }, 1000);
     },
-    chooseAlgorithm: ()=>{
-    },
+    buildListenPage:()=>{},
+    buildAlgorithmsPage:()=>{},
+    buildCatalogPage:()=>{},
+    buildShopPage:()=>{},
+
 }
 const ready = "cordova" in window ? "deviceready" : "DOMContentLoaded";
 document.addEventListener(ready, app.init);

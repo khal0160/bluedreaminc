@@ -6,6 +6,32 @@
   margin: 0;
   box-sizing: border-box;
 }
+@keyframes vibrate {
+  0.50%, 10%, 20%, 30%, 40%, 50%
+  {
+    -webkit-transform: translate3d(0.5px, 0, 0);
+    transform: translate3d(0.5px, 0, 0);
+  }
+  5%, 15%, 25%, 35%, 45% 
+  {
+    -webkit-transform: translate3d(-0.5px, 0, 0);
+    transform: translate3d(-0.5px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0.5px, 0, 0);
+    transform: translate3d(0.5px, 0, 0);
+  }
+
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
 html{
   background-color: #616161;
 }
@@ -28,16 +54,18 @@ html{
 #header{
   top: 0;
   z-index: 100;
+  width: 100%;
   display: flex;
   justify-content: row;
 }
 .headTitle{
   font-family: 'Libre Barcode 39 Extended Text', cursive;
   color: whitesmoke;
-  font-size: 30px;
+  font-size: 20px;
   display: flex;
   justify-content: center;
-  padding: 2px 2px 2px 2px;
+  padding: 2px 20px 20px 20px;
+  
 }
 #menuButton{ 
   font-size: 60px;
@@ -194,6 +222,69 @@ img{
 #footPlayButton{
   font-size: 50px;
 } 
+.icons{
+  fill: white;
+  width: 50px !important;
+  height: 40px !important;
+  padding-right: 30px !important;
+  padding-left: 5px;
+  padding-top: 22px;
+
+}
+.headIcons{
+  display: flex;
+  width: 50%;
+  align-items: center;
+  left: 0;
+}
+.masterMenu{
+  display: flex;
+  justify-content: row;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  font-size: 15px;
+
+}
+.instruction{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: 30px;
+  
+}
+.latestTrackLinks{
+  display: flex;
+  justify-content: row;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  position: relative; 
+}
+.latestTrackArt{
+  width: 300px;
+  height: 300px;
+}
+.latestTrackArtRow{
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.link{
+  text-decoration: underline;
+  animation-name: vibrate;
+  animation-timing-function: ease;
+  color: gold;
+}
+.menuButton{
+  font-size: 20px;
+}
+.glow {
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
 /**************************
     LAYOUT - MEDIUM SIZE
 **************************/
@@ -776,5 +867,4 @@ img{
   #algorithm5:hover {
     background-color: black;
   }
-  
 }
