@@ -57,6 +57,7 @@ html{
   width: 100%;
   display: flex;
   justify-content: row;
+  background-color: #2b2e36;
 }
 .headTitle{
   font-family: 'Libre Barcode 39 Extended Text', cursive;
@@ -267,8 +268,7 @@ img{
 .link{
   text-decoration: underline;
   animation-name: vibrate;
-  animation-timing-function: ease;
-  color: gold;
+  color: #fdfcfd;
 }
 .glow {
   font-size: 10px;
@@ -281,6 +281,51 @@ img{
 .menuButton{
   font-size: 17px;
   color: white;
+}
+.textShadow{
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+.characterBox{
+  width: 100%;
+  height: 500px;
+  background-color: bisque;
+  z-index: 1000;
+}
+.characterSelect{
+  width: 100%;
+  height: 150px;
+  z-index: 1000;
+  background-color: black;
+}
+.characterRow{
+  display: flex;
+  justify-content: row;
+  width: 100%;
+  height: 50%;
+}
+.algorithm{
+  width: 33.33%;
+  height: 100%;
+  background-color: grey;
+  border-radius: 3px;
+  outline: black;
+  z-index: 1001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.choiceRow{
+  display: flex;
+  justify-content: center;
+}
+.buttonChoice{
+  height: 30px;
+  background-color: white;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /**************************
     LAYOUT - MEDIUM SIZE

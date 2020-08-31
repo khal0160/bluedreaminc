@@ -17,14 +17,11 @@
   <div class="lds-hourglass"></div>  
 </div>
 <!-- HEADER BAR -->
-  <nav id="header" class="grey darken-4" role="navigation">
+  <nav id="header">
     <a id="logo-container" href="#" class="headTitle">DIVEINCHI</a>
     <div class="headIcons">
       <a href="https://music.apple.com/ca/artist/diveinchi/1493677786">
         <img href="https://www.apple.com" id="appleHeadButton" src="icons/apple.svg" alt="appleIcon" class="icons">
-      </a>
-      <a href="https://www.instagram.com/diveinchi/">
-        <img id="instagramHeadButton" src="icons/instagram.svg" alt="instagramIcon" class="icons">
       </a>
       <a href="https://open.spotify.com/artist/1UcfrAUFvuoxqwAaZlDPux?si=qUhpfCMZTsy_BV1VEsm62Q">
         <img id="spotifyHeadButton" src="icons/spotify.svg" alt="spotifyIcon" class="icons">
@@ -34,6 +31,9 @@
       </a>
       <a href="https://www.youtube.com/channel/UCzUmJa1uVZtMxWlB_zkSIoA">
         <img id="youtubeHeadButton" src="icons/youtube.svg" alt="youtubeIcon" class="icons">
+      </a>
+      <a href="https://www.instagram.com/diveinchi/">
+        <img id="instagramHeadButton" src="icons/instagram.svg" alt="instagramIcon" class="icons">
       </a>
     </div>
     <!-- <ul id='dropdown1' class='dropdown-content'>
@@ -51,10 +51,10 @@
     </div>
   </nav>
   <div class="masterMenu">
-    <div data-target="listenPage" class="menuButton" id="listenButton">LISTEN</div>
-    <div data-target="algorithmsPage" class="menuButton" id="algorithmsButton">ALGORITHMS</div>
-    <div data-target="catalogPage" class="menuButton" id="catalogButton">CATALOG</div>
-    <div data-target="shopPage" class="menuButton" id="shopButton">SHOP</div> 
+    <div data-target="listenPage" class="menuButton textShadow" id="listenButton">LISTEN</div>
+    <div data-target="algorithmsPage" class="menuButton textShadow" id="algorithmsButton">ALGORITHMS</div>
+    <div data-target="catalogPage" class="menuButton textShadow" id="catalogButton">CATALOG</div>
+    <div data-target="shopPage" class="menuButton textShadow" id="shopButton">SHOP</div> 
   </div>
 <!-- HEADER BAR -->
 <!-- TEMPLATES -->
@@ -84,7 +84,7 @@
   </template>
   <div class="hide"> LOCKED </div>
   <!-- PAGES -->
-  <section id="intro" class="page active">
+  <section id="listenPage" class="page active">
     <div class="latestTrack">
       <div class="instruction">Listen to TRACK NAME</div>
       <div class="latestTrackLinks">
@@ -144,22 +144,36 @@
       <h2>Plastic 604</h2>
     </div>
   </section>
-  <section id="listenPage" class="page">
-  </section>
   <section id="algorithmsPage" class="page">
+    <div class="characterBox"></div>
+    <div class="characterSelect">
+      <div class="characterRow">
+        <div class="algorithm">DIVEINCHI</div>
+        <div class="algorithm">LASOUF</div>
+        <div class="algorithm">61ITCH</div>
+      </div>
+      <div class="characterRow">
+        <div class="algorithm">LO2US</div>
+        <div class="algorithm">PHILO</div>
+      </div>
+    </div>
+    
   </section>
   <section id="catalogPage" class="page">
+    <div class="choiceRow">
+      <div class="buttonChoice">Audio</div>
+      <div class="buttonChoice">Video</div>
+    </div>
   </section>
   <section id="shopPage" class="page">
+    <div class="choiceRow">CLOSED</div>
   </section>
   <!-- PAGES -->
 
-  <footer id= "footer" class="grey darken-4">
-    <!-- Play Buttons -->
+  <!-- <footer id= "footer" class="grey darken-4">
     <div id="playBar">
       <i class="material-icons playButtons" id="footPlayButton">play_arrow</i>
     </div>
-    <!-- Track Details -->
     <div class="trackDetails">
       <img id="currentTrackArt" class="" src="https://diveinchi-art.s3.us-east-2.amazonaws.com/s10_12.png">
       <div id="currentTrackDetails">
@@ -172,7 +186,7 @@
         <div class="trackEndTime" id="footEndTime">00:00</div>
         </div>
     </div>
-  </footer>
+  </footer> -->
   <script src="js/materialize.js"></script>
   <script src="js/audio.min.js"></script>
   <script src="js/diveinchi.js"></script> 

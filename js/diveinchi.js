@@ -892,9 +892,6 @@ let app = {
         app.pages.forEach((pg)=>{
             pg.addEventListener('show', app.pageShown);
         })
-        document.querySelectorAll('.simButton').forEach((link)=>{
-            link.addEventListener('click', app.nav);
-        })
         app.addListeners();
         audiojs.events.ready(function() {
             var as = audiojs.createAll();
@@ -902,24 +899,21 @@ let app = {
     },
     addListeners: ()=>{
         console.log("after addListeners")
-            var elems = document.querySelectorAll('.dropdown-trigger');
-            var instances = M.Dropdown.init(elems, []);
-            document.getElementById("footPlayButton").addEventListener("click", app.playPause);
-            document.getElementById("listenPage").addEventListener("click", app.buildListenPage);
-            document.getElementById("algorithmsPage").addEventListener("click", app.buildAlgorithmsPage);
-            document.getElementById("catalogPage").addEventListener("click", app.buildCatalogPage);
-            document.getElementById("shopPage").addEventListener("click", app.buildShopPage);
+        // document.getElementById("footPlayButton").addEventListener("click", app.playPause);
+        document.getElementById("listenButton").addEventListener("click", app.menuNav);
+        document.getElementById("algorithmsButton").addEventListener("click", app.menuNav);
+        document.getElementById("catalogButton").addEventListener("click", app.menuNav);
+        document.getElementById("shopButton").addEventListener("click", app.menuNav);
     },
     nav: ev=>{
-        console.log("after nav")
+        console.log("after nav");
         ev.preventDefault();
         let btn = ev.target;
-        let target = btn.getAttribute("data-target");
-        console.log("Navigate to", target);
+        let tar = btn.getAttribute("data-target");
+        console.log("Navigate to", tar);
         document.querySelector(".page.active").classList.remove("active");
-        document.getElementById(target).classList.add("active");
-        // app.buildSimulation(ev.target);
-        
+        document.getElementById(tar).classList.add("active");
+        app.buildSimulation(btn);
     },
     buildSimulation: tar =>{
         console.log('After buildSimulation');
@@ -1097,19 +1091,44 @@ let app = {
             document.getElementById('loading').classList.add("hidden")
           }, 1000);
     },
-    buildListenPage:()=>{
-        console.log("after buildListenPage");
+
+    menuNav: ev=>{
+        console.log("after menuNav");
+        ev.preventDefault();
+        let btn = ev.target;
+        let dataTar = btn.getAttribute("data-target");
+        console.log("Navigate to", dataTar);
+        document.querySelector(".page.active").classList.remove("active");
+        document.getElementById(dataTar).classList.add("active");
+        console.log(dataTar);
+        if(dataTar=="listenPage"){
+            app.buildListenPage(dataTar);
+        }
+        if(dataTar=="algorithmsPage"){ 
+            app.buildAlgorithmsPage(dataTar);
+        }
+        if(dataTar=="catalogPage"){
+            app.buildCatalogPage(dataTar);
+        }
+        if(dataTar=="shopPage"){
+            app.buildShopPage(dataTar);
+        }
     },
-    buildAlgorithmsPage:()=>{
+    buildListenPage: ev=>{
+        console.log("after buildListenPage");
+        
+    },
+    buildAlgorithmsPage: ev=>{
         console.log("after buildAlgorithmsPage");
     },
-    buildCatalogPage:()=>{
+    buildCatalogPage: ev=>{
         console.log("after buildCatalogPage");
+        
     },
-    buildShopPage:()=>{
+    buildShopPage: ev=>{
         console.log("after buildShopPage");
-    },
-
+        
+    }
 }
 const ready = "cordova" in window ? "deviceready" : "DOMContentLoaded";
 document.addEventListener(ready, app.init);
