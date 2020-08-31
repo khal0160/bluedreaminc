@@ -60,12 +60,13 @@ html{
   background-color: #2b2e36;
 }
 .headTitle{
-  font-family: 'Libre Barcode 39 Extended Text', cursive;
+  font-family: 'Oswald', sans-serif;
   color: whitesmoke;
   font-size: 20px;
   display: flex;
   justify-content: center;
   padding: 2px 20px 20px 20px;
+  transform: rotate(90deg);
   
 }
 .menuButton{ 
@@ -239,7 +240,7 @@ img{
   display: flex;
   justify-content: row;
   justify-content: space-evenly;
-  padding-top: 20px;
+  padding-top: 7%;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -367,9 +368,10 @@ img{
     z-index: 100;
   }
   .headTitle{
-    font-family: 'Libre Barcode 39 Extended Text', cursive;
+    font-family: 'Oswald', sans-serif;
     color: whitesmoke;
     font-size: 30px;
+    transform: rotate(90deg);
   }
   .row{
     display: flex;
@@ -552,7 +554,7 @@ img{
     display: flex;
     justify-content: row;
     justify-content: space-evenly;
-    padding-top: 13%;
+    padding-top: 12%;
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -717,10 +719,11 @@ img{
     }
   }
   .headTitle{
-    font-family: 'Libre Barcode 39 Extended Text', cursive;
+    font-family: 'Oswald', sans-serif;
     color: whitesmoke;
     font-size: 300%;
     padding-top: 20px;
+    transform: rotate(90deg);
   }
   .menuButton{
     font-size: 40px;
@@ -732,7 +735,7 @@ img{
     display: flex;
     justify-content: row;
     justify-content: space-evenly;
-    padding-top: 13%;
+    padding-top: 10%;
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -898,9 +901,10 @@ img{
     }
   }
   .headTitle{
-    font-family: 'Libre Barcode 39 Extended Text', cursive;
+    font-family: 'Oswald', sans-serif;
     color: whitesmoke;
     font-size: 300%;
+    transform: rotate(90deg);
   }
   .menuButton{
     font-size: 50px ;
@@ -985,7 +989,7 @@ img{
     display: flex;
     justify-content: row;
     justify-content: space-evenly;
-    padding-top: 130px;
+    padding-top: 7%;
     padding-left: 5px;
     padding-right: 5px;
   }
