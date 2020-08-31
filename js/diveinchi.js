@@ -1091,7 +1091,6 @@ let app = {
             document.getElementById('loading').classList.add("hidden")
           }, 1000);
     },
-
     menuNav: ev=>{
         console.log("after menuNav");
         ev.preventDefault();
@@ -1115,19 +1114,16 @@ let app = {
         }
     },
     buildListenPage: ev=>{
-        console.log("after buildListenPage");
-        
+        console.log("after buildListenPage");  
     },
     buildAlgorithmsPage: ev=>{
         console.log("after buildAlgorithmsPage");
     },
     buildCatalogPage: ev=>{
-        console.log("after buildCatalogPage");
-        
+        console.log("after buildCatalogPage");  
     },
     buildShopPage: ev=>{
         console.log("after buildShopPage");
-        
     }
 }
 const ready = "cordova" in window ? "deviceready" : "DOMContentLoaded";
