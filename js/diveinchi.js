@@ -884,6 +884,7 @@ let app = {
     ],
     audioPlayer: undefined, 
     currentTrack: "",
+    latestUpload: "",
     init: ()=>{
         console.log("after init")
         app.loading();
@@ -914,6 +915,28 @@ let app = {
         document.querySelector(".page.active").classList.remove("active");
         document.getElementById(tar).classList.add("active");
         app.buildSimulation(btn);
+    },
+    menuNav: ev=>{
+        console.log("after menuNav");
+        ev.preventDefault();
+        let btn = ev.target;
+        let dataTar = btn.getAttribute("data-target");
+        console.log("Navigate to", dataTar);
+        document.querySelector(".page.active").classList.remove("active");
+        document.getElementById(dataTar).classList.add("active");
+        console.log(dataTar);
+        if(dataTar=="listenPage"){
+            app.buildListenPage(dataTar);
+        }
+        if(dataTar=="algorithmsPage"){ 
+            app.buildAlgorithmsPage(dataTar);
+        }
+        if(dataTar=="catalogPage"){
+            app.buildCatalogPage(dataTar);
+        }
+        if(dataTar=="shopPage"){
+            app.buildShopPage(dataTar);
+        }
     },
     buildSimulation: tar =>{
         console.log('After buildSimulation');
@@ -1085,34 +1108,6 @@ let app = {
  
         }
     },
-    loading: ()=>{
-        document.getElementById('loading').classList.remove("hidden")
-        setTimeout(function() {
-            document.getElementById('loading').classList.add("hidden")
-          }, 1000);
-    },
-    menuNav: ev=>{
-        console.log("after menuNav");
-        ev.preventDefault();
-        let btn = ev.target;
-        let dataTar = btn.getAttribute("data-target");
-        console.log("Navigate to", dataTar);
-        document.querySelector(".page.active").classList.remove("active");
-        document.getElementById(dataTar).classList.add("active");
-        console.log(dataTar);
-        if(dataTar=="listenPage"){
-            app.buildListenPage(dataTar);
-        }
-        if(dataTar=="algorithmsPage"){ 
-            app.buildAlgorithmsPage(dataTar);
-        }
-        if(dataTar=="catalogPage"){
-            app.buildCatalogPage(dataTar);
-        }
-        if(dataTar=="shopPage"){
-            app.buildShopPage(dataTar);
-        }
-    },
     buildListenPage: ev=>{
         console.log("after buildListenPage");  
     },
@@ -1124,7 +1119,13 @@ let app = {
     },
     buildShopPage: ev=>{
         console.log("after buildShopPage");
-    }
+    },
+    loading: ()=>{
+        document.getElementById('loading').classList.remove("hidden")
+        setTimeout(function() {
+            document.getElementById('loading').classList.add("hidden")
+          }, 1000);
+    },
 }
 const ready = "cordova" in window ? "deviceready" : "DOMContentLoaded";
 document.addEventListener(ready, app.init);

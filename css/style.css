@@ -55,6 +55,7 @@ html{
   top: 0;
   z-index: 100;
   width: 100%;
+  height: 50px;
   display: flex;
   justify-content: row;
   background-color: #2b2e36;
@@ -63,14 +64,15 @@ html{
   font-family: 'Oswald', sans-serif;
   color: whitesmoke;
   font-size: 20px;
+  padding-bottom: 30px;
   display: flex;
-  justify-content: center;
-  padding: 2px 20px 20px 20px;
+  align-items: center;
   transform: rotate(90deg);
   
 }
 .menuButton{ 
   font-size: 30px;
+  display: flex;
 }
 .row{
   display: flex;
@@ -112,7 +114,6 @@ html{
 }
 .trackVisual{
   height: 20px;
-  background-color: whitesmoke;
 }
 .audioPlayer{
   display: flex;
@@ -227,7 +228,7 @@ img{
   height: 40px ;
   padding-right: 30px ;
   padding-left: 5px;
-  padding-top: 22px;
+  padding-top: 10px;
 
 }
 .headIcons{
@@ -240,15 +241,18 @@ img{
   display: flex;
   justify-content: row;
   justify-content: space-evenly;
-  padding-top: 7%;
+  align-items: center;
+  padding-top: 9px;
+  padding-bottom: 5px;
   padding-left: 5px;
   padding-right: 5px;
+  background-color: #969CA1;
 }
 .instruction{
   display: flex;
   justify-content: center;
   padding-top: 20px;
-  font-size: 30px;
+  font-size: 20px;
 }
 .latestTrackLinks{
   display: flex;
@@ -299,7 +303,6 @@ img{
   width: 100%;
   height: 150px;
   z-index: 1000;
-  background-color: black;
 }
 .characterRow{
   display: flex;
@@ -322,7 +325,6 @@ img{
 .choiceRow{
   display: flex;
   justify-content: center;
-  padding-top: 20px;
 }
 .buttonChoice{
   height: 30px;
@@ -366,11 +368,17 @@ img{
     position: fixed;
     top: 0;
     z-index: 100;
+    height: 5%;
+    display: flex;
+    align-items: center;
   }
   .headTitle{
     font-family: 'Oswald', sans-serif;
     color: whitesmoke;
-    font-size: 30px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
     transform: rotate(90deg);
   }
   .row{
@@ -543,10 +551,12 @@ img{
     font-size: 50px;
   }
   .menuButton{
-    font-size: 30px;
+    font-size: 20px;
   }
   .headIcons{
     position: absolute;
+    display: flex;
+    align-items: center;
     right: 0;
 
   }
@@ -554,7 +564,7 @@ img{
     display: flex;
     justify-content: row;
     justify-content: space-evenly;
-    padding-top: 12%;
+    padding-top: 50px;
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -567,7 +577,7 @@ img{
   .icons{
     fill: white;
     width: 80px ;
-    height: 40px ;
+    height: 35px ;
     padding-left: 5px;
     padding-top: 20px;
   
@@ -590,7 +600,7 @@ img{
     position: fixed;
     top: 0;
     z-index: 100;
-    height: 10%;
+    height: 5%;
     display: flex;
     align-items: center;
   } 
@@ -721,12 +731,14 @@ img{
   .headTitle{
     font-family: 'Oswald', sans-serif;
     color: whitesmoke;
-    font-size: 300%;
-    padding-top: 20px;
+    font-size: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
     transform: rotate(90deg);
   }
   .menuButton{
-    font-size: 40px;
+    font-size: 20px;
   }
   #footPlayButton{
     font-size: 50px;
@@ -735,7 +747,7 @@ img{
     display: flex;
     justify-content: row;
     justify-content: space-evenly;
-    padding-top: 10%;
+    padding-top: 50px;
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -748,7 +760,7 @@ img{
   .icons{
     fill: white;
     width: 110px ;
-    height: 50px ;
+    height: 40px ;
     padding-right: 30px ;
     padding-left: 5px;
     padding-top: 22px;
@@ -762,6 +774,22 @@ img{
     align-items: center;
     border-style: solid;
   }
+  .characterSelect{
+    display: flex;
+    justify-content: row;
+  }
+  .characterRow{
+    width: 50%;
+  }
+  .characterBox{
+    width: 0;
+    height: 0;
+  }
+  .algorithm{
+    height: 500px;
+    display: flex;
+    align-items: flex-start;
+  }
 }
 /**************************
     LAYOUT - EXTRA LARGE SIZE
@@ -771,7 +799,7 @@ img{
     position: fixed;
     top: 0;
     z-index: 100;
-    height: 10%;
+    height: 5%;
     display: flex;
     align-items: center;
   } 
@@ -903,11 +931,14 @@ img{
   .headTitle{
     font-family: 'Oswald', sans-serif;
     color: whitesmoke;
-    font-size: 300%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
     transform: rotate(90deg);
   }
   .menuButton{
-    font-size: 50px ;
+    font-size: 20px ; 
   }
   #footPlayButton{
     font-size: 50px;
@@ -989,7 +1020,8 @@ img{
     display: flex;
     justify-content: row;
     justify-content: space-evenly;
-    padding-top: 7%;
+    padding-top: 45px;
+    padding-bottom: 3px;
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -1002,7 +1034,7 @@ img{
   .icons{
   fill: white;
   width: 150px ;
-  height: 60px ;
+  height: 40px ;
   padding-right: 30px ;
   padding-left: 5px;
   padding-top: 22px;
@@ -1015,5 +1047,21 @@ img{
     justify-content: center;
     align-items: center;
     border-style: solid;
+  }
+  .characterSelect{
+    display: flex;
+    justify-content: row;
+  }
+  .characterRow{
+    width: 50%;
+  }
+  .characterBox{
+    width: 0;
+    height: 0;
+  }
+  .algorithm{
+    height: 600px;
+    display: flex;
+    align-items: flex-start;
   }
 }
