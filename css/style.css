@@ -72,7 +72,9 @@ html{
 }
 .menuButton{ 
   font-size: 30px;
+  width: 25%;
   display: flex;
+  justify-content: center;
 }
 .row{
   display: flex;
@@ -343,6 +345,16 @@ img{
   width: 33.33%;
   height: 33.33%vw;
 }
+.clicked{
+  background-color: black;
+  z-index: 10003;
+  opacity: 10%;
+}
+.clickedChoice{
+  background-color: black;
+  z-index: 10003;
+  opacity: 10%;
+}
 /**************************
     LAYOUT - MEDIUM SIZE
 **************************/
@@ -608,6 +620,16 @@ img{
     width: 33.33%;
     height: 33.33%vw;
   }
+  .clicked{
+    background-color: black;
+    z-index: 10003;
+    opacity: 10%;
+  }
+  .clickedChoice{
+    background-color: black;
+    z-index: 10003;
+    opacity: 10%;
+  }
 }
 /**************************
     LAYOUT - LARGE SIZE
@@ -816,6 +838,16 @@ img{
   .gridBox{
     width: 33.33%;
     height: 33.33%vw;
+  }
+  .clicked{
+    background-color: black;
+    z-index: 10003;
+    opacity: 10%;
+  }
+  .clickedChoice{
+    background-color: black;
+    z-index: 10003;
+    opacity: 10%;
   }
 }
 /**************************
@@ -1102,5 +1134,15 @@ img{
   .gridBox{
     width: 33.33%;
     height: 33.33%vw;
+  }
+  .clicked{
+    background-color: black;
+    z-index: 10003;
+    opacity: 10%;
+  }
+  .clickedChoice{
+
+    z-index: 10003;
+    opacity: 10%;
   }
 }

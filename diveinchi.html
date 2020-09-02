@@ -40,10 +40,10 @@
     </div>
   </nav>
   <div class="masterMenu">
-    <div data-target="listenPage" class="menuButton textShadow" id="listenButton">LISTEN</div>
-    <div data-target="algorithmsPage" class="menuButton textShadow" id="algorithmsButton">ALGORITHMS</div>
-    <div data-target="catalogPage" class="menuButton textShadow" id="catalogButton">CATALOG</div>
-    <div data-target="shopPage" class="menuButton textShadow" id="shopButton">SHOP</div> 
+    <div data-target="listenPage" class="menuButton clicked" id="listenButton">LISTEN</div>
+    <div data-target="algorithmsPage" class="menuButton" id="algorithmsButton">ALGORITHMS</div>
+    <div data-target="catalogPage" class="menuButton" id="catalogButton">CATALOG</div>
+    <div data-target="shopPage" class="menuButton" id="shopButton">SHOP</div> 
   </div>
 <!-- HEADER BAR -->
 <!-- TEMPLATES -->
@@ -151,8 +151,8 @@
   </section>
   <section id="catalogPage" class="page">
     <div class="choiceRow">
-      <div class="buttonChoice">Audio</div>
-      <div class="buttonChoice">Video</div>
+      <div class="buttonChoice clickedChoice" data-target="videoChoice" id="audioChoice">Audio</div>
+      <div class="buttonChoice" data-target="audioChoice" id="videoChoice">Video</div>
     </div>
     <div class="grid"></div>
   </section>

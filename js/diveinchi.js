@@ -905,6 +905,9 @@ let app = {
         document.getElementById("algorithmsButton").addEventListener("click", app.menuNav);
         document.getElementById("catalogButton").addEventListener("click", app.menuNav);
         document.getElementById("shopButton").addEventListener("click", app.menuNav);
+        document.getElementById("audioChoice").addEventListener("click", app.clickedChoice("audioChoice"));
+        document.getElementById("videoChoice").addEventListener("click", app.clickedChoice("videoChoice"));
+
     },
     nav: ev=>{
         console.log("after nav");
@@ -921,21 +924,26 @@ let app = {
         ev.preventDefault();
         let btn = ev.target;
         let dataTar = btn.getAttribute("data-target");
+        let dataId = btn.getAttribute("id")
         console.log("Navigate to", dataTar);
         document.querySelector(".page.active").classList.remove("active");
         document.getElementById(dataTar).classList.add("active");
         console.log(dataTar);
         if(dataTar=="listenPage"){
             app.buildListenPage(dataTar);
+            app.clicked(dataId);
         }
         if(dataTar=="algorithmsPage"){ 
             app.buildAlgorithmsPage(dataTar);
+            app.clicked(dataId);
         }
         if(dataTar=="catalogPage"){
             app.buildCatalogPage(dataTar);
+            app.clicked(dataId);
         }
         if(dataTar=="shopPage"){
             app.buildShopPage(dataTar);
+            app.clicked(dataId);
         }
     },
     buildSimulation: tar =>{
@@ -1111,12 +1119,14 @@ let app = {
     buildListenPage: ev=>{
         console.log("after buildListenPage");  
     },
-    buildAlgorithmsPage: ev=>{
+    buildAlgorithmsPage: ()=>{
         console.log("after buildAlgorithmsPage");
+        
     },
     buildCatalogPage: ev=>{
-        document.querySelector(".grid").innerHTML="";
         console.log("after buildCatalogPage");
+
+        document.querySelector(".grid").innerHTML="";
         for (let i = app.trackList.length-1; i >=0; i--) {
             let img = document.createElement("img");
             img.src = app.trackList[i].trackArt;
@@ -1133,6 +1143,18 @@ let app = {
             document.getElementById('loading').classList.add("hidden")
           }, 1000);
     },
+    clicked: (id)=>{
+        console.log("after clicked")
+        document.querySelector(".clicked").classList.remove("clicked");
+        document.getElementById(id).classList.add("clicked");
+        
+    },
+    clickedChoice: (id)=>{
+        console.log("after clickedChoice")
+        document.querySelector(".clickedChoice").classList.remove("clickedChoice");
+        document.getElementById(id).classList.add("clickedChoice");
+    }
+
 }
 const ready = "cordova" in window ? "deviceready" : "DOMContentLoaded";
 document.addEventListener(ready, app.init);
