@@ -297,7 +297,6 @@ img{
   background-color: bisque;
   z-index: 1000;
   border-style: solid;
-  
 }
 .characterSelect{
   width: 100%;
@@ -334,6 +333,15 @@ img{
   justify-content: center;
   align-items: center;
   border-style: solid;
+}
+.grid{
+  padding-top: 10px;
+  width: 100%;
+  height: 50px;
+} 
+.gridBox{
+  width: 33.33%;
+  height: 33.33%vw;
 }
 /**************************
     LAYOUT - MEDIUM SIZE
@@ -591,6 +599,15 @@ img{
     align-items: center;
     border-style: solid;
   }
+  .grid{
+    padding-top: 10px;
+    width: 100%;
+    height: 50px;
+  } 
+  .gridBox{
+    width: 33.33%;
+    height: 33.33%vw;
+  }
 }
 /**************************
     LAYOUT - LARGE SIZE
@@ -784,11 +801,21 @@ img{
   .characterBox{
     width: 0;
     height: 0;
+    opacity: 0%;
   }
   .algorithm{
     height: 500px;
     display: flex;
     align-items: flex-start;
+  }
+  .grid{
+    padding-top: 10px;
+    width: 100%;
+    height: 50px;
+  } 
+  .gridBox{
+    width: 33.33%;
+    height: 33.33%vw;
   }
 }
 /**************************
@@ -1020,10 +1047,11 @@ img{
     display: flex;
     justify-content: row;
     justify-content: space-evenly;
-    padding-top: 45px;
+    padding-top: 50px;
     padding-bottom: 3px;
     padding-left: 5px;
     padding-right: 5px;
+    font-family: 'Lexend Peta', sans-serif;
   }
   .instruction{
   display: flex;
@@ -1038,6 +1066,7 @@ img{
   padding-right: 30px ;
   padding-left: 5px;
   padding-top: 22px;
+
   }
   .buttonChoice{
     height: 30px;
@@ -1058,10 +1087,20 @@ img{
   .characterBox{
     width: 0;
     height: 0;
+    opacity: 0%;
   }
   .algorithm{
     height: 600px;
     display: flex;
     align-items: flex-start;
+  }
+  .grid{
+    padding-top: 10px;
+    width: 100%;
+    height: 50px;
+  } 
+  .gridBox{
+    width: 33.33%;
+    height: 33.33%vw;
   }
 }

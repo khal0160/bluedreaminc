@@ -1115,7 +1115,14 @@ let app = {
         console.log("after buildAlgorithmsPage");
     },
     buildCatalogPage: ev=>{
-        console.log("after buildCatalogPage");  
+        document.querySelector(".grid").innerHTML="";
+        console.log("after buildCatalogPage");
+        for (let i = app.trackList.length-1; i >=0; i--) {
+            let img = document.createElement("img");
+            img.src = app.trackList[i].trackArt;
+            img.classList.add("gridBox");
+            document.querySelector(".grid").appendChild(img);
+        }  
     },
     buildShopPage: ev=>{
         console.log("after buildShopPage");
