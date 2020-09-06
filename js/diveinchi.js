@@ -909,7 +909,12 @@ let app = {
         document.getElementById("shopButton").addEventListener("click", app.menuNav);
         document.getElementById("audioChoice").addEventListener("click", app.clickedChoice);
         document.getElementById("videoChoice").addEventListener("click", app.clickedChoice);
-
+        document.getElementById("philoButton").addEventListener("click", app.clickedChoice2);
+        document.getElementById("lotusButton").addEventListener("click", app.clickedChoice2);
+        document.getElementById("blankButton").addEventListener("click", app.clickedChoice2);
+        document.getElementById("glitchButton").addEventListener("click", app.clickedChoice2);
+        document.getElementById("diveinchiButton").addEventListener("click", app.clickedChoice2);
+        document.getElementById("lasoufButton").addEventListener("click", app.clickedChoice2);
     },
     nav: ev=>{
         console.log("after nav");
@@ -1171,6 +1176,51 @@ let app = {
         }
         document.querySelector(".clickedChoice").classList.remove("clickedChoice");
         document.getElementById(dataTar).classList.add("clickedChoice");
+    },
+    clickedChoice2: ev =>{
+        ev.preventDefault();
+        console.log("after clickedChoice2")
+        console.log(ev.target);
+        let btn = ev.target;
+        let dataTar = btn.getAttribute("id");
+        if(dataTar == "philoChoice"){
+            app.buildPhiloPage();
+        }
+        else if(dataTar == "lotusChoice"){
+            app.buildLotusPage();
+        }
+        else if(dataTar == "blankChoice"){
+            app.buildBlankPage();
+        }
+        else if(dataTar == "glitchChoice"){
+            app.buildGlitchPage();
+        }
+        else if(dataTar == "diveinchiChoice"){
+            app.buildDiveinchiPage();
+        }
+        else if(dataTar == "lasoufChoice"){
+            app.buildLasoufPage();
+        }
+        document.querySelector(".clickedChoice2").classList.remove("clickedChoice2");
+        document.getElementById(dataTar).classList.add("clickedChoice2");
+    },
+    buildPhiloPage: ev=>{
+        console.log("after buildPhiloPage");
+    },
+    buildLotusPage: ev=>{
+        console.log("after buildLotusPage");
+    },
+    buildBlankPage: ev=>{
+        console.log("after buildBlankPage");
+    },
+    buildGlitchPage: ev=>{
+        console.log("after buildGlitchPage");
+    },
+    buildDiveinchiPage: ev=>{
+        console.log("after buildDiveinchiPage");
+    },
+    buildLasoufPage: ev=>{
+        console.log("after buildLasoufPage");
     },
 
 }

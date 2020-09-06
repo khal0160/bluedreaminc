@@ -627,6 +627,11 @@ a{
     z-index: 10003;
     opacity: 10%;
   }
+  .clickedChoice2{
+    z-index: 10033;
+    opacity: 10%;
+    color: black;
+  }
 }
 /**************************
     LAYOUT - LARGE SIZE
@@ -1165,5 +1170,12 @@ a{
   #shopPage{
     height: 85vh;
     background-color: white;
+  }
+  .clickedChoice2{
+    z-index: 10033;
+    opacity: 10%;
+    background-color: black;
+    height: 70px;
+    width: 200px;
   }
 }
