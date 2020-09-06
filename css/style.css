@@ -632,6 +632,18 @@ a{
     opacity: 10%;
     color: black;
   }
+  #enterButton{
+    height: 20px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+  .enterRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 /**************************
     LAYOUT - LARGE SIZE
@@ -1174,8 +1186,7 @@ a{
   .clickedChoice2{
     z-index: 10033;
     opacity: 10%;
-    background-color: black;
-    height: 70px;
+    height: 600px;
     width: 200px;
   }
 }

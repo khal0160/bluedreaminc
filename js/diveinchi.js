@@ -915,6 +915,7 @@ let app = {
         document.getElementById("glitchButton").addEventListener("click", app.clickedChoice2);
         document.getElementById("diveinchiButton").addEventListener("click", app.clickedChoice2);
         document.getElementById("lasoufButton").addEventListener("click", app.clickedChoice2);
+        document.getElementById("enterButton").addEventListener("click", app.enterAlgorithm);
     },
     nav: ev=>{
         console.log("after nav");
@@ -1222,7 +1223,10 @@ let app = {
     buildLasoufPage: ev=>{
         console.log("after buildLasoufPage");
     },
-
+    enterAlgorithm: ev=>{
+        console.log("after enterAlgorithm");
+        document.querySelector("clickedChoice2")
+    }
 }
 const ready = "cordova" in window ? "deviceready" : "DOMContentLoaded";
 document.addEventListener(ready, app.init);
