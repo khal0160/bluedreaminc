@@ -901,12 +901,14 @@ let app = {
     addListeners: ()=>{
         console.log("after addListeners")
         // document.getElementById("footPlayButton").addEventListener("click", app.playPause);
+        let choice1 = "audioChoice";
+        let choice2 = "videoChoice"
         document.getElementById("listenButton").addEventListener("click", app.menuNav);
         document.getElementById("algorithmsButton").addEventListener("click", app.menuNav);
         document.getElementById("catalogButton").addEventListener("click", app.menuNav);
         document.getElementById("shopButton").addEventListener("click", app.menuNav);
-        document.getElementById("audioChoice").addEventListener("click", app.clickedChoice("audioChoice"));
-        document.getElementById("videoChoice").addEventListener("click", app.clickedChoice("videoChoice"));
+        document.getElementById("audioChoice").addEventListener("click", app.clickedChoice);
+        document.getElementById("videoChoice").addEventListener("click", app.clickedChoice);
 
     },
     nav: ev=>{
@@ -938,7 +940,7 @@ let app = {
             app.clicked(dataId);
         }
         if(dataTar=="catalogPage"){
-            app.buildCatalogPage(dataTar);
+            app.buildAudioCatalogPage(dataTar);
             app.clicked(dataId);
         }
         if(dataTar=="shopPage"){
@@ -1123,9 +1125,8 @@ let app = {
         console.log("after buildAlgorithmsPage");
         
     },
-    buildCatalogPage: ev=>{
+    buildAudioCatalogPage: ev=>{
         console.log("after buildCatalogPage");
-
         document.querySelector(".grid").innerHTML="";
         for (let i = app.trackList.length-1; i >=0; i--) {
             let img = document.createElement("img");
@@ -1133,6 +1134,13 @@ let app = {
             img.classList.add("gridBox");
             document.querySelector(".grid").appendChild(img);
         }  
+    },
+    buildVideoCatalogPage: ev=>{
+        let videoInstruction =document.createElement("div");
+        videoInstruction.classList.add("center");
+        videoInstruction.innerHTML="No Videos, yet!";
+        document.querySelector(".grid").innerHTML=""
+        document.querySelector(".grid").appendChild(videoInstruction);
     },
     buildShopPage: ev=>{
         console.log("after buildShopPage");
@@ -1149,11 +1157,21 @@ let app = {
         document.getElementById(id).classList.add("clicked");
         
     },
-    clickedChoice: (id)=>{
+    clickedChoice: ev =>{
+        ev.preventDefault();
         console.log("after clickedChoice")
+        console.log(ev.target);
+        let btn = ev.target;
+        let dataTar = btn.getAttribute("data-target");
+        if(dataTar == "videoChoice"){
+            app.buildVideoCatalogPage();
+        }
+        else if(dataTar == "audioChoice"){
+            app.buildAudioCatalogPage();
+        }
         document.querySelector(".clickedChoice").classList.remove("clickedChoice");
-        document.getElementById(id).classList.add("clickedChoice");
-    }
+        document.getElementById(dataTar).classList.add("clickedChoice");
+    },
 
 }
 const ready = "cordova" in window ? "deviceready" : "DOMContentLoaded";

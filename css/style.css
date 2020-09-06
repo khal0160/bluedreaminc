@@ -70,12 +70,6 @@ html{
   transform: rotate(90deg);
   
 }
-.menuButton{ 
-  font-size: 30px;
-  width: 25%;
-  display: flex;
-  justify-content: center;
-}
 .row{
   display: flex;
   flex-direction: column;
@@ -249,6 +243,7 @@ img{
   padding-left: 5px;
   padding-right: 5px;
   background-color: #969CA1;
+  font-family: 'Lexend Peta', sans-serif;
 }
 .instruction{
   display: flex;
@@ -286,7 +281,7 @@ img{
   animation: glow 1s ease-in-out infinite alternate;
 }
 .menuButton{
-  font-size: 17px;
+  font-size: 13px;
   color: white;
 }
 .textShadow{
@@ -314,7 +309,7 @@ img{
 .algorithm{
   width: 33.33%;
   height: 100%;
-  background-color: grey;
+  background-color: bisque;
   border-radius: 3px;
   outline: black;
   z-index: 1001;
@@ -351,9 +346,11 @@ img{
   opacity: 10%;
 }
 .clickedChoice{
-  background-color: black;
   z-index: 10003;
-  opacity: 10%;
+  opacity: 7%;
+}
+a{
+  height: 50px;
 }
 /**************************
     LAYOUT - MEDIUM SIZE
@@ -578,7 +575,7 @@ img{
     display: flex;
     align-items: center;
     right: 0;
-
+    padding-bottom: 7px;
   }
   .masterMenu{
     display: flex;
@@ -587,6 +584,7 @@ img{
     padding-top: 50px;
     padding-left: 5px;
     padding-right: 5px;
+    font-family: 'Lexend Peta', sans-serif;
   }
   .instruction{
     display: flex;
@@ -626,7 +624,6 @@ img{
     opacity: 10%;
   }
   .clickedChoice{
-    background-color: black;
     z-index: 10003;
     opacity: 10%;
   }
@@ -789,6 +786,7 @@ img{
     padding-top: 50px;
     padding-left: 5px;
     padding-right: 5px;
+    font-family: 'Lexend Peta', sans-serif;
   }
   .instruction{
     display: flex;
@@ -802,7 +800,7 @@ img{
     height: 40px ;
     padding-right: 30px ;
     padding-left: 5px;
-    padding-top: 22px;
+    padding-bottom: 5px;
   }
   .buttonChoice{
     height: 30px;
@@ -821,14 +819,23 @@ img{
     width: 50%;
   }
   .characterBox{
-    width: 0;
-    height: 0;
-    opacity: 0%;
+    width: 100%;
+    height: 500px;
+    background-color: bisque;
+    z-index: 1000;
+    border-style: solid;
   }
   .algorithm{
-    height: 500px;
+    width: 33.33%;
+    height: 100%;
+    background-color: bisque;
+    border-radius: 3px;
+    outline: black;
+    z-index: 1001;
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
   }
   .grid{
     padding-top: 10px;
@@ -845,7 +852,6 @@ img{
     opacity: 10%;
   }
   .clickedChoice{
-    background-color: black;
     z-index: 10003;
     opacity: 10%;
   }
@@ -858,7 +864,7 @@ img{
     position: fixed;
     top: 0;
     z-index: 100;
-    height: 5%;
+    height: 50px;
     display: flex;
     align-items: center;
   } 
@@ -1079,7 +1085,7 @@ img{
     display: flex;
     justify-content: row;
     justify-content: space-evenly;
-    padding-top: 50px;
+    padding-top: 60px;
     padding-bottom: 3px;
     padding-left: 5px;
     padding-right: 5px;
@@ -1097,7 +1103,8 @@ img{
   height: 40px ;
   padding-right: 30px ;
   padding-left: 5px;
-  padding-top: 22px;
+  display: flex;
+  align-items: center;
 
   }
   .buttonChoice{
@@ -1125,7 +1132,7 @@ img{
     height: 600px;
     display: flex;
     align-items: flex-start;
-  }
+    background-color: bisque;  }
   .grid{
     padding-top: 10px;
     width: 100%;
@@ -1141,8 +1148,22 @@ img{
     opacity: 10%;
   }
   .clickedChoice{
-
     z-index: 10003;
     opacity: 10%;
+  }
+  .headIcons{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    padding-bottom: 15px;
+    right: 0;
+  }
+  a{
+    display: flex;
+    align-items: center;
+  }
+  #shopPage{
+    height: 85vh;
+    background-color: white;
   }
 }
