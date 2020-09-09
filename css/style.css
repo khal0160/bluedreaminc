@@ -259,8 +259,8 @@ img{
   position: relative; 
 }
 .latestTrackArt{
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
 }
 .latestTrackArtRow{
   display: flex;
@@ -352,6 +352,25 @@ img{
 a{
   height: 50px;
 }
+.enterRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+}
+#enterButton{
+  height: 30px;
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.clickedChoice2{
+  z-index: 10033;
+  opacity: 10%;
+  color: black;
+}
 /**************************
     LAYOUT - MEDIUM SIZE
 **************************/
@@ -373,7 +392,7 @@ a{
     min-height: 100%; /* allow for content off the bottom of the page */
     padding: 1rem 2rem;
     padding-bottom: 10px;
-    padding-top: 40px;
+    padding-top: 10px;
     opacity: 0; 
   }
   .active{
@@ -633,8 +652,8 @@ a{
     color: black;
   }
   #enterButton{
-    height: 20px;
-    width: 100px;
+    height: 30px;
+    width: 33.33%;
     display: flex;
     justify-content: center;
     background-color: white;
@@ -643,6 +662,7 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-top: 10px;
   }
 }
 /**************************
@@ -831,6 +851,7 @@ a{
   .characterSelect{
     display: flex;
     justify-content: row;
+    height: 70px;
   }
   .characterRow{
     width: 50%;
@@ -844,7 +865,7 @@ a{
   }
   .algorithm{
     width: 33.33%;
-    height: 100%;
+    height: 70px;
     background-color: bisque;
     border-radius: 3px;
     outline: black;
@@ -871,6 +892,17 @@ a{
   .clickedChoice{
     z-index: 10003;
     opacity: 10%;
+  }
+  .enterRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #enterButton{
+    height: 30px;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
   }
 }
 /**************************
@@ -1181,7 +1213,6 @@ a{
   }
   #shopPage{
     height: 85vh;
-    background-color: white;
   }
   .clickedChoice2{
     z-index: 10033;
@@ -1189,4 +1220,17 @@ a{
     height: 600px;
     width: 200px;
   }
+  .enterRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 550px;
+  }
+  #enterButton{
+    height: 30px;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+  }
+  
 }
