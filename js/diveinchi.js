@@ -916,6 +916,7 @@ let app = {
         document.getElementById("diveinchiButton").addEventListener("click", app.clickedChoice2);
         document.getElementById("lasoufButton").addEventListener("click", app.clickedChoice2);
         document.getElementById("enterButton").addEventListener("click", app.enterAlgorithm);
+        document.getElementById("headTitle").addEventListener("click", app.menuNav);
     },
     nav: ev=>{
         console.log("after nav");
@@ -939,7 +940,12 @@ let app = {
         console.log(dataTar);
         if(dataTar=="listenPage"){
             app.buildListenPage(dataTar);
-            app.clicked(dataId);
+            if(dataId != "listenButton"){
+                app.clicked("listenButton");
+            }
+            else{
+                app.clicked(dataId)
+            }
         }
         if(dataTar=="algorithmsPage"){ 
             app.buildAlgorithmsPage(dataTar);
@@ -1133,13 +1139,19 @@ let app = {
     },
     buildAudioCatalogPage: ev=>{
         console.log("after buildCatalogPage");
-        document.querySelector(".grid").innerHTML="";
-        for (let i = app.trackList.length-1; i >=0; i--) {
-            let img = document.createElement("img");
-            img.src = app.trackList[i].trackArt;
-            img.classList.add("gridBox");
-            document.querySelector(".grid").appendChild(img);
-        }  
+        let audioInstruction =document.createElement("div");
+        audioInstruction.classList.add("center");
+        audioInstruction.innerHTML="No Audio, yet!";
+        document.querySelector(".grid").innerHTML=""
+        document.querySelector(".grid").appendChild(audioInstruction);
+        // document.querySelector(".grid").innerHTML="";
+        // for (let i = app.trackList.length-1; i >=0; i--) {
+        //     let img = document.createElement("img");
+        //     img.src = app.trackList[i].trackArt;
+        //     img.classList.add("gridBox");
+        //     document.querySelector(".grid").appendChild(img);
+        // }  
+        
     },
     buildVideoCatalogPage: ev=>{
         let videoInstruction =document.createElement("div");

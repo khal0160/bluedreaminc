@@ -6,7 +6,3 @@ Things to do
 - #shopPage  | create rows of products. main product is wav files
 
 - .characterBox  |  design and upload the locked character for each algorithm 
-
--  #audioChoice  |  remove all the pictures and leave a note " no audio, yet. "
-
-- .headTitle  |  click takes user to #listenPage 
