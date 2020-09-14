@@ -20,7 +20,7 @@
 </div>
 <!-- HEADER BAR -->
   <nav id="header">
-    <a id="headTitle" data-target="listenPage" href="#" class="headTitle">BDI</a>
+    <a id="headTitle" data-target="listenPage" href="#" class="headTitle">DIVEINCHI</a>
     <div class="headIcons">
       <a href="https://music.apple.com/ca/artist/diveinchi/1493677786">
         <img href="https://www.apple.com" id="appleHeadButton" src="icons/apple.svg" alt="appleIcon" class="icons">
@@ -40,7 +40,7 @@
     </div>
   </nav>
   <div class="masterMenu">
-    <div data-target="listenPage" class="menuButton clicked" id="listenButton">LISTEN</div>
+    <div v:on:click="menuNav" data-target="listenPage" class="menuButton clicked" id="listenButton">LISTEN</div>
     <div data-target="algorithmsPage" class="menuButton" id="algorithmsButton">ALGORITHMS</div>
     <div data-target="catalogPage" class="menuButton" id="catalogButton">CATALOG</div>
     <div data-target="shopPage" class="menuButton" id="shopButton">SHOP</div> 
@@ -162,6 +162,7 @@
   </section>
   <section id="shopPage" class="page">
     <div class="choiceRow">CLOSED</div>
+    <div class="row"></div>
   </section>
   <!-- PAGES -->
   <!-- <footer id= "footer" class="grey darken-4">

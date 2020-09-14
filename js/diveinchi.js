@@ -903,7 +903,7 @@ let app = {
         // document.getElementById("footPlayButton").addEventListener("click", app.playPause);
         let choice1 = "audioChoice";
         let choice2 = "videoChoice"
-        document.getElementById("listenButton").addEventListener("click", app.menuNav);
+        // document.getElementById("listenButton").addEventListener("click", app.menuNav);
         document.getElementById("algorithmsButton").addEventListener("click", app.menuNav);
         document.getElementById("catalogButton").addEventListener("click", app.menuNav);
         document.getElementById("shopButton").addEventListener("click", app.menuNav);
