@@ -901,9 +901,7 @@ let app = {
     addListeners: ()=>{
         console.log("after addListeners")
         // document.getElementById("footPlayButton").addEventListener("click", app.playPause);
-        let choice1 = "audioChoice";
-        let choice2 = "videoChoice"
-        // document.getElementById("listenButton").addEventListener("click", app.menuNav);
+        document.getElementById("listenButton").addEventListener("click", app.menuNav);
         document.getElementById("algorithmsButton").addEventListener("click", app.menuNav);
         document.getElementById("catalogButton").addEventListener("click", app.menuNav);
         document.getElementById("shopButton").addEventListener("click", app.menuNav);
@@ -911,7 +909,6 @@ let app = {
         document.getElementById("videoChoice").addEventListener("click", app.clickedChoice);
         document.getElementById("philoButton").addEventListener("click", app.clickedChoice2);
         document.getElementById("lotusButton").addEventListener("click", app.clickedChoice2);
-        document.getElementById("blankButton").addEventListener("click", app.clickedChoice2);
         document.getElementById("glitchButton").addEventListener("click", app.clickedChoice2);
         document.getElementById("diveinchiButton").addEventListener("click", app.clickedChoice2);
         document.getElementById("lasoufButton").addEventListener("click", app.clickedChoice2);

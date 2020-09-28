@@ -1,4 +1,5 @@
 Things to do
+
 - #enterButton | user choses algorithm button then clicks enter , depending on the choice,                  the desired page fucntion is triggered
 
 - #loading  | simulate a garage gate going up 

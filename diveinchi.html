@@ -11,16 +11,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
-    <title>DIVEINCHI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">    <title>DIVEINCHI</title>
   </head>
 <body id="body">
   <div id="loading">
   <div class="loaderTitle">BLUE DREAM INC.</div>
   <div class="lds-hourglass"></div>  
 </div>
+<!-- TEMPLATES -->
+<template id="albumRow">
+  <div class="row">
+    <div class="col s12 m12 l6 albumArtRow"><img class= "responsive-img albumArt"src="" alt=""></div>
+    <div class="col s12 m6 l3"><p></p></div>
+    <div class="col s12 m6 l6 "></div>
+  </div>
+</template>
+<template id="trackRow">
+  <div class="row">
+    <div class="col s12 m12 l6 trackArtRow"><img class="responsive-img trackArt" src="" alt=""></div>
+    <div class="col s12 m12 l9">
+      <div class="trackTitle col s12"></div>
+      <div class="audioPlayer">
+        <i class="material-icons playTrackButton">play_arrow</i>
+        <div class="trackCurrentTime">00:00</div>
+        <source class="trackAudioSource" src="" type="audio/mpeg"/>
+        <div class="progress trackVisual">
+          <div class="trackProgress"></div>
+        </div>
+        <div class="trackEndTime">00:00</div>
+      </div>
+    </div>
+  </div> 
+</template>
+<!-- TEMPLATES -->
 <!-- HEADER BAR -->
   <nav id="header">
-    <a id="headTitle" data-target="listenPage" href="#" class="headTitle">DIVEINCHI</a>
+    <a id="headTitle" data-target="listenPage" href="#" class="headTitle">BLUEDREAMINC</a>
     <div class="headIcons">
       <a href="https://music.apple.com/ca/artist/diveinchi/1493677786">
         <img href="https://www.apple.com" id="appleHeadButton" src="icons/apple.svg" alt="appleIcon" class="icons">
@@ -40,38 +66,12 @@
     </div>
   </nav>
   <div class="masterMenu">
-    <div v:on:click="menuNav" data-target="listenPage" class="menuButton clicked" id="listenButton">LISTEN</div>
+    <div data-target="listenPage" v-on:click="menuNav" class="menuButton clicked" id="listenButton">LISTEN</div>
     <div data-target="algorithmsPage" class="menuButton" id="algorithmsButton">ALGORITHMS</div>
     <div data-target="catalogPage" class="menuButton" id="catalogButton">CATALOG</div>
     <div data-target="shopPage" class="menuButton" id="shopButton">SHOP</div> 
   </div>
 <!-- HEADER BAR -->
-<!-- TEMPLATES -->
-  <template id="albumRow">
-    <div class="row">
-      <div class="col s12 m12 l6 albumArtRow"><img class= "responsive-img albumArt"src="" alt=""></div>
-      <div class="col s12 m6 l3"><p></p></div>
-      <div class="col s12 m6 l6 "></div>
-    </div>
-  </template>
-  <template id="trackRow">
-    <div class="row">
-      <div class="col s12 m12 l6 trackArtRow"><img class="responsive-img trackArt" src="" alt=""></div>
-      <div class="col s12 m12 l9">
-        <div class="trackTitle col s12"></div>
-        <div class="audioPlayer">
-          <i class="material-icons playTrackButton">play_arrow</i>
-          <div class="trackCurrentTime">00:00</div>
-          <source class="trackAudioSource" src="" type="audio/mpeg"/>
-          <div class="progress trackVisual">
-            <div class="trackProgress"></div>
-          </div>
-          <div class="trackEndTime">00:00</div>
-        </div>
-      </div>
-    </div> 
-  </template>
-<!-- TEMPLATES -->
   <!-- PAGES -->
   <section id="listenPage" class="page active">
     <div class="latestTrack">
@@ -134,22 +134,22 @@
     </div>
   </section>
   <section id="algorithmsPage" class="page"> 
-    <div class="algorithmInstruction center">CHOOSE ALGORITHM</div>
-    <div class="characterBox"></div>
+    <div class="instructionRow">
+      <div class="instruction">CHOOSE ALGORITHM</div>
+    </div>
+    <divc class="characterRow"><div class="characterBox"></div></divc>
+    
     <div class="characterSelect">
       <div class="characterRow">
         <div id="philoButton" class="algorithm">PHILO</div>
         <div id="lotusButton" class="algorithm">LO2US</div>
-        <div id="blankButton" class="algorithm">BLANK</div>
-      </div>
-      <div class="characterRow">
         <div id="glitchButton" class="algorithm">61ITCH</div>
         <div id="diveinchiButton" class="algorithm clickedChoice2">DIVEINCHI</div>
         <div id="lasoufButton" class="algorithm">LASOUF</div>
       </div>
     </div>
     <div class="enterRow">
-      <div id="enterButton"> ENTER</div>
+      <button id="enterButton" class="instructionEnterButton">Enter</button>
     </div>
     
   </section>
@@ -182,8 +182,11 @@
         </div>
     </div>
   </footer> -->
+  <script src="js/vue.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/audio.min.js"></script>
-  <script src="js/diveinchi.js"></script> 
+  <script src="js/diveinchi.js"></script>
+
+
 </body>
 </html>
