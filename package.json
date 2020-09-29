@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "this example is so cool.",
   "main": "diveinchi.js",
+  "config" : { "port" : "8080" },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node diveinchi.js"
+    "start": "node js/diveinchi.js"
   },
   "repository": {
     "type": "git",
@@ -13,10 +14,6 @@
   },
   "author": "youssef-khalil",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/khal0160/diveinchi/issues"
-  },
-  "homepage": "https://github.com/khal0160/diveinchi#readme",
   "dependencies": {
     "express": "^4.17.1"
   },

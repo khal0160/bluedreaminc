@@ -1,6 +1,5 @@
 let app = {
     pages: [],
-    show: new Event('show'),
     simulations: [
         {
             albumId: "one",
