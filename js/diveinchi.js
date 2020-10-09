@@ -1168,8 +1168,7 @@ let app = {
     clicked: (id)=>{
         console.log("after clicked")
         document.querySelector(".clicked").classList.remove("clicked");
-        document.getElementById(id).classList.add("clicked");
-        
+        document.getElementById(id).classList.add("clicked");  
     },
     clickedChoice: ev =>{
         ev.preventDefault();
