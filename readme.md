@@ -1,4 +1,4 @@
-Blue Dream Incorporated is shrouded in mystery. Its history has essentially been wiped from the books with many believing its origins must be a dream. Running on hip hop's five elements , the hive creates visual and auditory art combating earth's existentialism with experimentalism.
+Progressive Web App www.bluedreamincorporated.com
 
 PHILO - Graffiti 
 
