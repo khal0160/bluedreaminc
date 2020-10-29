@@ -1,12 +1,12 @@
 Progressive Web App www.bluedreamincorporated.com
 
-PHILO - Graffiti 
+PHILO - GRAFFITI
 
 LOTUS - DJ 
 
-Glitch - Bboy 
+GLITCH - BBOY 
 
-DIVEINCHI - Knowledge 
+DIVEINCHI - KNOWLEDGE
 
 LASOUF - MC
 
