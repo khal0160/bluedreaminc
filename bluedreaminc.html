@@ -4,6 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy" 
+        content="default-src 'self' data: gap: 'unsafe-eval' ws: ; 
+        style-src 'self' 'unsafe-inline'; 
+        script-src https: *.example.com ;
+        media-src 'none'; 
+        font-src *;
+        connect-src *;
+        img-src 'self' data: content:;">
+        <!--
+        VALUES
+        'self' - anything from the same origin
+        data: - data-uri (base64 images)
+        gap: - phonegap and cordova used by plugins on iOS
+        ws: - web sockets
+        * - anything except data: and blobs
+        filesystem: - access things on the local filesystem
+        blob: - allow Binary Large OBjects
+        mediastream: - allow streamed media
+        content: - used by Cordova
+        'none' - prevent anything in the category
+        https: - anything over https://
+        *.example.com - anything from any subdomain of example.com
+        'unsafe-inline' - inline source elements like style attribute, onclick, or script tags 
+        'unsafe-eval' - allow javascript eval( ). 
+        -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
