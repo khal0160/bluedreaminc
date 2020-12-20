@@ -1,12 +1,4 @@
-Progressive Web App www.bluedreamincorporated.com
+Progressive Web App www.diveinchi.com
 
-PHILO - GRAFFITI
-
-LOTUS - DJ 
-
-GLITCH - BBOY 
-
-DIVEINCHI - KNOWLEDGE
-
-LASOUF - MC
+Progressive Web Application displaying Ontario artist's work
 
