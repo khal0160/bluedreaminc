@@ -30,8 +30,11 @@
         'unsafe-eval' - allow javascript eval( ). 
         -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize STYLESHEET -->
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!-- STYLESHEET -->
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!-- FONT LINKS -->
     <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -39,37 +42,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">    <title>DIVEINCHI</title>
   </head>
 <body id="body">
-  <div id="loading">
-  <div class="loaderTitle">BLUE DREAM INC.</div>
-  <div class="lds-hourglass"></div>  
-</div>
-<!-- TEMPLATES -->
-<template id="albumRow">
-  <div class="row">
-    <div class="col s12 m12 l6 albumArtRow"><img class= "responsive-img albumArt"src="" alt=""></div>
-    <div class="col s12 m6 l3"><p></p></div>
-    <div class="col s12 m6 l6 "></div>
-  </div>
-</template>
-<template id="trackRow">
-  <div class="row">
-    <div class="col s12 m12 l6 trackArtRow"><img class="responsive-img trackArt" src="" alt=""></div>
-    <div class="col s12 m12 l9">
-      <div class="trackTitle col s12"></div>
-      <div class="audioPlayer">
-        <i class="material-icons playTrackButton">play_arrow</i>
-        <div class="trackCurrentTime">00:00</div>
-        <source class="trackAudioSource" src="" type="audio/mpeg"/>
-        <div class="progress trackVisual">
-          <div class="trackProgress"></div>
-        </div>
-        <div class="trackEndTime">00:00</div>
-      </div>
+  <!-- TEMPLATES ------------------------------------------------------------------------------->
+  <!-- Album Row Template | Image | empty | empty -->
+  <template id="albumRow">
+    <div class="row">
+      <div class="col s12 m12 l6 albumArtRow"><img class= "responsive-img albumArt"src="" alt=""></div>
+      <div class="col s12 m6 l3"><p></p></div>
+      <div class="col s12 m6 l6 "></div>
     </div>
-  </div> 
-</template>
-<!-- TEMPLATES -->
-<!-- HEADER BAR -->
+  </template>
+  <!-- Track Row Template | Image | Title / Audio Player -->
+  <template id="trackRow">
+    <div class="row">
+      <!-- Image -->
+      <div class="col s12 m12 l6 trackArtRow"><img class="responsive-img trackArt" src="" alt=""></div>
+      <div class="col s12 m12 l9">
+        <!-- Title -->
+        <div class="trackTitle col s12"></div>
+        <!-- Audio Player -->
+        <div class="audioPlayer">
+          <i class="material-icons playTrackButton">play_arrow</i>
+          <div class="trackCurrentTime">00:00</div>
+          <source class="trackAudioSource" src="" type="audio/mpeg"/>
+          <div class="progress trackVisual">
+            <div class="trackProgress"></div>
+          </div>
+          <div class="trackEndTime">00:00</div>
+        </div>
+      </div>
+    </div> 
+  </template>
+  <!--------------------------------------------------------------------------------------------->
+  <!-- LOADING SCREEN --------------------------------------------------------------------------->
+  <div id="loading">
+    <div class="loaderTitle">DIVEINCHI</div>
+    <div class="lds-hourglass"></div>
+  </div>
+  <!--------------------------------------------------------------------------------------------->
+  <!-- HEADER BAR ------------------------------------------------------------------------------->
   <nav id="header">
     <a id="headTitle" data-target="listenPage" href="#" class="headTitle">DIVEINCHI</a>
     <!-- <div class="headIcons">
@@ -90,14 +100,15 @@
       </a>
     </div> -->
   </nav>
+  <!-- MASTER MENU LISTEN | ALGORITHMS | CATALOG | SHOP ----------------------------------------->
   <div class="masterMenu">
     <div data-target="listenPage" v-on:click="menuNav" class="menuButton clicked" id="listenButton">LISTEN</div>
     <div data-target="algorithmsPage" class="menuButton" id="algorithmsButton">ALGORITHMS</div>
     <div data-target="catalogPage" class="menuButton" id="catalogButton">CATALOG</div>
     <div data-target="shopPage" class="menuButton" id="shopButton">SHOP</div> 
   </div>
-<!-- HEADER BAR -->
-  <!-- PAGES -->
+  <!-- PAGES ------------------------------------------------------------------------------------>
+  <!-- LISTEN PAGE SECTION ---------------------------------------------------------------------->
   <section id="listenPage" class="page active">
     <div class="latestTrack">
       <div class="instruction">Listen to TRACK NAME</div>
@@ -116,48 +127,7 @@
     </div>
     
   </section>
-  <section id="one" class="page">
-    <h2 class="albumTitle">Simulation 1:</h2>
-    <h2>Testing</h2>
-  </section>
-  <section id="two" class="page">
-    <h2 class="albumTitle">Simulation 2:</h2>
-    <h2>Good Deeds And Synth</h2>
-  </section>
-  <section id="three" class="page">
-    <h2 class="albumTitle">Simulation 3:</h2>
-    <h2>Instant Gratification</h2>
-  </section>
-  <section id="four" class="page">
-    <h2 class="albumTitle">Simulation 4:</h2>
-    <h2>Microdosing Fear</h2>
-  </section>
-  <section id="five" class="page">
-  <h2 class="albumTitle">Simulation 5:</h2>
-  <h2>Alternate Immersion</h2>
-  </section>
-  <section id="six" class="page">
-    <h2 class="albumTitle">Simulation 6:</h2>
-    <h2>Logical Eternity</h2>
-  </section>
-  <section id="seven" class="page">
-    <h2 class="albumTitle">Simulation 7:</h2>
-    <h2>HitClips</h2>
-  </section>
-  <section id="eight" class="page">
-    <h2 class="albumTitle">Simulation 8:</h2>
-    <h2>Lasouf</h2>
-  </section>
-  <section id="nine" class="page">
-    <h2 class="albumTitle">Simulation 9:</h2>
-    <h2>Lorem Ipsum</h2>
-  </section>
-  <section id="ten" class="page">
-    <div class="titleBlock">
-      <h2 class="albumTitle">Simulation 10:</h2>
-      <h2>Plastic 604</h2>
-    </div>
-  </section>
+  <!-- ALGORITHMS PAGE SECTION ------------------------------------------------------------------>
   <section id="algorithmsPage" class="page"> 
     <div class="instructionRow">
       <div class="instruction">CHOOSE ALGORITHM</div>
@@ -180,6 +150,7 @@
     
     
   </section>
+  <!-- CATALOG PAGE SECTION --------------------------------------------------------------------->
   <section id="catalogPage" class="page">
     <div class="choiceRow">
       <div data-target="audioChoice" id="audioChoice" class="buttonChoice clickedChoice" >Audio</div>
@@ -187,11 +158,65 @@
     </div>
     <div class="grid"></div>
   </section>
+  <!-- SHOP PAGE SECTION ------------------------------------------------------------------------>
   <section id="shopPage" class="page">
     <div class="choiceRow">CLOSED</div>
     <div class="row"></div>
   </section>
-  <!-- PAGES -->
+  <!-- SIMULATION ONE PAGE SECTION -------------------------------------------------------------->
+  <section id="one" class="page">
+    <h2 class="albumTitle">Simulation 1:</h2>
+    <h2>Testing</h2>
+  </section>
+  <!-- SIMULATION TWO PAGE SECTION -------------------------------------------------------------->
+  <section id="two" class="page">
+    <h2 class="albumTitle">Simulation 2:</h2>
+    <h2>Good Deeds And Synth</h2>
+  </section>
+  <!-- SIMULATION THREE PAGE SECTION ------------------------------------------------------------>
+  <section id="three" class="page">
+    <h2 class="albumTitle">Simulation 3:</h2>
+    <h2>Instant Gratification</h2>
+  </section>
+  <!-- SIMULATION FOUR PAGE SECTION ------------------------------------------------------------->
+  <section id="four" class="page">
+    <h2 class="albumTitle">Simulation 4:</h2>
+    <h2>Microdosing Fear</h2>
+  </section>
+  <!-- SIMULATION FIVE PAGE SECTION ------------------------------------------------------------->
+  <section id="five" class="page">
+  <h2 class="albumTitle">Simulation 5:</h2>
+  <h2>Alternate Immersion</h2>
+  </section>
+  <!-- SIMULATION SIX PAGE SECTION -------------------------------------------------------------->
+  <section id="six" class="page">
+    <h2 class="albumTitle">Simulation 6:</h2>
+    <h2>Logical Eternity</h2>
+  </section>
+  <!-- SIMULATION SEVEN PAGE SECTION ------------------------------------------------------------>
+  <section id="seven" class="page">
+    <h2 class="albumTitle">Simulation 7:</h2>
+    <h2>HitClips</h2>
+  </section>
+  <!-- SIMULATION EIGHT PAGE SECTION ------------------------------------------------------------>
+  <section id="eight" class="page">
+    <h2 class="albumTitle">Simulation 8:</h2>
+    <h2>Lasouf</h2>
+  </section>
+  <!-- SIMULATION NINE PAGE SECTION ------------------------------------------------------------->
+  <section id="nine" class="page">
+    <h2 class="albumTitle">Simulation 9:</h2>
+    <h2>Lorem Ipsum</h2>
+  </section>
+  <!-- SIMULATION TEN PAGE SECTION -------------------------------------------------------------->
+  <section id="ten" class="page">
+    <div class="titleBlock">
+      <h2 class="albumTitle">Simulation 10:</h2>
+      <h2>Plastic 604</h2>
+    </div>
+  </section>
+  
+  <!-- FOOTER SECTION -------------------------------------------------------------->
   <!-- <footer id= "footer" class="grey darken-4">
     <div id="playBar">
       <i class="material-icons playButtons" id="footPlayButton">play_arrow</i>
@@ -209,11 +234,11 @@
         </div>
     </div>
   </footer> -->
+  
+  <!-- JAVA SCRIPTS -------------------------------------------------------------->
   <script src="js/vue.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/audio.min.js"></script>
   <script src="js/diveinchi.js"></script>
-
-
 </body>
 </html>
