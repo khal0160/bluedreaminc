@@ -1,5 +1,8 @@
+
 let app = {
+    // PAGES ARRAY
     pages: [],
+    // ARRAY OF ALBUM INFO OBJECTS
     simulations: [
         {
             albumId: "one",
@@ -82,6 +85,7 @@ let app = {
             albumDescription: "Blah Blah Blah",
         },
     ],
+    // ARRAY OF TRACK INFO OBJECTS
     trackList:[
         {
             trackName: "Achievement Unlocked: New Level Of Abstraction",
@@ -881,22 +885,31 @@ let app = {
         
 
     ],
+    // AUDIO PLAYER 
     audioPlayer: undefined, 
+    // GLOBAL CURRENT TRACK STRING
     currentTrack: "",
+    // GLOBAL LATEST UPLOAD STRING
     latestUpload: "",
+    // INITIATE FUNCTION
     init: ()=>{
         console.log("after init")
+        // DISPLAY LOADING SCREEN
         app.loading();
-        
+        // GRAB PAGES 
         app.pages = document.querySelectorAll('.page');
+        // 
         app.pages.forEach((pg)=>{
             pg.addEventListener('show', app.pageShown);
         })
+        // 
         app.addListeners();
+        //
         audiojs.events.ready(function() {
             var as = audiojs.createAll();
           });
     },
+    // ADDLISTENERS FUNCTION
     addListeners: ()=>{
         console.log("after addListeners")
         // document.getElementById("footPlayButton").addEventListener("click", app.playPause);
@@ -914,6 +927,7 @@ let app = {
         document.getElementById("enterButton").addEventListener("click", app.enterAlgorithm);
         document.getElementById("headTitle").addEventListener("click", app.menuNav);
     },
+    // NAV FUNC TO ACTIVATE CLICKED PAGE
     nav: ev=>{
         console.log("after nav");
         ev.preventDefault();
@@ -924,6 +938,7 @@ let app = {
         document.getElementById(tar).classList.add("active");
         app.buildSimulation(btn);
     },
+    // MENU NAV FUNC 
     menuNav: ev=>{
         console.log("after menuNav");
         ev.preventDefault();
@@ -956,6 +971,7 @@ let app = {
             app.clicked(dataId);
         }
     },
+    // BUILD THIS SIMULATION
     buildSimulation: tar =>{
         console.log('After buildSimulation');
         let target= tar.getAttribute('data-target');
@@ -990,6 +1006,7 @@ let app = {
             }
         }
     },
+    // PLAY OR PAUSE FUNCTION
     playPause: ev=> {
         console.log("after playPause")
         // DEFINE EVENT TRACK NAME
@@ -1016,6 +1033,7 @@ let app = {
             console.log("No track name found")
         }
     },
+    // TRACKING TIME
     trackTime: ev=> {
         //Start Time Tracking
         currentPercent=app.audioPlayer.currentTime / app.audioPlayer.duration * 100;
@@ -1059,6 +1077,7 @@ let app = {
             document.getElementById("footEndTime").textContent= currentEndMinute +":"+ currentEndSeconds;
         }
     },
+    // CURRENT TRACK UPDATE
     updateCurrentTrack(trackId){
         console.log("after checkCurrentTrack: " + trackId);
         // Find the track from the trackList array
@@ -1079,6 +1098,7 @@ let app = {
         app.currentTrack.trackId=findTrack.trackId;
         
     },
+    // CHECK CURRENT TRACK IS PAUSED OR PLAYING
     checkCurrentTrackState(ev, oldTrackId){
         console.log("after checkCurrentTrackState");
         //IF CurrentTrack is PAUSED 
@@ -1126,13 +1146,16 @@ let app = {
  
         }
     },
+    // BUILD LISTEN PAGE
     buildListenPage: ev=>{
         console.log("after buildListenPage");  
     },
+    // BUILD ALGORITHMS PAGE
     buildAlgorithmsPage: ()=>{
         console.log("after buildAlgorithmsPage");
         
     },
+    // BUILD AUDIO CATALAG PAGE
     buildAudioCatalogPage: ev=>{
         console.log("after buildCatalogPage");
         let audioInstruction =document.createElement("div");
@@ -1149,6 +1172,7 @@ let app = {
         // }  
         
     },
+    // BUILD VIDEO CATALAG PAGE
     buildVideoCatalogPage: ev=>{
         let videoInstruction =document.createElement("div");
         videoInstruction.classList.add("center");
@@ -1156,20 +1180,24 @@ let app = {
         document.querySelector(".grid").innerHTML=""
         document.querySelector(".grid").appendChild(videoInstruction);
     },
+    // BUILD SHOP PAGE
     buildShopPage: ev=>{
         console.log("after buildShopPage");
     },
+    // LOADING FUNCTIONALITY
     loading: ()=>{
         document.getElementById('loading').classList.remove("hidden")
         setTimeout(function() {
             document.getElementById('loading').classList.add("hidden")
           }, 1000);
     },
+    // CLICKED FUNCTIONALITY
     clicked: (id)=>{
         console.log("after clicked")
         document.querySelector(".clicked").classList.remove("clicked");
         document.getElementById(id).classList.add("clicked");  
     },
+    // AUDIO OR VIDEO CLICK CHOICE
     clickedChoice: ev =>{
         ev.preventDefault();
         console.log("after clickedChoice")
@@ -1185,55 +1213,7 @@ let app = {
         document.querySelector(".clickedChoice").classList.remove("clickedChoice");
         document.getElementById(dataTar).classList.add("clickedChoice");
     },
-    clickedChoice2: ev =>{
-        ev.preventDefault();
-        console.log("after clickedChoice2")
-        console.log(ev.target);
-        let btn = ev.target;
-        let dataTar = btn.getAttribute("id");
-        if(dataTar == "philoChoice"){
-            app.buildPhiloPage();
-        }
-        else if(dataTar == "lotusChoice"){
-            app.buildLotusPage();
-        }
-        else if(dataTar == "blankChoice"){
-            app.buildBlankPage();
-        }
-        else if(dataTar == "glitchChoice"){
-            app.buildGlitchPage();
-        }
-        else if(dataTar == "diveinchiChoice"){
-            app.buildDiveinchiPage();
-        }
-        else if(dataTar == "lasoufChoice"){
-            app.buildLasoufPage();
-        }
-        document.querySelector(".clickedChoice2").classList.remove("clickedChoice2");
-        document.getElementById(dataTar).classList.add("clickedChoice2");
-    },
-    buildPhiloPage: ev=>{
-        console.log("after buildPhiloPage");
-    },
-    buildLotusPage: ev=>{
-        console.log("after buildLotusPage");
-    },
-    buildBlankPage: ev=>{
-        console.log("after buildBlankPage");
-    },
-    buildGlitchPage: ev=>{
-        console.log("after buildGlitchPage");
-    },
-    buildDiveinchiPage: ev=>{
-        console.log("after buildDiveinchiPage");
-    },
-    buildLasoufPage: ev=>{
-        console.log("after buildLasoufPage");
-    },
-    enterAlgorithm: ev=>{
-        console.log("after enterAlgorithm");
-        document.querySelector("clickedChoice2")
-    }
+    
 }
-const ready = "cordova" in window ? "deviceready" : "DOMContentLoaded";
+const ready = "DIVEICHI" in window ? "deviceready" : "DOMContentLoaded";
 document.addEventListener(ready, app.init);
