@@ -914,7 +914,6 @@ let app = {
         console.log("after addListeners")
         // document.getElementById("footPlayButton").addEventListener("click", app.playPause);
         document.getElementById("listenButton").addEventListener("click", app.menuNav);
-        document.getElementById("algorithmsButton").addEventListener("click", app.menuNav);
         document.getElementById("catalogButton").addEventListener("click", app.menuNav);
         document.getElementById("shopButton").addEventListener("click", app.menuNav);
         document.getElementById("audioChoice").addEventListener("click", app.clickedChoice);

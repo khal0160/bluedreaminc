@@ -261,6 +261,7 @@ img{
 .menuButton{
   font-size: 13px;
   color: white;
+  
 }
 .textShadow{
   color: white;
@@ -566,6 +567,8 @@ a{
   }
   .menuButton{
     font-size: 20px;
+    width: 33%;
+    text-align: center;
   }
   .headIcons{
     position: absolute;
@@ -837,6 +840,8 @@ a{
   }
   .menuButton{
     font-size: 20px;
+    width: 33%;
+    text-align: center;
   }
   #footPlayButton{
     font-size: 50px;
@@ -1101,6 +1106,9 @@ a{
   }
   .menuButton{
     font-size: 20px ; 
+    width: 33%;
+    text-align: center;
+    
   }
   #footPlayButton{
     font-size: 50px;
