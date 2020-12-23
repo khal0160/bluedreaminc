@@ -32,7 +32,6 @@ html{
   height: 50px;
   display: flex;
   justify-content: row;
-  justify-content: center;
   background-color: #2b2e36;
 }
 .headTitle{
@@ -40,8 +39,9 @@ html{
   color: whitesmoke;
   font-size: 20px;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  /* padding-left: 10px; */
+  padding-left: 10px;
   /* transform: rotate(90deg); */
   
 }
