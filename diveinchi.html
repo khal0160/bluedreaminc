@@ -4,31 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <meta http-equiv="Content-Security-Policy" 
-        content="default-src 'self' data: gap: 'unsafe-eval' ws: ; 
-        style-src 'self' 'unsafe-inline'; 
-        script-src https: *.example.com ;
-        media-src 'none'; 
-        font-src *;
-        connect-src *;
-        img-src 'self' data: content:;"> -->
-        <!--
-        VALUES
-        'self' - anything from the same origin
-        data: - data-uri (base64 images)
-        gap: - phonegap and cordova used by plugins on iOS
-        ws: - web sockets
-        * - anything except data: and blobs
-        filesystem: - access things on the local filesystem
-        blob: - allow Binary Large OBjects
-        mediastream: - allow streamed media
-        content: - used by Cordova
-        'none' - prevent anything in the category
-        https: - anything over https://
-        *.example.com - anything from any subdomain of example.com
-        'unsafe-inline' - inline source elements like style attribute, onclick, or script tags 
-        'unsafe-eval' - allow javascript eval( ). 
-        -->
+    <meta http-equiv="Content-Security-Policy" >
+        <!--'self' - anything from the same origin   -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Materialize STYLESHEET -->
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -39,7 +16,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">    <title>DIVEINCHI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">  
+    <title>DIVEINCHI</title>
   </head>
 <body id="body">
   <!-- TEMPLATES ------------------------------------------------------------------------------->
@@ -102,22 +82,23 @@
   </nav>
   <!-- MASTER MENU LISTEN | ALGORITHMS | CATALOG | SHOP ----------------------------------------->
   <div class="masterMenu">
-    <div data-target="listenPage" v-on:click="menuNav" class="menuButton clicked" id="listenButton">LISTEN</div>
-    <div data-target="catalogPage" class="menuButton" id="catalogButton">CATALOG</div>
-    <div data-target="shopPage" class="menuButton" id="shopButton">SHOP</div> 
+    <div class="masterHitbox">
+      <img data-target="listenPage" id="listenButton" class ="masterIcons clicked" src="icons/openEar.svg" alt="listen button">
+      <div class="masterLabels">LISTEN</div>
+    </div>
+    <div class="masterHitbox">
+      <img data-target="watchPage" id="watchButton" class =" masterIcons" src="icons/openEye.svg" alt="watch button">
+      <div class="masterLabels">WATCH</div>
+    </div>
+    <div class="masterHitbox">
+      <img data-target="shopPage" id="shopButton" class ="masterIcons" src="icons/cart.svg" alt="shop button">
+      <div class="masterLabels">SHOP</div>
+    </div> 
   </div>
   <!-- PAGES ------------------------------------------------------------------------------------>
   <!-- LISTEN PAGE SECTION ---------------------------------------------------------------------->
   <section id="listenPage" class="page active">
     <div class="latestTrack">
-      <div class="instruction">Listen to TRACK NAME</div>
-      <div class="latestTrackLinks">
-        <div class="link">SPOTIFY</div>
-        <div class="link">APPLE</div>
-        <div class="link">YOUTUBE</div>
-        <div class="link">DEEZER</div>
-        <div class="link">TIDAL</div>
-        </div>
         <div class="latestTrackArtRow">
           <img src="img/underConstruction.png" alt="" class="latestTrackArt">
         </div>
@@ -127,16 +108,20 @@
     
   </section>
   <!-- CATALOG PAGE SECTION --------------------------------------------------------------------->
-  <section id="catalogPage" class="page">
-    <div class="choiceRow">
-      <div data-target="audioChoice" id="audioChoice" class="buttonChoice clickedChoice" >Audio</div>
-      <div data-target="videoChoice" id="videoChoice" class="buttonChoice" >Video</div>
-    </div>
-    <div class="grid"></div>
+  <section id="watchPage" class="page">
+    <div class="choiceRow">NO VIDEOS TO WATCH</div>
+    <!-- <iframe class="youtubeVideo" src="https://www.youtube.com/embed/dS8Mdh4H_wE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="youtubeVideo" src="https://www.youtube.com/embed/9ld1n-LAFAo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="youtubeVideo" src="https://www.youtube.com/embed/knGI-tm1VKQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="youtubeVideo" src="https://www.youtube.com/embed/DPe3x0V9J70" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="youtubeVideo" src="https://www.youtube.com/embed/doY57USBuUo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="youtubeVideo" src="https://www.youtube.com/embed/7ICxfjFXYKc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="youtubeVideo" src="https://www.youtube.com/embed/9YiiPcUXp6g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     -->
   </section>
   <!-- SHOP PAGE SECTION ------------------------------------------------------------------------>
   <section id="shopPage" class="page">
-    <div class="choiceRow">CLOSED</div>
+    <div class="choiceRow">SHOP IS CLOSED</div>
     <div class="row"></div>
   </section>
   <!-- SIMULATION ONE PAGE SECTION -------------------------------------------------------------->
@@ -212,7 +197,6 @@
   </footer> -->
   
   <!-- JAVA SCRIPTS -------------------------------------------------------------->
-  <script src="js/vue.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/audio.min.js"></script>
   <script src="js/diveinchi.js"></script>

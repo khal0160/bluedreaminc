@@ -914,16 +914,8 @@ let app = {
         console.log("after addListeners")
         // document.getElementById("footPlayButton").addEventListener("click", app.playPause);
         document.getElementById("listenButton").addEventListener("click", app.menuNav);
-        document.getElementById("catalogButton").addEventListener("click", app.menuNav);
+        document.getElementById("watchButton").addEventListener("click", app.menuNav);
         document.getElementById("shopButton").addEventListener("click", app.menuNav);
-        document.getElementById("audioChoice").addEventListener("click", app.clickedChoice);
-        document.getElementById("videoChoice").addEventListener("click", app.clickedChoice);
-        document.getElementById("philoButton").addEventListener("click", app.clickedChoice2);
-        document.getElementById("lotusButton").addEventListener("click", app.clickedChoice2);
-        document.getElementById("glitchButton").addEventListener("click", app.clickedChoice2);
-        document.getElementById("diveinchiButton").addEventListener("click", app.clickedChoice2);
-        document.getElementById("lasoufButton").addEventListener("click", app.clickedChoice2);
-        document.getElementById("enterButton").addEventListener("click", app.enterAlgorithm);
         document.getElementById("headTitle").addEventListener("click", app.menuNav);
     },
     // NAV FUNC TO ACTIVATE CLICKED PAGE
@@ -959,10 +951,6 @@ let app = {
         }
         if(dataTar=="algorithmsPage"){ 
             app.buildAlgorithmsPage(dataTar);
-            app.clicked(dataId);
-        }
-        if(dataTar=="catalogPage"){
-            app.buildAudioCatalogPage(dataTar);
             app.clicked(dataId);
         }
         if(dataTar=="shopPage"){
@@ -1155,22 +1143,22 @@ let app = {
         
     },
     // BUILD AUDIO CATALAG PAGE
-    buildAudioCatalogPage: ev=>{
-        console.log("after buildCatalogPage");
-        let audioInstruction =document.createElement("div");
-        audioInstruction.classList.add("center");
-        audioInstruction.innerHTML="No Audio, yet!";
-        document.querySelector(".grid").innerHTML=""
-        document.querySelector(".grid").appendChild(audioInstruction);
-        // document.querySelector(".grid").innerHTML="";
-        // for (let i = app.trackList.length-1; i >=0; i--) {
-        //     let img = document.createElement("img");
-        //     img.src = app.trackList[i].trackArt;
-        //     img.classList.add("gridBox");
-        //     document.querySelector(".grid").appendChild(img);
-        // }  
+    // buildAudioCatalogPage: ev=>{
+    //     console.log("after buildCatalogPage");
+    //     let audioInstruction =document.createElement("div");
+    //     audioInstruction.classList.add("center");
+    //     audioInstruction.innerHTML="No Audio, yet!";
+    //     document.querySelector(".grid").innerHTML=""
+    //     document.querySelector(".grid").appendChild(audioInstruction);
+    //     // document.querySelector(".grid").innerHTML="";
+    //     // for (let i = app.trackList.length-1; i >=0; i--) {
+    //     //     let img = document.createElement("img");
+    //     //     img.src = app.trackList[i].trackArt;
+    //     //     img.classList.add("gridBox");
+    //     //     document.querySelector(".grid").appendChild(img);
+    //     // }  
         
-    },
+    // },
     // BUILD VIDEO CATALAG PAGE
     buildVideoCatalogPage: ev=>{
         let videoInstruction =document.createElement("div");
@@ -1196,7 +1184,7 @@ let app = {
         document.querySelector(".clicked").classList.remove("clicked");
         document.getElementById(id).classList.add("clicked");  
     },
-    // AUDIO OR VIDEO CLICK CHOICE
+    // // AUDIO OR VIDEO CLICK CHOICE
     clickedChoice: ev =>{
         ev.preventDefault();
         console.log("after clickedChoice")
