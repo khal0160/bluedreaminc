@@ -1184,22 +1184,7 @@ let app = {
         document.querySelector(".clicked").classList.remove("clicked");
         document.getElementById(id).classList.add("clicked");  
     },
-    // // AUDIO OR VIDEO CLICK CHOICE
-    clickedChoice: ev =>{
-        ev.preventDefault();
-        console.log("after clickedChoice")
-        console.log(ev.target);
-        let btn = ev.target;
-        let dataTar = btn.getAttribute("data-target");
-        if(dataTar == "videoChoice"){
-            app.buildVideoCatalogPage();
-        }
-        else if(dataTar == "audioChoice"){
-            app.buildAudioCatalogPage();
-        }
-        document.querySelector(".clickedChoice").classList.remove("clickedChoice");
-        document.getElementById(dataTar).classList.add("clickedChoice");
-    },
+    
     
 }
 const ready = "DIVEICHI" in window ? "deviceready" : "DOMContentLoaded";

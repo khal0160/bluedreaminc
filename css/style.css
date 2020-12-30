@@ -131,7 +131,6 @@ img{
   left: 1%;
 }
 .icons{
-
   width: 15px ;
   padding-top: 10px;
 }
@@ -256,14 +255,8 @@ img{
   flex-direction: row;
   justify-content: center;
 }
-.clicked{
-  fill: white;
-}
-.clickedChoice2{
-  z-index: 10033;
-  opacity: 10%;
-  color: black;
-}
+
+
 .instructionEnterButton{
   width: 500px;
   height: 100px;
@@ -299,6 +292,7 @@ img{
 .youtubeVideo{
   width: 100%;
   height: 300px;
+  padding-top: 10px
 }
 #youtubeHeadButton{
   padding-bottom: 3px;
@@ -306,6 +300,42 @@ img{
 #instagramHeadButton{
   padding-bottom: 1px;
 }
+.masterTrackName{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+.masterTrack{
+  display: flex;
+  flex-direction: column;
+}
+.masterTrackFrame{
+  /* padding-left: 22%; */
+}
+.masterTrackLinks{
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+.listenGrid{
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+.listenGridRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+.listenGridRowImage{
+  width: 90px;
+  height: 90px;
+}
+
 /* FOOTER */
 #footer{
   display: flex;
@@ -642,16 +672,13 @@ img{
     width: 33.33%;
     height: 33.33%vw;
   }
-  .clicked{   
-  }
-  .clickedChoice{
-    z-index: 10003;
-    opacity: 10%;
-  }
-  .clickedChoice2{
+  
+ 
+  .clicked{ 
+    width: 33%;
+    height: 10px;
     z-index: 10033;
-    opacity: 10%;
-    color: black;
+    background-color: black !important
   }
   .enterRow{
     display: flex;
@@ -711,6 +738,35 @@ img{
     justify-content: center;
     height: 70px;
     width: 100%vw;
+  }
+  .masterTrack{
+    display: flex;
+    flex-direction: column;
+  }
+  .masterTrackName{
+    font-size: 30px;
+  }
+  .masterTrackFrame{
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+  .masterTrackLinks{
+    display: flex;
+    justify-content: center;
+  }
+  .listenGrid{
+    display: flex;
+    flex-direction: column;
+  }
+  .listenGridRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 100px;
+  }
+  .listenGridRowImage{
+    width: 200px;
+    height: 200px;
   }
 }
 /**************************
@@ -935,10 +991,7 @@ img{
   .clicked{
     width: 33%;
   }
-  .clickedChoice{
-    z-index: 10003;
-    opacity: 10%;
-  }
+ 
   .enterRow{
     display: flex;
     flex-direction: row;
@@ -975,6 +1028,35 @@ img{
   .masterIcons{
     width: 50px;
     margin-bottom: -19px; 
+  }
+  .masterTrack{
+    display: flex;
+    flex-direction: column;
+  }
+  .masterTrackName{
+    font-size: 30px;
+  }
+  .masterTrackFrame{
+    padding-left: 22%;
+    padding-right: 22%;
+  }
+  .masterTrackLinks{
+    display: flex;
+    justify-content: center;
+  }
+  .listenGrid{
+    display: flex;
+    flex-direction: column;
+  }
+  .listenGridRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 100px;
+  }
+  .listenGridRowImage{
+    width: 200px;
+    height: 200px;
   }
 }
 /**************************
@@ -1208,10 +1290,6 @@ img{
   .clicked{
     width: 33%;
   }
-  .clickedChoice{
-    z-index: 10003;
-    opacity: 10%;
-  }
   .headIcons{
     display: flex;
     justify-content: space-around;
@@ -1260,5 +1338,34 @@ img{
   .masterIcons{
     width: 50px;
     margin-bottom: -19px; 
+  }
+  .masterTrack{
+    display: flex;
+    flex-direction: column;
+  }
+  .masterTrackName{
+    font-size: 30px;
+  }
+  .masterTrackFrame{
+    padding-left: 22%;
+    padding-right: 22%;
+  }
+  .masterTrackLinks{
+    display: flex;
+    justify-content: center;
+  }
+  .listenGrid{
+    display: flex;
+    flex-direction: column;
+  }
+  .listenGridRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 100px;
+  }
+  .listenGridRowImage{
+    width: 200px;
+    height: 200px;
   }
 }
