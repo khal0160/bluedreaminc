@@ -272,20 +272,15 @@ img{
   margin-bottom: -19px; 
 }
 .masterLabels{
+  display: flex;
+  justify-content: center;
   width: 50px;
   font-size: 10px;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #616161;
 }
-.masterHitBox{
-  background-color: aqua;
-  z-index: 10000;
-  width: 100px;
-  display: flex;
-  flex-direction: column; 
-  
-}
+
 #shopButton{
   padding-left: 3px; 
 }
@@ -334,6 +329,10 @@ img{
 .listenGridRowImage{
   width: 90px;
   height: 90px;
+}
+.clicked{ 
+  height: 50px;
+  background-color: white
 }
 
 /* FOOTER */
@@ -672,14 +671,7 @@ img{
     width: 33.33%;
     height: 33.33%vw;
   }
-  
- 
-  .clicked{ 
-    width: 33%;
-    height: 10px;
-    z-index: 10033;
-    background-color: black !important
-  }
+
   .enterRow{
     display: flex;
     flex-direction: row;
@@ -768,6 +760,7 @@ img{
     width: 200px;
     height: 200px;
   }
+  
 }
 /**************************
     LAYOUT - LARGE SIZE
@@ -988,9 +981,7 @@ img{
     width: 33.33%;
     height: 33.33%vw;
   }
-  .clicked{
-    width: 33%;
-  }
+
  
   .enterRow{
     display: flex;
@@ -1287,9 +1278,7 @@ img{
     width: 33.33%;
     height: 33.33%vw;
   }
-  .clicked{
-    width: 33%;
-  }
+
   .headIcons{
     display: flex;
     justify-content: space-around;

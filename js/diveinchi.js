@@ -949,7 +949,7 @@ let app = {
                 app.clicked(dataId)
             }
         }
-        if(dataTar=="algorithmsPage"){ 
+        if(dataTar=="watchPage"){ 
             app.buildAlgorithmsPage(dataTar);
             app.clicked(dataId);
         }
