@@ -1,6 +1,22 @@
-/**************************
-    LAYOUT - MOBILE SIZE
-**************************/
+
+/*#region MOBILE SIZE*/
+.watchColumn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.ytVideo{
+  padding-top: 10px;
+  height: 400px;
+  width: 100%;
+}
+.scPlaylist{
+  padding-top: 20px;
+  width: 100%;
+  height: 450px;
+}
+
 *{ 
   padding: 0;
   margin: 0;
@@ -402,16 +418,22 @@ img{
   height: 50px;
   background-color: white
 }
+.selected{ 
+  height: 20px;
+  background-color: white
+}
 .gridPageNumbers{
   padding-top: 10px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
+.simPage{
+  opacity: 0;
+}
+/*#endregion MOBILE SIZE*/
 
-/**************************
-    LAYOUT - MEDIUM SIZE
-**************************/
+/*#region MEDIUM SIZE*/
 @media screen and (min-width:600px){
   *{ 
     padding: 0;
@@ -768,9 +790,9 @@ img{
   }
   
 }
-/**************************
-    LAYOUT - LARGE SIZE
-**************************/
+/*#endregion MEDIUM SIZE*/
+
+/*#region LARGE SIZE*/
 @media screen and (min-width:800px){  
   #header{
     position: fixed;
@@ -1056,10 +1078,26 @@ img{
     height: 200px;
   }
 }
-/**************************
-    LAYOUT - EXTRA LARGE SIZE
-**************************/
-@media screen and (min-width:1200px){    
+/*#endregion LARGE SIZE*/
+
+/*#region XLARGE SIZE*/
+@media screen and (min-width:1200px){
+  .ytVideo{
+    padding-top: 20px;
+    height: 400px;
+    width: 1000px;
+  }
+  .scPlaylist{
+    padding-top: 20px;
+    width: 1000px;
+    height: 400px;
+  }
+  .listenColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }    
+
   #header{
     position: fixed;
     top: 0;
@@ -1214,6 +1252,18 @@ img{
     display: block;
     color: white;
   }
+  .simulationMenu{
+    display: flex;
+    justify-content: row;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    left: 0;
+    background-color: rgb(114, 119, 124);
+    font-family: 'Lexend Peta', sans-serif;
+    width: 100%;
+    position: fixed;
+  }
   .masterMenu{
     display: flex;
     justify-content: row;
@@ -1363,4 +1413,28 @@ img{
     width: 200px;
     height: 200px;
   }
+  .trackRow{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+  }
+  .instagram-media{
+    width: 300px;
+    height: 500px;
+  }
+  .soundcloud-media{
+    width: 100%;
+    height: 100px;
+  }
+  .trackSecondColumn{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 20px;
+  }
+  .youtube-media{
+    width: 100%;
+    height: 400px;
+  }
 }
+/*#endregion XLARGE SIZE*/
