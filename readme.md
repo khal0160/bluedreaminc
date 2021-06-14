@@ -1,3 +1,2 @@
-Single Page Application. The purpose of this website is to display my personal art. The site is built mostly out of Javascript and CSS. Currently it is under construction as the programming is catching up to the art, but I am constantly planning and executing new ideas behind the scene.
-
+React.js Multi-Page SPA (Single Page Application). The purpose of this website is to display my portfolio, and exercise React.js methodoligies and techniques.
 Live at https://www.diveinchi.com
