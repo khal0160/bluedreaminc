@@ -1082,6 +1082,9 @@ img{
 
 /*#region XLARGE SIZE*/
 @media screen and (min-width:1200px){
+  amp-ad{
+    z-index: 1000000;
+  }
   .ytVideo{
     padding-top: 20px;
     height: 400px;
